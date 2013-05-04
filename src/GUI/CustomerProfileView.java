@@ -4,6 +4,10 @@
  */
 package GUI;
 
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Supri
@@ -27,7 +31,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private void initComponents() {
 
         schoolLabel = new javax.swing.JLabel();
-        schoolCombobox = new javax.swing.JComboBox();
+        schoolComboBox = new javax.swing.JComboBox();
         profileViewSeparator = new javax.swing.JSeparator();
         manualFillPanel = new javax.swing.JPanel();
         primaryContactLabel = new javax.swing.JLabel();
@@ -36,8 +40,8 @@ public class CustomerProfileView extends javax.swing.JFrame {
         materialContactLabel = new javax.swing.JLabel();
         materialContactTextField = new javax.swing.JTextField();
         materialEmailLabel = new javax.swing.JLabel();
-        primaryEmailFormattedField = new javax.swing.JFormattedTextField();
-        materialEmailFormattedField = new javax.swing.JFormattedTextField();
+        primaryEmailTextField = new javax.swing.JTextField();
+        materialEmailTextField = new javax.swing.JTextField();
         autoFillPanel = new javax.swing.JPanel();
         countryLabel = new javax.swing.JLabel();
         countryTextField = new javax.swing.JTextField();
@@ -60,65 +64,48 @@ public class CustomerProfileView extends javax.swing.JFrame {
 
         schoolLabel.setText("Select School:");
 
-        schoolCombobox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        schoolCombobox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                schoolComboboxActionPerformed(evt);
-            }
-        });
-
-        manualFillPanel.setBackground(new java.awt.Color(240, 240, 240));
+        schoolComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "<Select School>", "Point Grey Secondary School", "Britannia Secondary School", "Lord Byng Secondary School", "Sir Winston Churchill Secondary School", "Crofton House School", "David Thompson Secondary School", "Eric Hamber Secondary School", "Gladstone Secondary School", "John Oliver Secondary School", "King David High School", "Kitsilano Secondary School", "David Thompson Secondary School", "Little Flower Academy", "Magee Secondary School", "Notre Dame Regional Secondary School", "Prince of Wales Secondary School", "St. George's School", "St. John's School", "Sir Charles Tupper Secondary School", "Stratford Hall", "Templeton Secondary School\"", "University Hill Secondary School", "York House School", "West Point Grey Academy", "Windermere Secondary School" }));
 
         primaryContactLabel.setText("Primary Contact:");
 
-        primaryContactTextField.setForeground(new java.awt.Color(200, 200, 200));
         primaryContactTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        primaryContactTextField.setText("Enter Name");
 
         primaryEmailLabel.setText("Email:");
 
         materialContactLabel.setText("Material Contact:");
 
-        materialContactTextField.setForeground(new java.awt.Color(200, 200, 200));
         materialContactTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        materialContactTextField.setText("Enter Name");
 
         materialEmailLabel.setText("Email:");
 
-        primaryEmailFormattedField.setForeground(new java.awt.Color(200, 200, 200));
-        primaryEmailFormattedField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        primaryEmailFormattedField.setText("Enter email");
+        primaryEmailTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        materialEmailFormattedField.setForeground(new java.awt.Color(200, 200, 200));
-        materialEmailFormattedField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        materialEmailFormattedField.setText("Enter email");
+        materialEmailTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         org.jdesktop.layout.GroupLayout manualFillPanelLayout = new org.jdesktop.layout.GroupLayout(manualFillPanel);
         manualFillPanel.setLayout(manualFillPanelLayout);
         manualFillPanelLayout.setHorizontalGroup(
             manualFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(manualFillPanelLayout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(manualFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(manualFillPanelLayout.createSequentialGroup()
                         .add(primaryContactLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(primaryContactTextField))
+                        .add(primaryContactTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .add(manualFillPanelLayout.createSequentialGroup()
                         .add(materialContactLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(materialContactTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 112, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(18, 18, 18)
+                        .add(materialContactTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .add(34, 34, 34)
+                .add(manualFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, primaryEmailLabel)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, materialEmailLabel))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(manualFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(manualFillPanelLayout.createSequentialGroup()
-                        .add(primaryEmailLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(primaryEmailFormattedField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 131, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(manualFillPanelLayout.createSequentialGroup()
-                        .add(materialEmailLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(materialEmailFormattedField)))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(materialEmailTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .add(primaryEmailTextField))
+                .addContainerGap())
         );
 
         manualFillPanelLayout.linkSize(new java.awt.Component[] {materialContactLabel, primaryContactLabel}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
@@ -133,13 +120,13 @@ public class CustomerProfileView extends javax.swing.JFrame {
                     .add(primaryContactLabel)
                     .add(primaryContactTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(primaryEmailLabel)
-                    .add(primaryEmailFormattedField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(primaryEmailTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(18, 18, 18)
                 .add(manualFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(materialContactLabel)
                     .add(materialContactTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(materialEmailLabel)
-                    .add(materialEmailFormattedField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(materialEmailTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -147,11 +134,13 @@ public class CustomerProfileView extends javax.swing.JFrame {
 
         countryTextField.setEditable(false);
         countryTextField.setBackground(new java.awt.Color(222, 222, 222));
+        countryTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         stateLabel.setText("State/Province:");
 
         stateTextField.setEditable(false);
         stateTextField.setBackground(new java.awt.Color(222, 222, 222));
+        stateTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         cityLabel.setText("City:");
 
@@ -162,6 +151,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
 
         postalCodeTextField.setEditable(false);
         postalCodeTextField.setBackground(new java.awt.Color(222, 222, 222));
+        postalCodeTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         addressLabel.setText("Address:");
 
@@ -172,11 +162,13 @@ public class CustomerProfileView extends javax.swing.JFrame {
 
         phoneTextField.setEditable(false);
         phoneTextField.setBackground(new java.awt.Color(222, 222, 222));
+        phoneTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         faxLabel.setText("Fax:");
 
         faxTextField.setEditable(false);
         faxTextField.setBackground(new java.awt.Color(222, 222, 222));
+        faxTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         org.jdesktop.layout.GroupLayout autoFillPanelLayout = new org.jdesktop.layout.GroupLayout(autoFillPanel);
         autoFillPanel.setLayout(autoFillPanelLayout);
@@ -185,17 +177,6 @@ public class CustomerProfileView extends javax.swing.JFrame {
             .add(autoFillPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(autoFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(autoFillPanelLayout.createSequentialGroup()
-                        .add(autoFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(autoFillPanelLayout.createSequentialGroup()
-                                .add(countryLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(countryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(autoFillPanelLayout.createSequentialGroup()
-                                .add(stateLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(stateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(0, 0, Short.MAX_VALUE))
                     .add(autoFillPanelLayout.createSequentialGroup()
                         .add(cityLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -209,13 +190,24 @@ public class CustomerProfileView extends javax.swing.JFrame {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(addressTextField))
                     .add(autoFillPanelLayout.createSequentialGroup()
-                        .add(phoneLabel)
-                        .add(18, 18, 18)
-                        .add(phoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 111, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 62, Short.MAX_VALUE)
-                        .add(faxLabel)
-                        .add(18, 18, 18)
-                        .add(faxTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 111, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                        .add(autoFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(autoFillPanelLayout.createSequentialGroup()
+                                .add(countryLabel)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(countryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(autoFillPanelLayout.createSequentialGroup()
+                                .add(stateLabel)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(stateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(autoFillPanelLayout.createSequentialGroup()
+                                .add(phoneLabel)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(phoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(18, 18, 18)
+                                .add(faxLabel)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(faxTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                        .add(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         autoFillPanelLayout.setVerticalGroup(
@@ -240,13 +232,11 @@ public class CustomerProfileView extends javax.swing.JFrame {
                     .add(addressLabel)
                     .add(addressTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(autoFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(autoFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(phoneLabel)
-                        .add(phoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(autoFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(faxTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(faxLabel)))
+                .add(autoFillPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(phoneLabel)
+                    .add(phoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(faxLabel)
+                    .add(faxTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -262,31 +252,29 @@ public class CustomerProfileView extends javax.swing.JFrame {
                 .addContainerGap())
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(layout.createSequentialGroup()
-                        .add(0, 0, Short.MAX_VALUE)
-                        .add(nextButton))
-                    .add(layout.createSequentialGroup()
-                        .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(manualFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                        .add(29, 29, 29)
+                        .add(schoolLabel)
+                        .add(18, 18, 18)
+                        .add(schoolComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(26, 169, Short.MAX_VALUE))
+                    .add(layout.createSequentialGroup()
+                        .add(0, 25, Short.MAX_VALUE)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
-                                .add(25, 25, 25)
-                                .add(schoolLabel)
-                                .add(18, 18, 18)
-                                .add(schoolCombobox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
-                                .add(31, 31, 31)
-                                .add(autoFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(0, 0, Short.MAX_VALUE)))
+                            .add(nextButton)
+                            .add(manualFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
                 .add(25, 25, 25))
+            .add(layout.createSequentialGroup()
+                .add(82, 82, 82)
+                .add(autoFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .add(25, 25, 25)
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(schoolCombobox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(schoolComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(schoolLabel))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(autoFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -302,16 +290,17 @@ public class CustomerProfileView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void schoolComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_schoolComboboxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_schoolComboboxActionPerformed
-
+    
+    public String getSchoolName(){
+        return schoolComboBox.getSelectedItem().toString();
+    }
+    
     public String getPrimaryContact(){
         return primaryContactTextField.getText();
     }
     
     public String getPrimaryEmail(){
-        return primaryEmailFormattedField.getText();
+        return primaryEmailTextField.getText();
     }
     
     public String getMaterialContact(){
@@ -319,43 +308,75 @@ public class CustomerProfileView extends javax.swing.JFrame {
     }
     
     public String getMaterialEmail(){
-        return materialEmailFormattedField.getText();
+        return materialEmailTextField.getText();
     }
     
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CustomerProfileView().setVisible(true);
-            }
-        });
+    public void setCountry(String aCountry){
+        countryTextField.setText(aCountry);
     }
+    
+    public void setState(String aState){
+        stateTextField.setText(aState);
+    }
+    
+    public void setCity(String aCity){
+        cityTextField.setText(aCity);
+    }
+    
+    public void setPostalCode(String aPostalCode){
+        postalCodeTextField.setText(aPostalCode);
+    }
+    
+    public void setAddress(String anAddress){
+        addressTextField.setText(anAddress);
+    }
+    
+    public void setPhone(String aPhoneNumber){
+        phoneTextField.setText(aPhoneNumber);
+    }
+    
+    public void setFax(String aFaxNumber){
+        faxTextField.setText(aFaxNumber);
+    }
+       
+    public void displayErrorMessage(String message) {
+        JOptionPane.showMessageDialog(this, message);
+    }
+            
+    public void addSchoolComboBoxListener(ActionListener listenSchoolComboBox){
+        schoolComboBox.addActionListener(listenSchoolComboBox);
+    }
+    
+    public void addNextButtonListener(ActionListener listenNextButton){
+        nextButton.addActionListener(listenNextButton);
+    }
+    
+    /*
+    public void addShoolToComboBox(Set<String> schoolList){
+        schoolComboBox.addItem(schoolList);
+    }
+    */
+    
+    public void primaryEmailError() {
+        primaryEmailTextField.setText(null);
+        primaryEmailLabel.setForeground(Color.red);
+    }
+    
+    public void primaryEmailResetSetting() {
+        primaryEmailLabel.setForeground(Color.black);
+    }
+    
+    public void materialEmailError() {
+        materialEmailTextField.setText(null);
+        materialEmailLabel.setForeground(Color.red);
+    }
+    
+    
+    public void materialEmailResetSetting() {
+        materialEmailLabel.setForeground(Color.black);
+    }
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel addressLabel;
     private javax.swing.JTextField addressTextField;
@@ -369,8 +390,8 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private javax.swing.JPanel manualFillPanel;
     private javax.swing.JLabel materialContactLabel;
     private javax.swing.JTextField materialContactTextField;
-    private javax.swing.JFormattedTextField materialEmailFormattedField;
     private javax.swing.JLabel materialEmailLabel;
+    private javax.swing.JTextField materialEmailTextField;
     private javax.swing.JButton nextButton;
     private javax.swing.JLabel phoneLabel;
     private javax.swing.JTextField phoneTextField;
@@ -378,12 +399,13 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private javax.swing.JTextField postalCodeTextField;
     private javax.swing.JLabel primaryContactLabel;
     private javax.swing.JTextField primaryContactTextField;
-    private javax.swing.JFormattedTextField primaryEmailFormattedField;
     private javax.swing.JLabel primaryEmailLabel;
+    private javax.swing.JTextField primaryEmailTextField;
     private javax.swing.JSeparator profileViewSeparator;
-    private javax.swing.JComboBox schoolCombobox;
+    private javax.swing.JComboBox schoolComboBox;
     private javax.swing.JLabel schoolLabel;
     private javax.swing.JLabel stateLabel;
     private javax.swing.JTextField stateTextField;
     // End of variables declaration//GEN-END:variables
+
 }

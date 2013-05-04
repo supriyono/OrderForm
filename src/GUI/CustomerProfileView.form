@@ -33,31 +33,27 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="nextButton" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="schoolLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="schoolComboBox" min="-2" pref="275" max="-2" attributes="0"/>
+                      <EmptySpace min="26" pref="169" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="schoolLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="schoolCombobox" min="-2" pref="150" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                              <Component id="autoFillPanel" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="nextButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+              <Component id="autoFillPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -66,7 +62,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="schoolCombobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="schoolComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="schoolLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -88,61 +84,72 @@
         <Property name="text" type="java.lang.String" value="Select School:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="schoolCombobox">
+    <Component class="javax.swing.JComboBox" name="schoolComboBox">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+          <StringArray count="26">
+            <StringItem index="0" value="&lt;Select School&gt;"/>
+            <StringItem index="1" value="Point Grey Secondary School"/>
+            <StringItem index="2" value="Britannia Secondary School"/>
+            <StringItem index="3" value="Lord Byng Secondary School"/>
+            <StringItem index="4" value="Sir Winston Churchill Secondary School"/>
+            <StringItem index="5" value="Crofton House School"/>
+            <StringItem index="6" value="David Thompson Secondary School"/>
+            <StringItem index="7" value="Eric Hamber Secondary School"/>
+            <StringItem index="8" value="Gladstone Secondary School"/>
+            <StringItem index="9" value="John Oliver Secondary School"/>
+            <StringItem index="10" value="King David High School"/>
+            <StringItem index="11" value="Kitsilano Secondary School"/>
+            <StringItem index="12" value="David Thompson Secondary School"/>
+            <StringItem index="13" value="Little Flower Academy"/>
+            <StringItem index="14" value="Magee Secondary School"/>
+            <StringItem index="15" value="Notre Dame Regional Secondary School"/>
+            <StringItem index="16" value="Prince of Wales Secondary School"/>
+            <StringItem index="17" value="St. George&apos;s School"/>
+            <StringItem index="18" value="St. John&apos;s School"/>
+            <StringItem index="19" value="Sir Charles Tupper Secondary School"/>
+            <StringItem index="20" value="Stratford Hall"/>
+            <StringItem index="21" value="Templeton Secondary School&quot;"/>
+            <StringItem index="22" value="University Hill Secondary School"/>
+            <StringItem index="23" value="York House School"/>
+            <StringItem index="24" value="West Point Grey Academy"/>
+            <StringItem index="25" value="Windermere Secondary School"/>
           </StringArray>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="schoolComboboxActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JSeparator" name="profileViewSeparator">
     </Component>
     <Container class="javax.swing.JPanel" name="manualFillPanel">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="f0" green="f0" red="f0" type="rgb"/>
-        </Property>
-      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="primaryContactLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="primaryContactTextField" max="32767" attributes="0"/>
+                          <Component id="primaryContactTextField" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="materialContactLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="materialContactTextField" min="-2" pref="112" max="-2" attributes="0"/>
+                          <Component id="materialContactTextField" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="primaryEmailLabel" linkSize="3" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="materialEmailLabel" linkSize="3" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="primaryEmailLabel" linkSize="3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="primaryEmailFormattedField" min="-2" pref="131" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="materialEmailLabel" linkSize="3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="materialEmailFormattedField" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="materialEmailTextField" pref="200" max="32767" attributes="0"/>
+                      <Component id="primaryEmailTextField" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -154,14 +161,14 @@
                       <Component id="primaryContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="primaryContactTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="primaryEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="primaryEmailFormattedField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="primaryEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="materialContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="materialContactTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="materialEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="materialEmailFormattedField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="materialEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -176,11 +183,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="primaryContactTextField">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="c8" green="c8" red="c8" type="rgb"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Enter Name"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="primaryEmailLabel">
@@ -195,11 +198,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="materialContactTextField">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="c8" green="c8" red="c8" type="rgb"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Enter Name"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="materialEmailLabel">
@@ -207,22 +206,14 @@
             <Property name="text" type="java.lang.String" value="Email:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JFormattedTextField" name="primaryEmailFormattedField">
+        <Component class="javax.swing.JTextField" name="primaryEmailTextField">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="c8" green="c8" red="c8" type="rgb"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Enter email"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JFormattedTextField" name="materialEmailFormattedField">
+        <Component class="javax.swing.JTextField" name="materialEmailTextField">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="c8" green="c8" red="c8" type="rgb"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Enter email"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -235,21 +226,6 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="countryLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="countryTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="stateLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="stateTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
                       <Group type="102" attributes="0">
                           <Component id="cityLabel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -264,14 +240,29 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="addressTextField" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="phoneLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="phoneTextField" min="-2" pref="111" max="-2" attributes="0"/>
-                          <EmptySpace pref="62" max="32767" attributes="0"/>
-                          <Component id="faxLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="faxTextField" min="-2" pref="111" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="countryLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="countryTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="stateLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="stateTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="phoneLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="phoneTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="faxLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="faxTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -304,15 +295,11 @@
                       <Component id="addressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="phoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="phoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="faxTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="faxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="phoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="faxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="faxTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -331,6 +318,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="de" green="de" red="de" type="rgb"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="stateLabel">
@@ -344,6 +332,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="de" green="de" red="de" type="rgb"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="cityLabel">
@@ -370,6 +359,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="de" green="de" red="de" type="rgb"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="addressLabel">
@@ -396,6 +386,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="de" green="de" red="de" type="rgb"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="faxLabel">
@@ -409,6 +400,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="de" green="de" red="de" type="rgb"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
       </SubComponents>
