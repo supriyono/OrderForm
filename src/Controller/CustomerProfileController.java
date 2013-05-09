@@ -26,7 +26,6 @@ public class CustomerProfileController {
         
         
         theView.addSchoolComboBoxListener(new SchoolComboBoxListener());
-        theView.addNextButtonListener(new NextButtonListener());
         theView.addSameBillingCheckBoxListener(new SameBillingCheckBoxListener());
         theView.addSameShippingCheckBoxListener(new SameShippingCheckBoxListener());
     }

@@ -31,7 +31,6 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private void initComponents() {
 
         jSeparator = new javax.swing.JSeparator();
-        nextButton = new javax.swing.JButton();
         tabbedPane = new javax.swing.JTabbedPane();
         customerProfilePane = new javax.swing.JPanel();
         profileViewSeparator = new javax.swing.JSeparator();
@@ -103,8 +102,6 @@ public class CustomerProfileView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(240, 240, 240));
-
-        nextButton.setText("Next");
 
         customerProfilePane.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         customerProfilePane.setToolTipText("");
@@ -566,10 +563,6 @@ public class CustomerProfileView extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
-                .add(0, 0, Short.MAX_VALUE)
-                .add(nextButton)
-                .add(30, 30, 30))
             .add(layout.createSequentialGroup()
                 .addContainerGap()
                 .add(tabbedPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -579,10 +572,8 @@ public class CustomerProfileView extends javax.swing.JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .add(40, 40, 40)
-                .add(tabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 724, Short.MAX_VALUE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(nextButton)
-                .add(28, 28, 28))
+                .add(tabbedPane)
+                .add(63, 63, 63))
         );
 
         pack();
@@ -934,9 +925,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, message);
     }
     
-    public void addNextButtonListener(ActionListener listenNextButton){
-        nextButton.addActionListener(listenNextButton);
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel billingAddressLabel;
@@ -964,7 +953,6 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private javax.swing.JTextField materialContactTextField;
     private javax.swing.JLabel materialEmailLabel;
     private javax.swing.JTextField materialEmailTextField;
-    private javax.swing.JButton nextButton;
     private javax.swing.JLabel primaryContactLabel;
     private javax.swing.JTextField primaryContactTextField;
     private javax.swing.JLabel primaryEmailLabel;
