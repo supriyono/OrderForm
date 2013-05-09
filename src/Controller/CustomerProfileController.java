@@ -24,9 +24,10 @@ public class CustomerProfileController {
         theView = aView;
         theModel = aModel;
         
-        //theView.addShoolToComboBox(theModel.getSchoolList());
+        
         theView.addSchoolComboBoxListener(new SchoolComboBoxListener());
-        theView.addNextButtonListener(new NextButtonListener());
+        theView.addSameBillingCheckBoxListener(new SameBillingCheckBoxListener());
+        theView.addSameShippingCheckBoxListener(new SameShippingCheckBoxListener());
     }
 
     private class SchoolComboBoxListener implements ActionListener {
@@ -34,23 +35,25 @@ public class CustomerProfileController {
         public void actionPerformed(ActionEvent e) {
             String theKey = theView.getSchoolName();
             if("<Select School>".equals(theKey)){
-                theView.setCountry(null);
-                theView.setState(null);
-                theView.setCity(null);
-                theView.setAddress(null);
-                theView.setPostalCode(null);
-                theView.setPhone(null);
-                theView.setFax(null);
+                theView.setProfileCustNumber(null);
+                theView.setProfileCountry(null);
+                theView.setProfileStates(null);
+                theView.setProfileCity(null);
+                theView.setProfileAddress(null);
+                theView.setProfilePostalCode(null);
+                theView.setProfilePhone(null);
+                theView.setProfileFax(null);
             }
             else{
                 HashMap<String, String> keyProfile = theModel.getCustAttribute(theKey);
-                theView.setCountry(keyProfile.get("Country"));
-                theView.setState(keyProfile.get("State"));
-                theView.setCity(keyProfile.get("City"));
-                theView.setAddress(keyProfile.get("Address"));
-                theView.setPostalCode(keyProfile.get("Postal Code"));
-                theView.setPhone(keyProfile.get("Phone"));
-                theView.setFax(keyProfile.get("Fax"));
+                theView.setProfileCustNumber(keyProfile.get("Customer Number"));
+                theView.setProfileCountry(keyProfile.get("Country"));
+                theView.setProfileStates(keyProfile.get("State"));
+                theView.setProfileCity(keyProfile.get("City"));
+                theView.setProfileAddress(keyProfile.get("Address"));
+                theView.setProfilePostalCode(keyProfile.get("Postal Code"));
+                theView.setProfilePhone(keyProfile.get("Phone"));
+                theView.setProfileFax(keyProfile.get("Fax"));
             }
         }
     }
@@ -76,6 +79,70 @@ public class CustomerProfileController {
                 catch(AddressException ex){
                     theView.materialEmailError();
                     theView.displayErrorMessage("The Material email address is invalid!");    
+                }
+            }
+        }
+    }
+    
+    private class SameBillingCheckBoxListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e){
+            if(theView.getSchoolName().equals("<Select School>")){
+                theView.setSameBillingCheckBox(false);
+                theView.displayErrorMessage("Please select a school first!");
+            }
+            else{
+                if(theView.getSameBillingCheckBox()){
+                    theView.setBillingCustNumber(theView.getProfileCustNumber());
+                    theView.setBillingCountry(theView.getProfileCountry());
+                    theView.setBillingStates(theView.getProfileStates());
+                    theView.setBillingCity(theView.getProfileCity());
+                    theView.setBillingAddress(theView.getProfileAddress());
+                    theView.setBillingPostalCode(theView.getProfilePostalCode());
+                    theView.setBillTo(theView.getSchoolName());
+                    theView.setBillingTextFieldsEditable(false);
+                }
+                else{
+                    theView.setBillingCustNumber(null);
+                    theView.setBillingCountry(null);
+                    theView.setBillingStates(null);
+                    theView.setBillingCity(null);
+                    theView.setBillingAddress(null);
+                    theView.setBillingPostalCode(null);
+                    theView.setBillTo(null);
+                    theView.setBillingTextFieldsEditable(true);
+                }
+            }
+        }
+    }
+    
+    private class SameShippingCheckBoxListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e){
+            if(theView.getSchoolName().equals("<Select School>")){
+                theView.setSameShippingCheckBox(false);
+                theView.displayErrorMessage("Please select a school first!");
+            }
+            else{
+                if(theView.getSameShippingCheckBox()){
+                    theView.setShippingCustNumber(theView.getProfileCustNumber());
+                    theView.setShippingCountry(theView.getProfileCountry());
+                    theView.setShippingStates(theView.getProfileStates());
+                    theView.setShippingCity(theView.getProfileCity());
+                    theView.setShippingAddress(theView.getProfileAddress());
+                    theView.setShippingPostalCode(theView.getProfilePostalCode());
+                    theView.setShipTo(theView.getSchoolName());
+                    theView.setShippingTextFieldsEditable(false);
+                }
+                else{
+                    theView.setShippingCustNumber(null);
+                    theView.setShippingCountry(null);
+                    theView.setShippingStates(null);
+                    theView.setShippingCity(null);
+                    theView.setShippingAddress(null);
+                    theView.setShippingPostalCode(null);
+                    theView.setShipTo(null);
+                    theView.setShippingTextFieldsEditable(true);
                 }
             }
         }
