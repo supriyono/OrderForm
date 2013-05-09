@@ -27,6 +27,7 @@ public class CustomerProfileModel {
                  
          HashMap<String, String> aProfile = new HashMap<>();
          aProfile.put("School Name", "Point Grey Secondary School");
+         aProfile.put("Customer Number", "00001");
          aProfile.put("Country", "Canada");
          aProfile.put("State", "British Columbia");
          aProfile.put("City", "Vancouver");
@@ -38,6 +39,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> bProfile = new HashMap<>();
          bProfile.put("School Name", "Britannia Secondary School");
+         bProfile.put("Customer Number", "00002");
          bProfile.put("Country", "Canada");
          bProfile.put("State", "British Columbia");
          bProfile.put("City", "Vancouver");
@@ -49,6 +51,7 @@ public class CustomerProfileModel {
         
          HashMap<String, String> cProfile = new HashMap<>();
          cProfile.put("School Name", "Lord Byng Secondary School");
+         cProfile.put("Customer Number", "00003");         
          cProfile.put("Country", "Canada");
          cProfile.put("State", "British Columbia");
          cProfile.put("City", "Vancouver");
@@ -60,6 +63,7 @@ public class CustomerProfileModel {
         
          HashMap<String, String> dProfile = new HashMap<>();
          dProfile.put("School Name", "Sir Winston Churchill Secondary School");
+         dProfile.put("Customer Number", "00004");
          dProfile.put("Country", "Canada");
          dProfile.put("State", "British Columbia");
          dProfile.put("City", "Vancouver");
@@ -71,6 +75,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> eProfile = new HashMap<>();
          eProfile.put("School Name", "Crofton House School");
+         eProfile.put("Customer Number", "00005");
          eProfile.put("Country", "Canada");
          eProfile.put("State", "British Columbia");
          eProfile.put("City", "Vancouver");
@@ -82,6 +87,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> fProfile = new HashMap<>();
          fProfile.put("School Name", "David Thompson Secondary School");
+         fProfile.put("Customer Number", "00006");
          fProfile.put("Country", "Canada");
          fProfile.put("State", "British Columbia");
          fProfile.put("City", "Vancouver");
@@ -93,6 +99,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> gProfile = new HashMap<>();
          gProfile.put("School Name", "Eric Hamber Secondary School");
+         gProfile.put("Customer Number", "00007");
          gProfile.put("Country", "Canada");
          gProfile.put("State", "British Columbia");
          gProfile.put("City", "Vancouver");
@@ -104,6 +111,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> hProfile = new HashMap<>();
          hProfile.put("School Name", "Gladstone Secondary School");
+         hProfile.put("Customer Number", "00008");
          hProfile.put("Country", "Canada");
          hProfile.put("State", "British Columbia");
          hProfile.put("City", "Vancouver");
@@ -115,6 +123,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> iProfile = new HashMap<>();
          iProfile.put("School Name", "John Oliver Secondary School");
+         iProfile.put("Customer Number", "00009");
          iProfile.put("Country", "Canada");
          iProfile.put("State", "British Columbia");
          iProfile.put("City", "Vancouver");
@@ -126,6 +135,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> jProfile = new HashMap<>();
          jProfile.put("School Name", "King David High School");
+         jProfile.put("Customer Number", "00010");
          jProfile.put("Country", "Canada");
          jProfile.put("State", "British Columbia");
          jProfile.put("City", "Vancouver");
@@ -137,6 +147,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> kProfile = new HashMap<>();
          kProfile.put("School Name", "Kitsilano Secondary School");
+         kProfile.put("Customer Number", "00011");
          kProfile.put("Country", "Canada");
          kProfile.put("State", "British Columbia");
          kProfile.put("City", "Vancouver");
@@ -148,6 +159,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> lProfile = new HashMap<>();
          lProfile.put("School Name", "David Thompson Secondary School");
+         lProfile.put("Customer Number", "00012");
          lProfile.put("Country", "Canada");
          lProfile.put("State", "British Columbia");
          lProfile.put("City", "Vancouver");
@@ -159,6 +171,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> mProfile = new HashMap<>();
          mProfile.put("School Name", "Little Flower Academy");
+         mProfile.put("Customer Number", "00013");
          mProfile.put("Country", "Canada");
          mProfile.put("State", "British Columbia");
          mProfile.put("City", "Vancouver");
@@ -170,6 +183,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> nProfile = new HashMap<>();
          nProfile.put("School Name", "Magee Secondary School");
+         nProfile.put("Customer Number", "00014");
          nProfile.put("Country", "Canada");
          nProfile.put("State", "British Columbia");
          nProfile.put("City", "Vancouver");
@@ -181,6 +195,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> oProfile = new HashMap<>();
          oProfile.put("School Name", "Notre Dame Regional Secondary School");
+         oProfile.put("Customer Number", "00015");
          oProfile.put("Country", "Canada");
          oProfile.put("State", "British Columbia");
          oProfile.put("City", "Vancouver");
@@ -192,6 +207,7 @@ public class CustomerProfileModel {
         
          HashMap<String, String> pProfile = new HashMap<>();
          pProfile.put("School Name", "Prince of Wales Secondary School");
+         pProfile.put("Customer Number", "00016");
          pProfile.put("Country", "Canada");
          pProfile.put("State", "British Columbia");
          pProfile.put("City", "Vancouver");
@@ -203,6 +219,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> qProfile = new HashMap<>();
          qProfile.put("School Name", "St. George's School");
+         qProfile.put("Customer Number", "00017");
          qProfile.put("Country", "Canada");
          qProfile.put("State", "British Columbia");
          qProfile.put("City", "Vancouver");
@@ -214,6 +231,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> rProfile = new HashMap<>();
          rProfile.put("School Name", "St. John's School");
+         rProfile.put("Customer Number", "00018");
          rProfile.put("Country", "Canada");
          rProfile.put("State", "British Columbia");
          rProfile.put("City", "Vancouver");
@@ -225,6 +243,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> sProfile = new HashMap<>();
          sProfile.put("School Name", "Sir Charles Tupper Secondary School");
+         sProfile.put("Customer Number", "00019");
          sProfile.put("Country", "Canada");
          sProfile.put("State", "British Columbia");
          sProfile.put("City", "Vancouver");
@@ -236,6 +255,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> tProfile = new HashMap<>();
          tProfile.put("School Name", "Stratford Hall");
+         tProfile.put("Customer Number", "00020");
          tProfile.put("Country", "Canada");
          tProfile.put("State", "British Columbia");
          tProfile.put("City", "Vancouver");
@@ -247,6 +267,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> uProfile = new HashMap<>();
          uProfile.put("School Name", "Templeton Secondary School");
+         uProfile.put("Customer Number", "00021");
          uProfile.put("Country", "Canada");
          uProfile.put("State", "British Columbia");
          uProfile.put("City", "Vancouver");
@@ -258,6 +279,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> vProfile = new HashMap<>();
          vProfile.put("School Name", "University Hill Secondary School");
+         vProfile.put("Customer Number", "00022");
          vProfile.put("Country", "Canada");
          vProfile.put("State", "British Columbia");
          vProfile.put("City", "Vancouver");
@@ -269,6 +291,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> wProfile = new HashMap<>();
          wProfile.put("School Name", "York House School");
+         wProfile.put("Customer Number", "00023");
          wProfile.put("Country", "Canada");
          wProfile.put("State", "British Columbia");
          wProfile.put("City", "Vancouver");
@@ -280,6 +303,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> xProfile = new HashMap<>();
          xProfile.put("School Name", "West Point Grey Academy");
+         xProfile.put("Customer Number", "00024");
          xProfile.put("Country", "Canada");
          xProfile.put("State", "British Columbia");
          xProfile.put("City", "Vancouver");
@@ -291,6 +315,7 @@ public class CustomerProfileModel {
          
          HashMap<String, String> yProfile = new HashMap<>();
          yProfile.put("School Name", "Windermere Secondary School");
+         yProfile.put("Customer Number", "00025");
          yProfile.put("Country", "Canada");
          yProfile.put("State", "British Columbia");
          yProfile.put("City", "Vancouver");

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JSeparator" name="jSeparator">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -27,388 +31,823 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="profileViewSeparator" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="schoolLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="schoolComboBox" min="-2" pref="275" max="-2" attributes="0"/>
-                      <EmptySpace min="26" pref="169" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="nextButton" min="-2" max="-2" attributes="0"/>
-                          <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-              <Component id="autoFillPanel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="tabbedPane" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="schoolComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="schoolLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="autoFillPanel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="profileViewSeparator" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="nextButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="19" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="tabbedPane" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="schoolLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Select School:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="schoolComboBox">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="26">
-            <StringItem index="0" value="&lt;Select School&gt;"/>
-            <StringItem index="1" value="Point Grey Secondary School"/>
-            <StringItem index="2" value="Britannia Secondary School"/>
-            <StringItem index="3" value="Lord Byng Secondary School"/>
-            <StringItem index="4" value="Sir Winston Churchill Secondary School"/>
-            <StringItem index="5" value="Crofton House School"/>
-            <StringItem index="6" value="David Thompson Secondary School"/>
-            <StringItem index="7" value="Eric Hamber Secondary School"/>
-            <StringItem index="8" value="Gladstone Secondary School"/>
-            <StringItem index="9" value="John Oliver Secondary School"/>
-            <StringItem index="10" value="King David High School"/>
-            <StringItem index="11" value="Kitsilano Secondary School"/>
-            <StringItem index="12" value="David Thompson Secondary School"/>
-            <StringItem index="13" value="Little Flower Academy"/>
-            <StringItem index="14" value="Magee Secondary School"/>
-            <StringItem index="15" value="Notre Dame Regional Secondary School"/>
-            <StringItem index="16" value="Prince of Wales Secondary School"/>
-            <StringItem index="17" value="St. George&apos;s School"/>
-            <StringItem index="18" value="St. John&apos;s School"/>
-            <StringItem index="19" value="Sir Charles Tupper Secondary School"/>
-            <StringItem index="20" value="Stratford Hall"/>
-            <StringItem index="21" value="Templeton Secondary School&quot;"/>
-            <StringItem index="22" value="University Hill Secondary School"/>
-            <StringItem index="23" value="York House School"/>
-            <StringItem index="24" value="West Point Grey Academy"/>
-            <StringItem index="25" value="Windermere Secondary School"/>
-          </StringArray>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JSeparator" name="profileViewSeparator">
-    </Component>
-    <Container class="javax.swing.JPanel" name="manualFillPanel">
+    <Container class="javax.swing.JTabbedPane" name="tabbedPane">
 
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="primaryContactLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="primaryContactTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="materialContactLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="materialContactTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="primaryEmailLabel" linkSize="3" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="materialEmailLabel" linkSize="3" alignment="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="materialEmailTextField" pref="200" max="32767" attributes="0"/>
-                      <Component id="primaryEmailTextField" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="primaryContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="primaryContactTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="primaryEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="primaryEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="materialContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="materialContactTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="materialEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="materialEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-      </Layout>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="primaryContactLabel">
+        <Container class="javax.swing.JPanel" name="customerProfilePane">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Primary Contact:"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="primaryContactTextField">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="primaryEmailLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Email:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="materialContactLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Material Contact:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="materialContactTextField">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="materialEmailLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Email:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="primaryEmailTextField">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="materialEmailTextField">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JPanel" name="autoFillPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Customer Profile">
+                <Property name="tabTitle" type="java.lang.String" value="Customer Profile"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
 
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="30" max="32767" attributes="0"/>
+                      <Component id="custProfilePane" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="shippingPane" max="32767" attributes="0"/>
+                          <Component id="billingPane" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="profileViewSeparator" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="billingPane" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="shippingPane" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="custProfilePane" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
+                      <Component id="profileViewSeparator" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JSeparator" name="profileViewSeparator">
+            </Component>
+            <Container class="javax.swing.JPanel" name="manualFillPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="cityLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="cityTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="postalCodeLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="postalCodeTextField" max="32767" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="addressLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="addressTextField" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="countryLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="primaryContactLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="countryTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="primaryContactTextField" min="-2" pref="150" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="stateLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="materialContactLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="stateTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="phoneLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="phoneTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="faxLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="faxTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="materialContactTextField" min="-2" pref="150" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="primaryEmailLabel" linkSize="3" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="materialEmailLabel" linkSize="3" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="materialEmailTextField" pref="200" max="32767" attributes="0"/>
+                              <Component id="primaryEmailTextField" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="countryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="countryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="primaryContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="primaryContactTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="primaryEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="primaryEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="materialContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="materialContactTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="materialEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="materialEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="stateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="stateTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="primaryContactLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Primary Contact:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="primaryContactTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="primaryEmailLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Email:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="materialContactLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Material Contact:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="materialContactTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="materialEmailLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Email:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="primaryEmailTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="materialEmailTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="shippingPane">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="shippingAddressLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="shippingAddressTextField" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="shippingCityLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="shippingCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="shippingPostalCodeLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="shippingPostalCodeTextField" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="shippingTitleLabel" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="shippingCountryLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="shippingCountryTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="shippingStateLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="shippingStateTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="shippingContactLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="shippingContactTextField" min="-2" pref="200" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="shippingCustNumberLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="shippingCustNumberTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="shippingShipToLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="shippingShipToTextField" min="-2" pref="275" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="cityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="cityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="postalCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="postalCodeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="shippingTitleLabel" min="-2" pref="16" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shippingShipToLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingShipToTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shippingCustNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingCustNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shippingContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingContactTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shippingCountryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingCountryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shippingStateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingStateTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shippingCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingPostalCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingPostalCodeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="shippingAddressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="addressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="addressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="shippingContactLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Contact"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingContactTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingStateLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="State/Province:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingStateTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingCityTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingPostalCodeLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Postal Code:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingPostalCodeTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingAddressLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Address:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingAddressTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingTitleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans" size="15" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Shipping Address"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingCountryLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Country:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingCountryTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingShipToTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingShipToLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ship to:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="shippingCustNumberLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Customer #:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="shippingCustNumberTextField">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="billingPane">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="billingCityLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="billingCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="billingPostalCodeLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="billingPostalCodeTextField" pref="113" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="billingAddressLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="billingAddressTextField" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="billingCountryLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="billingCountryTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="billingTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="billingCustNumberLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="billingCustNumberTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="billingStateLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="billingStateTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="billingBillToLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="billingBillToTextField" min="-2" pref="275" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="phoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="phoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="faxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="faxTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="billingTitleLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="billingBillToLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingBillToTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="billingCustNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingCustNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="billingCountryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingCountryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="billingStateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingStateTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="billingCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingPostalCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingPostalCodeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="billingAddressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-      </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JLabel" name="countryLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Country:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="countryTextField">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="de" green="de" red="de" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="stateLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="State/Province:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="stateTextField">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="de" green="de" red="de" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="cityLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="City:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="cityTextField">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="de" green="de" red="de" type="rgb"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="postalCodeLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Postal Code:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="postalCodeTextField">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="de" green="de" red="de" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="addressLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Address:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="addressTextField">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="de" green="de" red="de" type="rgb"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="phoneLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Phone:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="phoneTextField">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="de" green="de" red="de" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="faxLabel">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Fax:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="faxTextField">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="de" green="de" red="de" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-          </Properties>
-        </Component>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="billingCountryLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Country:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="billingCountryTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="billingStateLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="State/Province:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="billingStateTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="billingCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="billingCityTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="billingPostalCodeLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Postal Code:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="billingPostalCodeTextField">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="billingAddressLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Address:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="billingAddressTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="billingTitleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans" size="15" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Billing Address"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="billingBillToLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Bill to:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="billingBillToTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="billingCustNumberLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Customer #:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="billingCustNumberTextField">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="custProfilePane">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="profileCityLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="profileCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="profilePostalCodeLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="profilePostalCodeTextField" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="profileAddressLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="profileAddressTextField" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="profileCountryLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="profileCountryTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="profileStateLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="profileStateTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="custProfileTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="profileCustNumLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="profileCustNumTextField" min="-2" pref="100" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="profilePhoneLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="profilePhoneTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="profileFaxLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="profileFaxTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="sameShippingCBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="schoolLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="schoolComboBox" min="-2" pref="275" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="sameBillingCBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="custProfileTitleLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="schoolComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="schoolLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="profileCustNumLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileCustNumTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="profileCountryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileCountryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="profileStateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileStateTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="profileCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profilePostalCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profilePostalCodeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="profileAddressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="profilePhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profilePhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileFaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileFaxTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="sameBillingCBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="sameShippingCBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="profileCountryLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Country:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profileCountryTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="profileStateLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="State/Province:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profileStateTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="profileCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profileCityTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="profilePostalCodeLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Postal Code:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profilePostalCodeTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="profileAddressLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Address:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profileAddressTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="profilePhoneLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Phone:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profilePhoneTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="profileFaxLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Fax:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profileFaxTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="sameBillingCBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Same billing address"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="custProfileTitleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Sans" size="18" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Customer Profile"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="profileCustNumLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Customer #:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="profileCustNumTextField">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="de" green="de" red="de" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="sameShippingCBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Same shipping address"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="schoolLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Select School:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="schoolComboBox">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="26">
+                        <StringItem index="0" value="&lt;Select School&gt;"/>
+                        <StringItem index="1" value="Point Grey Secondary School"/>
+                        <StringItem index="2" value="Britannia Secondary School"/>
+                        <StringItem index="3" value="Lord Byng Secondary School"/>
+                        <StringItem index="4" value="Sir Winston Churchill Secondary School"/>
+                        <StringItem index="5" value="Crofton House School"/>
+                        <StringItem index="6" value="David Thompson Secondary School"/>
+                        <StringItem index="7" value="Eric Hamber Secondary School"/>
+                        <StringItem index="8" value="Gladstone Secondary School"/>
+                        <StringItem index="9" value="John Oliver Secondary School"/>
+                        <StringItem index="10" value="King David High School"/>
+                        <StringItem index="11" value="Kitsilano Secondary School"/>
+                        <StringItem index="12" value="David Thompson Secondary School"/>
+                        <StringItem index="13" value="Little Flower Academy"/>
+                        <StringItem index="14" value="Magee Secondary School"/>
+                        <StringItem index="15" value="Notre Dame Regional Secondary School"/>
+                        <StringItem index="16" value="Prince of Wales Secondary School"/>
+                        <StringItem index="17" value="St. George&apos;s School"/>
+                        <StringItem index="18" value="St. John&apos;s School"/>
+                        <StringItem index="19" value="Sir Charles Tupper Secondary School"/>
+                        <StringItem index="20" value="Stratford Hall"/>
+                        <StringItem index="21" value="Templeton Secondary School&quot;"/>
+                        <StringItem index="22" value="University Hill Secondary School"/>
+                        <StringItem index="23" value="York House School"/>
+                        <StringItem index="24" value="West Point Grey Academy"/>
+                        <StringItem index="25" value="Windermere Secondary School"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="nextButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Next"/>
-      </Properties>
-    </Component>
   </SubComponents>
 </Form>
