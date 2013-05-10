@@ -6,18 +6,25 @@ package GUI;
 
 import java.awt.Color;
 import java.awt.event.ActionListener;
+import java.awt.event.InputMethodListener;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import javax.swing.InputVerifier;
+import javax.swing.JComponent;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /**
  *
  * @author Supri
  */
-public class CustomerProfileView extends javax.swing.JFrame {
+public class CustomerProfileTab extends javax.swing.JFrame {
 
     /**
      * Creates new form CustomerProfileView
      */
-    public CustomerProfileView() {
+    public CustomerProfileTab() {
         initComponents();
     }
 
@@ -31,7 +38,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private void initComponents() {
 
         jSeparator = new javax.swing.JSeparator();
-        tabbedPane = new javax.swing.JTabbedPane();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         customerProfilePane = new javax.swing.JPanel();
         profileViewSeparator = new javax.swing.JSeparator();
         manualFillPanel = new javax.swing.JPanel();
@@ -119,8 +126,10 @@ public class CustomerProfileView extends javax.swing.JFrame {
         materialEmailLabel.setText("Email:");
 
         primaryEmailTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        primaryEmailTextField.setInputVerifier(new EmailVerifier());
 
         materialEmailTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        materialEmailTextField.setInputVerifier(new EmailVerifier());
 
         org.jdesktop.layout.GroupLayout manualFillPanelLayout = new org.jdesktop.layout.GroupLayout(manualFillPanel);
         manualFillPanel.setLayout(manualFillPanelLayout);
@@ -311,7 +320,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
                         .add(18, 18, 18)
                         .add(billingPostalCodeLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(billingPostalCodeTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE))
+                        .add(billingPostalCodeTextField))
                     .add(billingPaneLayout.createSequentialGroup()
                         .add(billingAddressLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -335,7 +344,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
                                 .add(billingBillToLabel)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                                 .add(billingBillToTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(0, 0, Short.MAX_VALUE)))
+                        .add(0, 79, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         billingPaneLayout.setVerticalGroup(
@@ -524,9 +533,9 @@ public class CustomerProfileView extends javax.swing.JFrame {
         customerProfilePaneLayout.setHorizontalGroup(
             customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, customerProfilePaneLayout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
+                .add(35, 35, 35)
                 .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(30, 30, 30)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(shippingPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(billingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -534,7 +543,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
             .add(customerProfilePaneLayout.createSequentialGroup()
                 .add(40, 40, 40)
                 .add(manualFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(323, Short.MAX_VALUE))
             .add(org.jdesktop.layout.GroupLayout.TRAILING, customerProfilePaneLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(profileViewSeparator)
@@ -549,7 +558,9 @@ public class CustomerProfileView extends javax.swing.JFrame {
                         .add(billingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .add(30, 30, 30)
                         .add(shippingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(customerProfilePaneLayout.createSequentialGroup()
+                        .add(30, 30, 30)
+                        .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 8, Short.MAX_VALUE)
                 .add(profileViewSeparator, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -557,23 +568,23 @@ public class CustomerProfileView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        tabbedPane.addTab("Customer Profile", customerProfilePane);
+        jTabbedPane1.addTab("Customer Profile", customerProfilePane);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .addContainerGap()
-                .add(tabbedPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 941, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(40, 40, 40)
-                .add(tabbedPane)
-                .add(63, 63, 63))
+                .addContainerGap()
+                .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
@@ -897,24 +908,57 @@ public class CustomerProfileView extends javax.swing.JFrame {
         return materialEmailTextField.getText();
     }
     
-    public void primaryEmailError() {
-        primaryEmailTextField.setText(null);
-        primaryEmailLabel.setForeground(Color.red);
+    public void setTextFieldContentNull(JTextField tf) {
+        tf.setText(null);
     }
     
-    public void primaryEmailResetSetting() {
-        primaryEmailLabel.setForeground(Color.black);
+    public void setLabelColor(JLabel aLabel, Color c) {
+        aLabel.setForeground(c);
     }
     
-    public void materialEmailError() {
-        materialEmailTextField.setText(null);
-        materialEmailLabel.setForeground(Color.red);
+    public void addPrimaryEmailValidator(InputMethodListener emailValidator){
+        primaryEmailTextField.addInputMethodListener(emailValidator);
     }
     
-    public void materialEmailResetSetting() {
-        materialEmailLabel.setForeground(Color.black);
+    public void addMaterialEmailValidator(InputMethodListener emailValidator){
+        materialEmailTextField.addInputMethodListener(emailValidator);
     }
-
+    
+    public JTextField getPrimaryEmailTextField(){
+        return primaryEmailTextField;
+    }
+    
+    public JTextField getMaterialEmailTextField(){
+        return materialEmailTextField;
+    }
+    
+    public JLabel getPrimaryEmailLabel(){
+        return primaryEmailLabel;
+    }
+    
+    public JLabel getMaterialEmailLabel(){
+        return materialEmailLabel;
+    }
+    
+    public class EmailVerifier extends InputVerifier{
+            
+        @Override
+        public boolean verify(JComponent input) {
+            boolean value = false;
+            try{
+                new InternetAddress(((JTextField)input).getText()).validate();
+                value = true;
+            }
+            catch(AddressException ex){
+                value = false;
+                displayErrorMessage("Email is invalid!");
+            }
+            finally{
+                return value;
+            }
+        }
+    }
+    
     
     
     /**
@@ -924,6 +968,8 @@ public class CustomerProfileView extends javax.swing.JFrame {
     public void displayErrorMessage(String message) {
         JOptionPane.showMessageDialog(this, message);
     }
+    
+    
     
     
 
@@ -948,6 +994,7 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private javax.swing.JLabel custProfileTitleLabel;
     private javax.swing.JPanel customerProfilePane;
     private javax.swing.JSeparator jSeparator;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JPanel manualFillPanel;
     private javax.swing.JLabel materialContactLabel;
     private javax.swing.JTextField materialContactTextField;
@@ -996,7 +1043,6 @@ public class CustomerProfileView extends javax.swing.JFrame {
     private javax.swing.JLabel shippingStateLabel;
     private javax.swing.JTextField shippingStateTextField;
     private javax.swing.JLabel shippingTitleLabel;
-    private javax.swing.JTabbedPane tabbedPane;
     // End of variables declaration//GEN-END:variables
 
 }

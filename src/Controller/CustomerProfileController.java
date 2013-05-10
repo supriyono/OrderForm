@@ -4,26 +4,23 @@
  */
 package Controller;
 
-import GUI.CustomerProfileView;
+import GUI.CustomerProfileTab;
 import Model.CustomerProfileModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
 
 /**
  *
  * @author Supri
  */
 public class CustomerProfileController {
-    private CustomerProfileView theView;
+    private CustomerProfileTab theView;
     private CustomerProfileModel theModel;
     
-    public CustomerProfileController(CustomerProfileView aView, CustomerProfileModel aModel){
+    public CustomerProfileController(CustomerProfileTab aView, CustomerProfileModel aModel){
         theView = aView;
         theModel = aModel;
-        
         
         theView.addSchoolComboBoxListener(new SchoolComboBoxListener());
         theView.addSameBillingCheckBoxListener(new SameBillingCheckBoxListener());
@@ -54,32 +51,6 @@ public class CustomerProfileController {
                 theView.setProfilePostalCode(keyProfile.get("Postal Code"));
                 theView.setProfilePhone(keyProfile.get("Phone"));
                 theView.setProfileFax(keyProfile.get("Fax"));
-            }
-        }
-    }
-    
-    private class NextButtonListener implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try{
-                new InternetAddress(theView.getPrimaryEmail()).validate();
-                theView.primaryEmailResetSetting();
-                //add primary email to the model;
-            }
-            catch(AddressException ex){
-                theView.primaryEmailError();
-                theView.displayErrorMessage("The Primary email address is invalid!");
-            }
-            finally{
-                try{
-                    new InternetAddress(theView.getMaterialEmail()).validate();
-                    theView.materialEmailResetSetting();
-                    //add material email to the model;
-                }
-                catch(AddressException ex){
-                    theView.materialEmailError();
-                    theView.displayErrorMessage("The Material email address is invalid!");    
-                }
             }
         }
     }

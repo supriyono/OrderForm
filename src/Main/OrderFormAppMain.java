@@ -5,8 +5,9 @@
 package Main;
 
 import Controller.CustomerProfileController;
-import GUI.CustomerProfileView;
+import GUI.CustomerProfileTab;
 import Model.CustomerProfileModel;
+import javax.swing.UIManager;
 
 /**
  *
@@ -25,25 +26,22 @@ public class OrderFormAppMain {
          */
     
         try {
+            /*
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            */        
+            UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(CustomerProfileTab.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+    
         //</editor-fold>
-
         
-        final CustomerProfileView theView = new CustomerProfileView();
+        final CustomerProfileTab theView = new CustomerProfileTab();
         CustomerProfileModel theModel = new CustomerProfileModel();
         CustomerProfileController theController = new CustomerProfileController(theView, theModel);
         
