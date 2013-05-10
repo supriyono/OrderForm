@@ -19,12 +19,12 @@ import javax.swing.JTextField;
  *
  * @author Supri
  */
-public class CustomerProfileTab extends javax.swing.JFrame {
+public class MainView extends javax.swing.JFrame {
 
     /**
      * Creates new form CustomerProfileView
      */
-    public CustomerProfileTab() {
+    public MainView() {
         initComponents();
     }
 
@@ -38,7 +38,7 @@ public class CustomerProfileTab extends javax.swing.JFrame {
     private void initComponents() {
 
         jSeparator = new javax.swing.JSeparator();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        mainTabbedPane = new javax.swing.JTabbedPane();
         customerProfilePane = new javax.swing.JPanel();
         profileViewSeparator = new javax.swing.JSeparator();
         manualFillPanel = new javax.swing.JPanel();
@@ -106,6 +106,7 @@ public class CustomerProfileTab extends javax.swing.JFrame {
         sameShippingCBox = new javax.swing.JCheckBox();
         schoolLabel = new javax.swing.JLabel();
         schoolComboBox = new javax.swing.JComboBox();
+        orderPane = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(240, 240, 240));
@@ -568,7 +569,20 @@ public class CustomerProfileTab extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab("Customer Profile", customerProfilePane);
+        mainTabbedPane.addTab("Customer Profile", customerProfilePane);
+
+        org.jdesktop.layout.GroupLayout orderPaneLayout = new org.jdesktop.layout.GroupLayout(orderPane);
+        orderPane.setLayout(orderPaneLayout);
+        orderPaneLayout.setHorizontalGroup(
+            orderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 920, Short.MAX_VALUE)
+        );
+        orderPaneLayout.setVerticalGroup(
+            orderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 678, Short.MAX_VALUE)
+        );
+
+        mainTabbedPane.addTab("Add Order", orderPane);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -576,14 +590,14 @@ public class CustomerProfileTab extends javax.swing.JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 941, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(mainTabbedPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 941, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(mainTabbedPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
@@ -994,12 +1008,13 @@ public class CustomerProfileTab extends javax.swing.JFrame {
     private javax.swing.JLabel custProfileTitleLabel;
     private javax.swing.JPanel customerProfilePane;
     private javax.swing.JSeparator jSeparator;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane mainTabbedPane;
     private javax.swing.JPanel manualFillPanel;
     private javax.swing.JLabel materialContactLabel;
     private javax.swing.JTextField materialContactTextField;
     private javax.swing.JLabel materialEmailLabel;
     private javax.swing.JTextField materialEmailTextField;
+    private javax.swing.JPanel orderPane;
     private javax.swing.JLabel primaryContactLabel;
     private javax.swing.JTextField primaryContactTextField;
     private javax.swing.JLabel primaryEmailLabel;

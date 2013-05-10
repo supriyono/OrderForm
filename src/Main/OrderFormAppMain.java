@@ -5,7 +5,7 @@
 package Main;
 
 import Controller.CustomerProfileController;
-import GUI.CustomerProfileTab;
+import GUI.MainView;
 import Model.CustomerProfileModel;
 import javax.swing.UIManager;
 
@@ -36,12 +36,12 @@ public class OrderFormAppMain {
             */        
             UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CustomerProfileTab.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
     
         //</editor-fold>
         
-        final CustomerProfileTab theView = new CustomerProfileTab();
+        final MainView theView = new MainView();
         CustomerProfileModel theModel = new CustomerProfileModel();
         CustomerProfileController theController = new CustomerProfileController(theView, theModel);
         

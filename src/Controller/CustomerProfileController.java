@@ -4,7 +4,7 @@
  */
 package Controller;
 
-import GUI.CustomerProfileTab;
+import GUI.MainView;
 import Model.CustomerProfileModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,10 +15,10 @@ import java.util.HashMap;
  * @author Supri
  */
 public class CustomerProfileController {
-    private CustomerProfileTab theView;
+    private MainView theView;
     private CustomerProfileModel theModel;
     
-    public CustomerProfileController(CustomerProfileTab aView, CustomerProfileModel aModel){
+    public CustomerProfileController(MainView aView, CustomerProfileModel aModel){
         theView = aView;
         theModel = aModel;
         
