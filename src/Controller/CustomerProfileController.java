@@ -6,8 +6,11 @@ package Controller;
 
 import GUI.MainView;
 import Model.CustomerProfileModel;
+import java.awt.ItemSelectable;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.HashMap;
 
 /**
@@ -23,13 +26,17 @@ public class CustomerProfileController {
         theModel = aModel;
         
         theView.addSchoolComboBoxListener(new SchoolComboBoxListener());
-        theView.addSameBillingCheckBoxListener(new SameBillingCheckBoxListener());
-        theView.addSameShippingCheckBoxListener(new SameShippingCheckBoxListener());
+        theView.addBillingEqualProfileCheckBoxListener(new BillingEqualProfileCheckBoxListener());
+        theView.addShipEqualProfileListener(new ShippingEqualProfileListener());
+        theView.addShipEqualBillListener(new ShippingEqualBillingListener());
     }
 
-    private class SchoolComboBoxListener implements ActionListener {
+
+
+    private class SchoolComboBoxListener implements ItemListener {
         @Override
-        public void actionPerformed(ActionEvent e) {
+        public void itemStateChanged(ItemEvent e) {
+            //throw new UnsupportedOperationException("Not supported yet."); 
             String theKey = theView.getSchoolName();
             if("<Select School>".equals(theKey)){
                 theView.setProfileCustNumber(null);
@@ -52,18 +59,38 @@ public class CustomerProfileController {
                 theView.setProfilePhone(keyProfile.get("Phone"));
                 theView.setProfileFax(keyProfile.get("Fax"));
             }
+            
+            if(theView.getValueBillingEqualProfileCheckBox()){
+                theView.setBillingCustNumber(theView.getProfileCustNumber());
+                theView.setBillingCountry(theView.getProfileCountry());
+                theView.setBillingStates(theView.getProfileStates());
+                theView.setBillingCity(theView.getProfileCity());
+                theView.setBillingAddress(theView.getProfileAddress());
+                theView.setBillingPostalCode(theView.getProfilePostalCode());
+                theView.setBillTo(theView.getSchoolName());
+            }
+            
+            if(theView.getValueShippingEqualProfileCheckBox()){
+                theView.setShippingCustNumber(theView.getProfileCustNumber());
+                theView.setShippingCountry(theView.getProfileCountry());
+                theView.setShippingStates(theView.getProfileStates());
+                theView.setShippingCity(theView.getProfileCity());
+                theView.setShippingAddress(theView.getProfileAddress());
+                theView.setShippingPostalCode(theView.getProfilePostalCode());
+                theView.setShipTo(theView.getSchoolName());
+            }
         }
     }
     
-    private class SameBillingCheckBoxListener implements ActionListener{
+    private class BillingEqualProfileCheckBoxListener implements ItemListener{
         @Override
-        public void actionPerformed(ActionEvent e){
-            if(theView.getSchoolName().equals("<Select School>")){
-                theView.setSameBillingCheckBox(false);
-                theView.displayErrorMessage("Please select a school first!");
-            }
-            else{
-                if(theView.getSameBillingCheckBox()){
+        public void itemStateChanged(ItemEvent e) {
+            if(e.getStateChange() == ItemEvent.SELECTED){
+                if(theView.getSchoolName().equals("<Select School>")){
+                    theView.displayErrorMessage("Please select a school first!");
+                    theView.setBillingEqualProfileCheckBox(false);
+                }
+                else{
                     theView.setBillingCustNumber(theView.getProfileCustNumber());
                     theView.setBillingCountry(theView.getProfileCountry());
                     theView.setBillingStates(theView.getProfileStates());
@@ -71,31 +98,24 @@ public class CustomerProfileController {
                     theView.setBillingAddress(theView.getProfileAddress());
                     theView.setBillingPostalCode(theView.getProfilePostalCode());
                     theView.setBillTo(theView.getSchoolName());
-                    theView.setBillingTextFieldsEditable(false);
                 }
-                else{
-                    theView.setBillingCustNumber(null);
-                    theView.setBillingCountry(null);
-                    theView.setBillingStates(null);
-                    theView.setBillingCity(null);
-                    theView.setBillingAddress(null);
-                    theView.setBillingPostalCode(null);
-                    theView.setBillTo(null);
-                    theView.setBillingTextFieldsEditable(true);
-                }
+            }
+            else{
+                theView.resetBillingDetails();
             }
         }
     }
     
-    private class SameShippingCheckBoxListener implements ActionListener{
+    private class ShippingEqualProfileListener implements ItemListener{
         @Override
-        public void actionPerformed(ActionEvent e){
-            if(theView.getSchoolName().equals("<Select School>")){
-                theView.setSameShippingCheckBox(false);
-                theView.displayErrorMessage("Please select a school first!");
-            }
-            else{
-                if(theView.getSameShippingCheckBox()){
+        public void itemStateChanged(ItemEvent e) {
+            if(e.getStateChange() == ItemEvent.SELECTED){
+                if(theView.getSchoolName().equals("<Select School>")){
+                    theView.displayErrorMessage("Please select a school first!");
+                    theView.setShippingEqualProfileCheckBox(false);
+                }
+                else{
+                    theView.setShippingEqualBillingCheckBox(false);
                     theView.setShippingCustNumber(theView.getProfileCustNumber());
                     theView.setShippingCountry(theView.getProfileCountry());
                     theView.setShippingStates(theView.getProfileStates());
@@ -103,18 +123,39 @@ public class CustomerProfileController {
                     theView.setShippingAddress(theView.getProfileAddress());
                     theView.setShippingPostalCode(theView.getProfilePostalCode());
                     theView.setShipTo(theView.getSchoolName());
-                    theView.setShippingTextFieldsEditable(false);
+                }
+            }
+            else{
+                theView.resetShippingDetails();
+            }
+        }
+    }
+    
+    private class ShippingEqualBillingListener implements ItemListener {
+        @Override
+        public void itemStateChanged(ItemEvent e) {
+            if(e.getStateChange() == ItemEvent.SELECTED){
+                if(! theView.billingDetailsIsComplete()){
+                    theView.displayErrorMessage("Please complete the billing information before making this selection!");
+                    theView.setShippingEqualBillingCheckBox(false);
+                    if(theView.getValueShippingEqualProfileCheckBox()){
+                        theView.setShippingEqualProfileCheckBox(false);
+                        theView.setShippingEqualProfileCheckBox(true);
+                    }
                 }
                 else{
-                    theView.setShippingCustNumber(null);
-                    theView.setShippingCountry(null);
-                    theView.setShippingStates(null);
-                    theView.setShippingCity(null);
-                    theView.setShippingAddress(null);
-                    theView.setShippingPostalCode(null);
-                    theView.setShipTo(null);
-                    theView.setShippingTextFieldsEditable(true);
+                    theView.setShippingEqualProfileCheckBox(false);
+                    theView.setShippingCustNumber(theView.getBillingCustNumber());
+                    theView.setShippingCountry(theView.getBillingCountry());
+                    theView.setShippingStates(theView.getBillingStates());
+                    theView.setShippingCity(theView.getBillingCity());
+                    theView.setShippingAddress(theView.getBillingAddress());
+                    theView.setShippingPostalCode(theView.getBillingPostalCode());
+                    theView.setShipTo(theView.getBillTo());
                 }
+            }
+            else{
+                theView.resetShippingDetails();
             }
         }
     }
