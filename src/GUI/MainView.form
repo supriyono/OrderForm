@@ -42,7 +42,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="mainTabbedPane" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,9 +73,9 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="custProfilePane" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="shippingPane" max="32767" attributes="0"/>
                           <Component id="billingPane" min="-2" max="-2" attributes="0"/>
@@ -85,7 +85,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="323" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="323" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
@@ -99,21 +99,21 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="custProfilePane" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="billingPane" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Component id="shippingPane" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="custProfilePane" min="-2" max="-2" attributes="0"/>
-                          </Group>
                       </Group>
-                      <EmptySpace pref="8" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="profileViewSeparator" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="manualFillPanel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -240,53 +240,48 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="shippingAddressLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="shippingAddressTextField" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="shippingCityLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="shippingCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="shippingPostalCodeLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="shippingPostalCodeTextField" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="shippingAddressLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingCityLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingStateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingCountryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingContactLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingCustNumberLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingShipToLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="shippingPostalCodeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="shippingAddressTextField" alignment="0" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="shippingTitleLabel" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="shippingCountryLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="shippingCountryTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="shippingStateLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="shippingStateTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="shippingContactLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="shippingContactTextField" min="-2" pref="200" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="shippingCustNumberLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="shippingCustNumberTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="shippingShipToLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="shippingShipToTextField" min="-2" pref="275" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="shippingShipToTextField" alignment="0" min="-2" pref="275" max="-2" attributes="0"/>
+                                      <Component id="shippingCustNumberTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="shippingContactTextField" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                                      <Component id="shippingCountryTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="shippingStateTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="shippingCityTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="shippingPostalCodeTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                  <Component id="shippingTitleLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="shippingEqualBillingCbox" min="-2" max="-2" attributes="0"/>
+                                      <Component id="shippingEqualProfileCbox" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -295,7 +290,11 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="shippingTitleLabel" min="-2" pref="16" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="shippingEqualProfileCbox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="shippingEqualBillingCbox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="shippingShipToLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="shippingShipToTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -324,6 +323,9 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="shippingCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="shippingCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="shippingPostalCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="shippingPostalCodeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -405,6 +407,16 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="shippingCustNumberTextField">
                 </Component>
+                <Component class="javax.swing.JCheckBox" name="shippingEqualProfileCbox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Same as customer profile"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="shippingEqualBillingCbox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Same as billing address"/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="billingPane">
@@ -422,48 +434,41 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="billingCityLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="billingCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="billingPostalCodeLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="billingPostalCodeTextField" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="billingAddressLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="billingAddressTextField" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="billingCountryLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="billingCountryTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="billingTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="billingCustNumberLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="billingCustNumberTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="billingStateLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="billingStateTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="billingBillToLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="billingBillToTextField" min="-2" pref="275" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace min="0" pref="79" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="billingAddressLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingCityLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingStateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingCountryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingCustNumberLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingBillToLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="billingPostalCodeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="billingAddressTextField" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="billingCityTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="billingStateTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="billingBillToTextField" alignment="0" min="-2" pref="275" max="-2" attributes="0"/>
+                                      <Component id="billingCustNumberTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="billingCountryTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="billingPostalCodeTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                  <Component id="billingEqualProfileCbox" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="billingTitleLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -473,6 +478,8 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="billingTitleLabel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="billingEqualProfileCbox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="billingBillToLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="billingBillToTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -496,6 +503,9 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="billingCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="billingCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="billingPostalCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="billingPostalCodeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -570,6 +580,11 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="billingCustNumberTextField">
                 </Component>
+                <Component class="javax.swing.JCheckBox" name="billingEqualProfileCbox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Same as customer profile"/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="custProfilePane">
@@ -580,59 +595,39 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="profileCityLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="profileCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="profilePostalCodeLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="profilePostalCodeTextField" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="profileAddressLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="profileAddressTextField" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="profileCountryLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="profileCountryTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="profileStateLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="profileStateTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="custProfileTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="profileCustNumLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="profileCustNumTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="profilePhoneLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="profilePhoneTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="profileFaxLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="profileFaxTextField" min="-2" pref="150" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="sameShippingCBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="schoolLabel" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="schoolComboBox" min="-2" pref="275" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="sameBillingCBox" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="profileAddressLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="profilePostalCodeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileCityLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileStateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileCountryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="schoolLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileCustNumLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="profileFaxLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="profilePhoneLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="profileAddressTextField" alignment="0" pref="289" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="profileFaxTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="profilePhoneTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="profileCityTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="profileStateTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="profileCountryTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="profileCustNumTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="schoolComboBox" alignment="0" min="-2" pref="275" max="-2" attributes="0"/>
+                                      <Component id="profilePostalCodeTextField" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="14" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Component id="custProfileTitleLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="247" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -641,50 +636,52 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="custProfileTitleLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="schoolComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="schoolLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profileCustNumLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profileCustNumTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profileCountryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profileCountryTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profileStateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profileStateTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profileCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profileCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profilePostalCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profilePostalCodeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profileAddressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profileAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profilePhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profilePhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="profileFaxLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="profileFaxTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="sameBillingCBox" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="sameShippingCBox" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -782,11 +779,6 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="sameBillingCBox">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Same billing address"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JLabel" name="custProfileTitleLabel">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -806,11 +798,6 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="de" green="de" red="de" type="rgb"/>
                     </Property>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JCheckBox" name="sameShippingCBox">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Same shipping address"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="schoolLabel">
@@ -873,7 +860,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="678" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="837" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
