@@ -7,6 +7,7 @@ package GUI;
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.InputMethodListener;
+import java.awt.event.ItemListener;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.swing.InputVerifier;
@@ -68,6 +69,8 @@ public class MainView extends javax.swing.JFrame {
         shippingShipToLabel = new javax.swing.JLabel();
         shippingCustNumberLabel = new javax.swing.JLabel();
         shippingCustNumberTextField = new javax.swing.JTextField();
+        shippingEqualProfileCbox = new javax.swing.JCheckBox();
+        shippingEqualBillingCbox = new javax.swing.JCheckBox();
         billingPane = new javax.swing.JPanel();
         billingCountryLabel = new javax.swing.JLabel();
         billingCountryTextField = new javax.swing.JTextField();
@@ -84,6 +87,7 @@ public class MainView extends javax.swing.JFrame {
         billingBillToTextField = new javax.swing.JTextField();
         billingCustNumberLabel = new javax.swing.JLabel();
         billingCustNumberTextField = new javax.swing.JTextField();
+        billingEqualProfileCbox = new javax.swing.JCheckBox();
         custProfilePane = new javax.swing.JPanel();
         profileCountryLabel = new javax.swing.JLabel();
         profileCountryTextField = new javax.swing.JTextField();
@@ -99,11 +103,9 @@ public class MainView extends javax.swing.JFrame {
         profilePhoneTextField = new javax.swing.JTextField();
         profileFaxLabel = new javax.swing.JLabel();
         profileFaxTextField = new javax.swing.JTextField();
-        sameBillingCBox = new javax.swing.JCheckBox();
         custProfileTitleLabel = new javax.swing.JLabel();
         profileCustNumLabel = new javax.swing.JLabel();
         profileCustNumTextField = new javax.swing.JTextField();
-        sameShippingCBox = new javax.swing.JCheckBox();
         schoolLabel = new javax.swing.JLabel();
         schoolComboBox = new javax.swing.JComboBox();
         orderPane = new javax.swing.JPanel();
@@ -203,6 +205,10 @@ public class MainView extends javax.swing.JFrame {
 
         shippingCustNumberLabel.setText("Customer #:");
 
+        shippingEqualProfileCbox.setText("Same as customer profile");
+
+        shippingEqualBillingCbox.setText("Same as billing address");
+
         org.jdesktop.layout.GroupLayout shippingPaneLayout = new org.jdesktop.layout.GroupLayout(shippingPane);
         shippingPane.setLayout(shippingPaneLayout);
         shippingPaneLayout.setHorizontalGroup(
@@ -210,50 +216,50 @@ public class MainView extends javax.swing.JFrame {
             .add(shippingPaneLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(shippingPaneLayout.createSequentialGroup()
-                        .add(shippingAddressLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(shippingAddressTextField))
-                    .add(shippingPaneLayout.createSequentialGroup()
-                        .add(shippingCityLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(shippingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(18, 18, 18)
-                        .add(shippingPostalCodeLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(shippingPostalCodeTextField))
+                    .add(shippingAddressLabel)
+                    .add(shippingCityLabel)
+                    .add(shippingStateLabel)
+                    .add(shippingCountryLabel)
+                    .add(shippingContactLabel)
+                    .add(shippingCustNumberLabel)
+                    .add(shippingShipToLabel)
+                    .add(shippingPostalCodeLabel))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(shippingAddressTextField)
                     .add(shippingPaneLayout.createSequentialGroup()
                         .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(shippingTitleLabel)
-                            .add(shippingPaneLayout.createSequentialGroup()
-                                .add(shippingCountryLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(shippingCountryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(shippingPaneLayout.createSequentialGroup()
-                                .add(shippingStateLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(shippingStateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(shippingPaneLayout.createSequentialGroup()
-                                .add(shippingContactLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(shippingContactTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(shippingPaneLayout.createSequentialGroup()
-                                .add(shippingCustNumberLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(shippingCustNumberTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(shippingPaneLayout.createSequentialGroup()
-                                .add(shippingShipToLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(shippingShipToTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                            .add(shippingShipToTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(shippingCustNumberTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(shippingContactTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(shippingCountryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(shippingStateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(shippingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(shippingPostalCodeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .add(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(shippingPaneLayout.createSequentialGroup()
+                .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(shippingPaneLayout.createSequentialGroup()
+                        .add(6, 6, 6)
+                        .add(shippingTitleLabel))
+                    .add(shippingPaneLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(shippingEqualBillingCbox)
+                            .add(shippingEqualProfileCbox))))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         shippingPaneLayout.setVerticalGroup(
             shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(shippingPaneLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(shippingTitleLabel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(18, 18, 18)
+                .add(24, 24, 24)
+                .add(shippingEqualProfileCbox)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(shippingEqualBillingCbox)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(shippingShipToLabel)
                     .add(shippingShipToTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -276,7 +282,9 @@ public class MainView extends javax.swing.JFrame {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(shippingCityLabel)
-                    .add(shippingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(shippingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(shippingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(shippingPostalCodeLabel)
                     .add(shippingPostalCodeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -307,6 +315,8 @@ public class MainView extends javax.swing.JFrame {
 
         billingCustNumberLabel.setText("Customer #:");
 
+        billingEqualProfileCbox.setText("Same as customer profile");
+
         org.jdesktop.layout.GroupLayout billingPaneLayout = new org.jdesktop.layout.GroupLayout(billingPane);
         billingPane.setLayout(billingPaneLayout);
         billingPaneLayout.setHorizontalGroup(
@@ -314,39 +324,34 @@ public class MainView extends javax.swing.JFrame {
             .add(billingPaneLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(billingPaneLayout.createSequentialGroup()
-                        .add(billingCityLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(billingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(18, 18, 18)
-                        .add(billingPostalCodeLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(billingPostalCodeTextField))
-                    .add(billingPaneLayout.createSequentialGroup()
-                        .add(billingAddressLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(billingAddressTextField))
+                    .add(billingAddressLabel)
+                    .add(billingCityLabel)
+                    .add(billingStateLabel)
+                    .add(billingCountryLabel)
+                    .add(billingCustNumberLabel)
+                    .add(billingBillToLabel)
+                    .add(billingPostalCodeLabel))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(billingAddressTextField)
                     .add(billingPaneLayout.createSequentialGroup()
                         .add(billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(billingPaneLayout.createSequentialGroup()
-                                .add(billingCountryLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(billingCountryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(billingTitleLabel)
-                            .add(billingPaneLayout.createSequentialGroup()
-                                .add(billingCustNumberLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(billingCustNumberTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(billingPaneLayout.createSequentialGroup()
-                                .add(billingStateLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(billingStateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(billingPaneLayout.createSequentialGroup()
-                                .add(billingBillToLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(billingBillToTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(0, 79, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .add(billingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(billingStateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(billingBillToTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(billingCustNumberTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(billingCountryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(billingPostalCodeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(billingPaneLayout.createSequentialGroup()
+                .add(6, 6, 6)
+                .add(billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(billingPaneLayout.createSequentialGroup()
+                        .add(6, 6, 6)
+                        .add(billingEqualProfileCbox))
+                    .add(billingTitleLabel))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         billingPaneLayout.setVerticalGroup(
             billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -354,6 +359,8 @@ public class MainView extends javax.swing.JFrame {
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(billingTitleLabel)
                 .add(18, 18, 18)
+                .add(billingEqualProfileCbox)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(billingBillToLabel)
                     .add(billingBillToTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -372,7 +379,9 @@ public class MainView extends javax.swing.JFrame {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(billingCityLabel)
-                    .add(billingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(billingCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(billingPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(billingPostalCodeLabel)
                     .add(billingPostalCodeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -418,8 +427,6 @@ public class MainView extends javax.swing.JFrame {
         profileFaxTextField.setEditable(false);
         profileFaxTextField.setBackground(new java.awt.Color(222, 222, 222));
 
-        sameBillingCBox.setText("Same billing address");
-
         custProfileTitleLabel.setFont(new java.awt.Font("Lucida Sans", 1, 18)); // NOI18N
         custProfileTitleLabel.setText("Customer Profile");
 
@@ -427,8 +434,6 @@ public class MainView extends javax.swing.JFrame {
 
         profileCustNumTextField.setEditable(false);
         profileCustNumTextField.setBackground(new java.awt.Color(222, 222, 222));
-
-        sameShippingCBox.setText("Same shipping address");
 
         schoolLabel.setText("Select School:");
 
@@ -441,92 +446,77 @@ public class MainView extends javax.swing.JFrame {
             .add(custProfilePaneLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(custProfilePaneLayout.createSequentialGroup()
-                        .add(profileCityLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(profileCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(18, 18, 18)
-                        .add(profilePostalCodeLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(profilePostalCodeTextField))
-                    .add(custProfilePaneLayout.createSequentialGroup()
-                        .add(profileAddressLabel)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(profileAddressTextField))
+                    .add(profileAddressLabel)
+                    .add(profilePostalCodeLabel)
+                    .add(profileCityLabel)
+                    .add(profileStateLabel)
+                    .add(profileCountryLabel)
+                    .add(schoolLabel)
+                    .add(profileCustNumLabel)
+                    .add(profileFaxLabel)
+                    .add(profilePhoneLabel))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(profileAddressTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 289, Short.MAX_VALUE)
                     .add(custProfilePaneLayout.createSequentialGroup()
                         .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(custProfilePaneLayout.createSequentialGroup()
-                                .add(profileCountryLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(profileCountryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(custProfilePaneLayout.createSequentialGroup()
-                                .add(profileStateLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(profileStateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(custProfileTitleLabel)
-                            .add(custProfilePaneLayout.createSequentialGroup()
-                                .add(profileCustNumLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(profileCustNumTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(custProfilePaneLayout.createSequentialGroup()
-                                .add(profilePhoneLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(profilePhoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(18, 18, 18)
-                                .add(profileFaxLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(profileFaxTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(sameShippingCBox)
-                            .add(custProfilePaneLayout.createSequentialGroup()
-                                .add(schoolLabel)
-                                .add(18, 18, 18)
-                                .add(schoolComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(sameBillingCBox))
-                        .add(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .add(profileFaxTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(profilePhoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(profileCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(profileStateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(profileCountryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(profileCustNumTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(schoolComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 275, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(profilePostalCodeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(0, 14, Short.MAX_VALUE)))
+                .addContainerGap(14, Short.MAX_VALUE))
+            .add(custProfilePaneLayout.createSequentialGroup()
+                .add(6, 6, 6)
+                .add(custProfileTitleLabel)
+                .addContainerGap(247, Short.MAX_VALUE))
         );
         custProfilePaneLayout.setVerticalGroup(
             custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, custProfilePaneLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(custProfileTitleLabel)
-                .add(30, 30, 30)
+                .add(35, 35, 35)
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(schoolComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(schoolLabel))
-                .add(18, 18, 18)
+                .add(25, 25, 25)
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profileCustNumLabel)
                     .add(profileCustNumTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(18, 18, 18)
+                .add(25, 25, 25)
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profileCountryLabel)
                     .add(profileCountryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(18, 18, 18)
+                .add(25, 25, 25)
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profileStateLabel)
                     .add(profileStateTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(18, 18, 18)
+                .add(25, 25, 25)
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profileCityLabel)
-                    .add(profileCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(profileCityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(25, 25, 25)
+                .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profilePostalCodeLabel)
                     .add(profilePostalCodeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(18, 18, 18)
+                .add(25, 25, 25)
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profileAddressLabel)
                     .add(profileAddressTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(18, 18, 18)
+                .add(25, 25, 25)
                 .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profilePhoneLabel)
-                    .add(profilePhoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(profilePhoneTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(25, 25, 25)
+                .add(custProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(profileFaxLabel)
                     .add(profileFaxTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(30, 30, 30)
-                .add(sameBillingCBox)
-                .add(18, 18, 18)
-                .add(sameShippingCBox)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(30, 30, 30))
         );
 
         org.jdesktop.layout.GroupLayout customerProfilePaneLayout = new org.jdesktop.layout.GroupLayout(customerProfilePane);
@@ -534,9 +524,9 @@ public class MainView extends javax.swing.JFrame {
         customerProfilePaneLayout.setHorizontalGroup(
             customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, customerProfilePaneLayout.createSequentialGroup()
-                .add(35, 35, 35)
+                .add(40, 40, 40)
                 .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(30, 30, 30)
                 .add(customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(shippingPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(billingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -544,7 +534,7 @@ public class MainView extends javax.swing.JFrame {
             .add(customerProfilePaneLayout.createSequentialGroup()
                 .add(40, 40, 40)
                 .add(manualFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(323, Short.MAX_VALUE))
+                .add(323, 323, 323))
             .add(org.jdesktop.layout.GroupLayout.TRAILING, customerProfilePaneLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(profileViewSeparator)
@@ -556,17 +546,17 @@ public class MainView extends javax.swing.JFrame {
                 .addContainerGap()
                 .add(customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(customerProfilePaneLayout.createSequentialGroup()
+                        .add(40, 40, 40)
+                        .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(customerProfilePaneLayout.createSequentialGroup()
                         .add(billingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .add(30, 30, 30)
-                        .add(shippingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(customerProfilePaneLayout.createSequentialGroup()
-                        .add(30, 30, 30)
-                        .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 8, Short.MAX_VALUE)
+                        .add(shippingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(profileViewSeparator, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(manualFillPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         mainTabbedPane.addTab("Customer Profile", customerProfilePane);
@@ -579,7 +569,7 @@ public class MainView extends javax.swing.JFrame {
         );
         orderPaneLayout.setVerticalGroup(
             orderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 678, Short.MAX_VALUE)
+            .add(0, 837, Short.MAX_VALUE)
         );
 
         mainTabbedPane.addTab("Add Order", orderPane);
@@ -598,7 +588,7 @@ public class MainView extends javax.swing.JFrame {
             .add(layout.createSequentialGroup()
                 .addContainerGap()
                 .add(mainTabbedPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -644,23 +634,7 @@ public class MainView extends javax.swing.JFrame {
     public String getProfileFax(){
         return profileFaxTextField.getText();
     }
-    
-    public boolean getSameBillingCheckBox(){
-        Object[] bcb = sameBillingCBox.getSelectedObjects();
-        if(bcb[0] != null)
-            return true;
-        else 
-            return false;
-    }
-    
-    public boolean getSameShippingCheckBox(){
-        Object[] scb = sameShippingCBox.getSelectedObjects();
-        if(scb[0] == null) 
-            return false;
-        else 
-            return true;
-    }
-    
+
     public void setProfileCustNumber(String aNumber){
         profileCustNumTextField.setText(aNumber);
     }
@@ -692,27 +666,11 @@ public class MainView extends javax.swing.JFrame {
     public void setProfileFax(String aFaxNumber){
         profileFaxTextField.setText(aFaxNumber);
     }
-    
-    public void setSameBillingCheckBox(boolean x){
-        sameBillingCBox.setSelected(x);
+           
+    public void addSchoolComboBoxListener(ItemListener listenSchoolComboBox){
+        schoolComboBox.addItemListener(listenSchoolComboBox);
     }
-    
-    public void setSameShippingCheckBox(boolean x){
-        sameShippingCBox.setSelected(x);
-    }
-            
-    public void addSchoolComboBoxListener(ActionListener listenSchoolComboBox){
-        schoolComboBox.addActionListener(listenSchoolComboBox);
-    }
-    
-    public void addSameBillingCheckBoxListener(ActionListener listenSameBillingCheckBox){
-        sameBillingCBox.addActionListener(listenSameBillingCheckBox);
-    }
-    
-    public void addSameShippingCheckBoxListener(ActionListener listenSameShippingCheckBox){
-        sameShippingCBox.addActionListener(listenSameShippingCheckBox);
-    }
-    
+   
   
     
     /**
@@ -746,6 +704,15 @@ public class MainView extends javax.swing.JFrame {
         return billingCustNumberTextField.getText();
     }
     
+    public boolean getValueBillingEqualProfileCheckBox(){
+        
+        Object[] bcb = billingEqualProfileCbox.getSelectedObjects();
+        if(bcb == null)
+            return false;
+        else 
+            return true;
+    }
+    
     public void setBillTo(String x){
         billingBillToTextField.setText(x);
     }
@@ -772,6 +739,10 @@ public class MainView extends javax.swing.JFrame {
     
     public void setBillingCustNumber(String aCustNumber){
         billingCustNumberTextField.setText(aCustNumber);
+    }
+    
+    public void setBillingEqualProfileCheckBox(boolean x){
+        billingEqualProfileCbox.setSelected(x);
     }
     
     public void setBillingTextFieldsEditable(boolean x){
@@ -801,6 +772,30 @@ public class MainView extends javax.swing.JFrame {
             billingAddressTextField.setBackground(new Color(222,222,222));
             billingPostalCodeTextField.setBackground(new Color(222,222,222));
         }
+    }
+    
+    public void resetBillingDetails(){
+        billingAddressTextField.setText(null);
+        billingBillToTextField.setText(null);
+        billingCityTextField.setText(null);
+        billingCountryTextField.setText(null);
+        billingCustNumberTextField.setText(null);
+        billingPostalCodeTextField.setText(null);
+        billingStateTextField.setText(null);
+    }
+    
+    public boolean billingDetailsIsComplete(){
+        return !(billingCountryTextField.getText().isEmpty() || 
+                 billingStateTextField.getText().isEmpty() || 
+                 billingCityTextField.getText().isEmpty() || 
+                 billingAddressTextField.getText().isEmpty() || 
+                 billingPostalCodeTextField.getText().isEmpty() || 
+                 billingCustNumberTextField.getText().isEmpty() || 
+                 billingBillToTextField.getText().isEmpty());
+    }
+    
+    public void addBillingEqualProfileCheckBoxListener(ItemListener listenSameBillingCheckBox){
+        billingEqualProfileCbox.addItemListener(listenSameBillingCheckBox);
     }
     
     
@@ -839,6 +834,22 @@ public class MainView extends javax.swing.JFrame {
         return shippingCustNumberTextField.getText();
     }
     
+    public boolean getValueShippingEqualProfileCheckBox(){
+        Object[] scb = shippingEqualProfileCbox.getSelectedObjects();
+        if(scb == null) 
+            return false;
+        else 
+            return true;
+    }
+    
+    public boolean getValueShippingEqualBillingCheckBox() {
+        Object[] scb = shippingEqualBillingCbox.getSelectedObjects();
+        if(scb == null) 
+            return false;
+        else 
+            return true;
+    }
+
     public void setShipTo(String x){
         shippingShipToTextField.setText(x);
     }
@@ -871,6 +882,24 @@ public class MainView extends javax.swing.JFrame {
         shippingCustNumberTextField.setText(aCustNumber);
     }
     
+    public void setShippingEqualProfileCheckBox(boolean x){
+        shippingEqualProfileCbox.setSelected(x);
+    }
+    
+    public void setShippingEqualBillingCheckBox(boolean x) {
+        shippingEqualBillingCbox.setSelected(x);
+    }
+    
+    public void resetShippingDetails(){
+        shippingCustNumberTextField.setText(null);
+        shippingCountryTextField.setText(null);
+        shippingStateTextField.setText(null);
+        shippingCityTextField.setText(null);
+        shippingAddressTextField.setText(null);
+        shippingPostalCodeTextField.setText(null);
+        shippingShipToTextField.setText(null);
+    }
+    
     public void setShippingTextFieldsEditable(boolean x){
         shippingCustNumberTextField.setEditable(x);
         shippingShipToTextField.setEditable(x);
@@ -898,6 +927,14 @@ public class MainView extends javax.swing.JFrame {
             shippingAddressTextField.setBackground(new Color(222,222,222));
             shippingPostalCodeTextField.setBackground(new Color(222,222,222));
         }
+    }
+    
+    public void addShipEqualProfileListener(ItemListener listenSameShippingCheckBox){
+        shippingEqualProfileCbox.addItemListener(listenSameShippingCheckBox);
+    }
+    
+    public void addShipEqualBillListener(ItemListener listenSameShippingCheckBox){
+        shippingEqualBillingCbox.addItemListener(listenSameShippingCheckBox);
     }
     
     
@@ -953,7 +990,7 @@ public class MainView extends javax.swing.JFrame {
     public JLabel getMaterialEmailLabel(){
         return materialEmailLabel;
     }
-    
+
     public class EmailVerifier extends InputVerifier{
             
         @Override
@@ -998,6 +1035,7 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JTextField billingCountryTextField;
     private javax.swing.JLabel billingCustNumberLabel;
     private javax.swing.JTextField billingCustNumberTextField;
+    private javax.swing.JCheckBox billingEqualProfileCbox;
     private javax.swing.JPanel billingPane;
     private javax.swing.JLabel billingPostalCodeLabel;
     private javax.swing.JTextField billingPostalCodeTextField;
@@ -1036,8 +1074,6 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JLabel profileStateLabel;
     private javax.swing.JTextField profileStateTextField;
     private javax.swing.JSeparator profileViewSeparator;
-    private javax.swing.JCheckBox sameBillingCBox;
-    private javax.swing.JCheckBox sameShippingCBox;
     private javax.swing.JComboBox schoolComboBox;
     private javax.swing.JLabel schoolLabel;
     private javax.swing.JLabel shippingAddressLabel;
@@ -1050,6 +1086,8 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JTextField shippingCountryTextField;
     private javax.swing.JLabel shippingCustNumberLabel;
     private javax.swing.JTextField shippingCustNumberTextField;
+    private javax.swing.JCheckBox shippingEqualBillingCbox;
+    private javax.swing.JCheckBox shippingEqualProfileCbox;
     private javax.swing.JPanel shippingPane;
     private javax.swing.JLabel shippingPostalCodeLabel;
     private javax.swing.JTextField shippingPostalCodeTextField;
