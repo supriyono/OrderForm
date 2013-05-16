@@ -4,18 +4,35 @@
  */
 package GUI;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputMethodListener;
 import java.awt.event.ItemListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
+import javax.swing.AbstractButton;
+import javax.swing.BorderFactory;
 import javax.swing.InputVerifier;
+import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
+import javax.swing.plaf.basic.BasicButtonUI;
 
 /**
  *
@@ -86,6 +103,11 @@ public class MainView extends javax.swing.JFrame {
         historyCreatePOButton = new javax.swing.JButton();
         historyCopyPOButton = new javax.swing.JButton();
         addOrderPane = new javax.swing.JPanel();
+        jMenuBar = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        editMenu = new javax.swing.JMenu();
+        viewMenu = new javax.swing.JMenu();
+        helpMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(240, 240, 240));
@@ -418,12 +440,11 @@ public class MainView extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE)
                 .add(customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
                     .add(orderHistoryPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                        .add(profileViewSeparator)
-                        .add(customerProfilePaneLayout.createSequentialGroup()
-                            .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(30, 30, 30)
-                            .add(billingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, profileViewSeparator)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, customerProfilePaneLayout.createSequentialGroup()
+                        .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(30, 30, 30)
+                        .add(billingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         customerProfilePaneLayout.setVerticalGroup(
@@ -450,10 +471,24 @@ public class MainView extends javax.swing.JFrame {
         );
         addOrderPaneLayout.setVerticalGroup(
             addOrderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 614, Short.MAX_VALUE)
+            .add(0, 613, Short.MAX_VALUE)
         );
 
         mainTabbedPane.addTab("+", addOrderPane);
+
+        fileMenu.setText("File");
+        jMenuBar.add(fileMenu);
+
+        editMenu.setText("Edit");
+        jMenuBar.add(editMenu);
+
+        viewMenu.setText("View");
+        jMenuBar.add(viewMenu);
+
+        helpMenu.setText("Help");
+        jMenuBar.add(helpMenu);
+
+        setJMenuBar(jMenuBar);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -475,14 +510,116 @@ public class MainView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private String selectedProduct;
+
+    private class ButtonTabComponent extends JPanel{
+        private final JTabbedPane thePane;
+        
+        ButtonTabComponent(final JTabbedPane aPane){
+            super(new FlowLayout(FlowLayout.LEFT, 0, 0));
+            if (aPane == null) {
+                throw new NullPointerException("TabbedPane is null");
+            }
+            thePane = aPane;
+            setOpaque(false);
+            
+            JLabel label = new JLabel() {
+                public String getText() {
+                    int i = thePane.indexOfTabComponent(ButtonTabComponent.this);
+                    if (i != -1) {
+                        return thePane.getTitleAt(i);
+                    }
+                    return null;
+                }
+            };
+            
+            add(label);
+            label.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 5));
+            JButton button = new TabButton();
+            add(button);
+            setBorder(BorderFactory.createEmptyBorder(2, 0, 0, 0));
+        }
+        
+        private class TabButton extends JButton implements ActionListener{
+
+            public TabButton() {
+                int size = 16;
+                setPreferredSize(new Dimension(size,size));
+                setUI(new BasicButtonUI());
+                setContentAreaFilled(false);
+                setFocusable(false);
+                setBorder(BorderFactory.createEtchedBorder());
+                setBorderPainted(false);
+                addMouseListener(buttonMouseListener);
+                setRolloverEnabled(true);
+                addActionListener(this);
+            }
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int i = thePane.indexOfTabComponent(ButtonTabComponent.this);
+                if (i != -1) {
+                    thePane.setSelectedComponent(customerProfilePane);
+                    thePane.remove(i);
+                }
+            }
+            
+            public void updateUI() {
+            }
+
+            
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                Graphics2D g2 = (Graphics2D) g.create();
+                if (getModel().isPressed()) {
+                    g2.translate(1, 1);
+                }
+                g2.setStroke(new BasicStroke(2));
+                g2.setColor(Color.BLACK);
+                if (getModel().isRollover()) {
+                    g2.setColor(Color.MAGENTA);
+                }
+                int delta = 6;
+                g2.drawLine(delta, delta, getWidth() - delta - 1, getHeight() - delta - 1);
+                g2.drawLine(getWidth() - delta - 1, delta, delta, getHeight() - delta - 1);
+                g2.dispose();
+            }
+        }
+        
+        private final MouseListener buttonMouseListener = new MouseAdapter() {
+            public void mouseEntered(MouseEvent e) {
+                Component component = e.getComponent();
+                if (component instanceof AbstractButton) {
+                    AbstractButton button = (AbstractButton) component;
+                    button.setBorderPainted(true);
+                }
+            }
+
+            public void mouseExited(MouseEvent e) {
+                Component component = e.getComponent();
+                if (component instanceof AbstractButton) {
+                    AbstractButton button = (AbstractButton) component;
+                    button.setBorderPainted(false);
+                }
+            }
+        };
+    }
+    
+    private int count = 0;
     private void mainTabbedPaneStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_mainTabbedPaneStateChanged
         JTabbedPane tabSource = (JTabbedPane) evt.getSource();
         String tab = tabSource.getTitleAt(tabSource.getSelectedIndex());
         if(tab.equals("+")){
-            mainTabbedPane.add("Order Detail", new javax.swing.JPanel());
-            mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
-            mainTabbedPane.add("+", addOrderPane);
-            displayErrorMessage("Adding New Order");
+            Object[] productType = {"Agenda", "Fulfilment", "P2", "Versatile"};
+            selectedProduct =   (String)JOptionPane.showInputDialog(addOrderPane, "Chooce the type of product do you want to order: ", 
+                                "Choose Product Type", JOptionPane.PLAIN_MESSAGE, null, productType, "Agenda");
+            if(selectedProduct.equals("Agenda")){
+                count++;
+                mainTabbedPane.add("Agenda " + count, new javax.swing.JPanel());
+                mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + count), new ButtonTabComponent(mainTabbedPane));
+                mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
+                mainTabbedPane.add("+", addOrderPane);
+            }
         }
     }//GEN-LAST:event_mainTabbedPaneStateChanged
 
@@ -730,11 +867,15 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JTextField billingStateTextField;
     private javax.swing.JPanel custProfilePane;
     private javax.swing.JPanel customerProfilePane;
+    private javax.swing.JMenu editMenu;
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenu helpMenu;
     private javax.swing.JButton historyCopyPOButton;
     private javax.swing.JButton historyCreatePOButton;
     private javax.swing.JTable historyOrderTable;
     private javax.swing.JScrollPane historyScrollPane;
     private javax.swing.JButton historyViewPOButton;
+    private javax.swing.JMenuBar jMenuBar;
     private javax.swing.JTabbedPane mainTabbedPane;
     private javax.swing.JPanel orderHistoryPane;
     private javax.swing.JLabel profileAddressLabel;
@@ -758,6 +899,7 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JLabel schoolDistrictLabel;
     private javax.swing.JTextField schoolDistrictTextField;
     private javax.swing.JLabel schoolLabel;
+    private javax.swing.JMenu viewMenu;
     // End of variables declaration//GEN-END:variables
 
 }
