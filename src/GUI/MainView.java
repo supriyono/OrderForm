@@ -14,6 +14,7 @@ import javax.swing.InputVerifier;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 
 /**
@@ -38,8 +39,6 @@ public class MainView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        frontCoverTypeButtonGroup = new javax.swing.ButtonGroup();
-        backCoverTypeButtonGroup = new javax.swing.ButtonGroup();
         mainTabbedPane = new javax.swing.JTabbedPane();
         customerProfilePane = new javax.swing.JPanel();
         custProfilePane = new javax.swing.JPanel();
@@ -86,11 +85,17 @@ public class MainView extends javax.swing.JFrame {
         historyViewPOButton = new javax.swing.JButton();
         historyCreatePOButton = new javax.swing.JButton();
         historyCopyPOButton = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        addOrderPane = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(240, 240, 240));
         setPreferredSize(new java.awt.Dimension(1122, 635));
+
+        mainTabbedPane.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                mainTabbedPaneStateChanged(evt);
+            }
+        });
 
         customerProfilePane.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         customerProfilePane.setToolTipText("");
@@ -437,18 +442,18 @@ public class MainView extends javax.swing.JFrame {
 
         mainTabbedPane.addTab("Customer Profile", customerProfilePane);
 
-        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+        org.jdesktop.layout.GroupLayout addOrderPaneLayout = new org.jdesktop.layout.GroupLayout(addOrderPane);
+        addOrderPane.setLayout(addOrderPaneLayout);
+        addOrderPaneLayout.setHorizontalGroup(
+            addOrderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(0, 1085, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+        addOrderPaneLayout.setVerticalGroup(
+            addOrderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(0, 614, Short.MAX_VALUE)
         );
 
-        mainTabbedPane.addTab("+", jPanel1);
+        mainTabbedPane.addTab("+", addOrderPane);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -469,6 +474,17 @@ public class MainView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mainTabbedPaneStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_mainTabbedPaneStateChanged
+        JTabbedPane tabSource = (JTabbedPane) evt.getSource();
+        String tab = tabSource.getTitleAt(tabSource.getSelectedIndex());
+        if(tab.equals("+")){
+            mainTabbedPane.add("Order Detail", new javax.swing.JPanel());
+            mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
+            mainTabbedPane.add("+", addOrderPane);
+            displayErrorMessage("Adding New Order");
+        }
+    }//GEN-LAST:event_mainTabbedPaneStateChanged
 
     
     /**
@@ -695,7 +711,7 @@ public class MainView extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup backCoverTypeButtonGroup;
+    private javax.swing.JPanel addOrderPane;
     private javax.swing.JLabel billingAddressLabel;
     private javax.swing.JTextField billingAddressTextField;
     private javax.swing.JLabel billingBillToLabel;
@@ -714,13 +730,11 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JTextField billingStateTextField;
     private javax.swing.JPanel custProfilePane;
     private javax.swing.JPanel customerProfilePane;
-    private javax.swing.ButtonGroup frontCoverTypeButtonGroup;
     private javax.swing.JButton historyCopyPOButton;
     private javax.swing.JButton historyCreatePOButton;
     private javax.swing.JTable historyOrderTable;
     private javax.swing.JScrollPane historyScrollPane;
     private javax.swing.JButton historyViewPOButton;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane mainTabbedPane;
     private javax.swing.JPanel orderHistoryPane;
     private javax.swing.JLabel profileAddressLabel;
