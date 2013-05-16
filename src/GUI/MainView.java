@@ -611,9 +611,14 @@ public class MainView extends javax.swing.JFrame {
         String tab = tabSource.getTitleAt(tabSource.getSelectedIndex());
         if(tab.equals("+")){
             Object[] productType = {"Agenda", "Fulfilment", "P2", "Versatile"};
+
             selectedProduct =   (String)JOptionPane.showInputDialog(addOrderPane, "Chooce the type of product do you want to order: ", 
-                                "Choose Product Type", JOptionPane.PLAIN_MESSAGE, null, productType, "Agenda");
-            if(selectedProduct.equals("Agenda")){
+                                    "Choose Product Type", JOptionPane.PLAIN_MESSAGE, null, productType, "Agenda");
+
+            if(selectedProduct == null){
+                mainTabbedPane.setSelectedComponent(customerProfilePane);
+            }
+            else if(selectedProduct.equals("Agenda")){
                 count++;
                 mainTabbedPane.add("Agenda " + count, new javax.swing.JPanel());
                 mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + count), new ButtonTabComponent(mainTabbedPane));
