@@ -27,8 +27,6 @@ public class CustomerProfileController {
         
         theView.addSchoolComboBoxListener(new SchoolComboBoxListener());
         theView.addBillingEqualProfileCheckBoxListener(new BillingEqualProfileCheckBoxListener());
-        theView.addShipEqualProfileListener(new ShippingEqualProfileListener());
-        theView.addShipEqualBillListener(new ShippingEqualBillingListener());
     }
 
 
@@ -69,16 +67,6 @@ public class CustomerProfileController {
                 theView.setBillingPostalCode(theView.getProfilePostalCode());
                 theView.setBillTo(theView.getSchoolName());
             }
-            
-            if(theView.getValueShippingEqualProfileCheckBox()){
-                theView.setShippingCustNumber(theView.getProfileCustNumber());
-                theView.setShippingCountry(theView.getProfileCountry());
-                theView.setShippingStates(theView.getProfileStates());
-                theView.setShippingCity(theView.getProfileCity());
-                theView.setShippingAddress(theView.getProfileAddress());
-                theView.setShippingPostalCode(theView.getProfilePostalCode());
-                theView.setShipTo(theView.getSchoolName());
-            }
         }
     }
     
@@ -102,60 +90,6 @@ public class CustomerProfileController {
             }
             else{
                 theView.resetBillingDetails();
-            }
-        }
-    }
-    
-    private class ShippingEqualProfileListener implements ItemListener{
-        @Override
-        public void itemStateChanged(ItemEvent e) {
-            if(e.getStateChange() == ItemEvent.SELECTED){
-                if(theView.getSchoolName().equals("<Select School>")){
-                    theView.displayErrorMessage("Please select a school first!");
-                    theView.setShippingEqualProfileCheckBox(false);
-                }
-                else{
-                    theView.setShippingEqualBillingCheckBox(false);
-                    theView.setShippingCustNumber(theView.getProfileCustNumber());
-                    theView.setShippingCountry(theView.getProfileCountry());
-                    theView.setShippingStates(theView.getProfileStates());
-                    theView.setShippingCity(theView.getProfileCity());
-                    theView.setShippingAddress(theView.getProfileAddress());
-                    theView.setShippingPostalCode(theView.getProfilePostalCode());
-                    theView.setShipTo(theView.getSchoolName());
-                }
-            }
-            else{
-                theView.resetShippingDetails();
-            }
-        }
-    }
-    
-    private class ShippingEqualBillingListener implements ItemListener {
-        @Override
-        public void itemStateChanged(ItemEvent e) {
-            if(e.getStateChange() == ItemEvent.SELECTED){
-                if(! theView.billingDetailsIsComplete()){
-                    theView.displayErrorMessage("Please complete the billing information before making this selection!");
-                    theView.setShippingEqualBillingCheckBox(false);
-                    if(theView.getValueShippingEqualProfileCheckBox()){
-                        theView.setShippingEqualProfileCheckBox(false);
-                        theView.setShippingEqualProfileCheckBox(true);
-                    }
-                }
-                else{
-                    theView.setShippingEqualProfileCheckBox(false);
-                    theView.setShippingCustNumber(theView.getBillingCustNumber());
-                    theView.setShippingCountry(theView.getBillingCountry());
-                    theView.setShippingStates(theView.getBillingStates());
-                    theView.setShippingCity(theView.getBillingCity());
-                    theView.setShippingAddress(theView.getBillingAddress());
-                    theView.setShippingPostalCode(theView.getBillingPostalCode());
-                    theView.setShipTo(theView.getBillTo());
-                }
-            }
-            else{
-                theView.resetShippingDetails();
             }
         }
     }

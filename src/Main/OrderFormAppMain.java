@@ -34,7 +34,7 @@ public class OrderFormAppMain {
                 }
             }
             */        
-            UIManager.setLookAndFeel("com.jtattoo.plaf.mint.MintLookAndFeel");
+            UIManager.setLookAndFeel("com.jtattoo.plaf.fast.FastLookAndFeel");
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MainView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
