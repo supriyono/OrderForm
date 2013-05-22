@@ -110,123 +110,198 @@ public class MainView extends javax.swing.JFrame {
         agendaHandbookTotalTextField3 = new javax.swing.JTextField();
         agendaSharedHandbookTotalTextField3 = new javax.swing.JTextField();
         agendaCoverPane = new javax.swing.JPanel();
-        handbookTypebuttonGroup = new javax.swing.ButtonGroup();
+        frontCoverLabel = new javax.swing.JLabel();
+        frontCoverOptionPanel = new javax.swing.JPanel();
+        standardFC = new javax.swing.JRadioButton();
+        custDuraFC = new javax.swing.JRadioButton();
+        custLamFC = new javax.swing.JRadioButton();
+        custFoilFC = new javax.swing.JRadioButton();
+        agendaOFCCheckBox = new javax.swing.JCheckBox();
+        agendaIFCCheckBox = new javax.swing.JCheckBox();
+        agendaFCListLabel = new javax.swing.JLabel();
+        agendaFCListComboBox = new javax.swing.JComboBox();
+        agendaFCTotalTextField = new javax.swing.JTextField();
+        agendaCoverHSeparator = new javax.swing.JSeparator();
+        backCoverLabel = new javax.swing.JLabel();
+        backCoverOptionPanel = new javax.swing.JPanel();
+        standardBC = new javax.swing.JRadioButton();
+        custDuraBC = new javax.swing.JRadioButton();
+        custLamBC = new javax.swing.JRadioButton();
+        custFoilBC = new javax.swing.JRadioButton();
+        agendaOBCCheckBox = new javax.swing.JCheckBox();
+        agendaIBCCheckBox = new javax.swing.JCheckBox();
+        agendaBCListLabel = new javax.swing.JLabel();
+        agendaBCListComboBox = new javax.swing.JComboBox();
+        agendaBCTotalTextField = new javax.swing.JTextField();
+        handbookTypeButtonGroup = new javax.swing.ButtonGroup();
+        frontCoverTypeButtonGroup = new javax.swing.ButtonGroup();
+        backCoverTypeButtonGroup = new javax.swing.ButtonGroup();
         agendaFormPane1 = new javax.swing.JPanel();
-        agendaResetButton3 = new javax.swing.JButton();
-        orderInfoPane3 = new javax.swing.JPanel();
-        primaryPhoneTextField3 = new javax.swing.JTextField();
-        materialContactLabel3 = new javax.swing.JLabel();
-        materialPhoneTextField3 = new javax.swing.JTextField();
-        materialContactTextField3 = new javax.swing.JTextField();
-        primaryContactTextField3 = new javax.swing.JTextField();
-        materialPhoneLabel3 = new javax.swing.JLabel();
-        primaryPhoneLabel3 = new javax.swing.JLabel();
-        primaryContactLabel3 = new javax.swing.JLabel();
-        productSizeLabel3 = new javax.swing.JLabel();
-        productSizeComboBox3 = new javax.swing.JComboBox();
-        productFamilyLabel3 = new javax.swing.JLabel();
-        productFamilyComboBox3 = new javax.swing.JComboBox();
-        quantityLabel3 = new javax.swing.JLabel();
-        quantityTextField3 = new javax.swing.JTextField();
-        agendaHSeparator3 = new javax.swing.JSeparator();
-        agendaPlanerPane3 = new javax.swing.JPanel();
-        agendaPlannerCodeLabel3 = new javax.swing.JLabel();
-        agendaPlannerCodeComboBox3 = new javax.swing.JComboBox();
-        agendaPlannerVSeparator6 = new javax.swing.JSeparator();
-        agendaPlannerStudentCheckBox3 = new javax.swing.JCheckBox();
-        agendaPlannerGradeLabel3 = new javax.swing.JLabel();
-        agendaPlannerGradeTextField3 = new javax.swing.JTextField();
-        agendaPlannerHSeparator3 = new javax.swing.JSeparator();
-        agendaPlannerTeacherCheckBox3 = new javax.swing.JCheckBox();
-        agendaPlannerAddLpRcLabel3 = new javax.swing.JLabel();
-        agendaPlannerLpRcComboBox3 = new javax.swing.JComboBox();
-        agendaPlannerStudentQtyLabel3 = new javax.swing.JLabel();
-        agendaPlannerStudentQtyTextField3 = new javax.swing.JTextField();
-        agendaPlannerTeacherQtyLabel3 = new javax.swing.JLabel();
-        agendaPlannerTeacherQtyTextField3 = new javax.swing.JTextField();
-        agendaPlannerStudentUnitPriceLabel3 = new javax.swing.JLabel();
-        agendaPlannerTeacherUnitPriceLabel3 = new javax.swing.JLabel();
-        agendaPlannerStudentUnitPriceTextField3 = new javax.swing.JTextField();
-        agendaPlannerTeacherUnitPriceTextField3 = new javax.swing.JTextField();
-        agendaPlannerVSeparator7 = new javax.swing.JSeparator();
-        agendaPlannerStudentTotalTextField3 = new javax.swing.JTextField();
-        agendaPlannerTeacherTotalTextField3 = new javax.swing.JTextField();
-        agendaHandbookPane3 = new javax.swing.JPanel();
-        agendaHandbookGeneric1 = new javax.swing.JRadioButton();
-        agendaHandbookNameLogo1 = new javax.swing.JRadioButton();
-        agendaHandbookHandbook1 = new javax.swing.JRadioButton();
-        agendaHandbookCustom1 = new javax.swing.JRadioButton();
-        agendaHandbookQtyLabel1 = new javax.swing.JLabel();
-        agendaHandbookQtyTextField4 = new javax.swing.JTextField();
-        agendaHandbookUnitPriceLabel4 = new javax.swing.JLabel();
-        agendaHandbookUnitPriceTextField4 = new javax.swing.JTextField();
-        agendaSharedHandbookQtyLabel1 = new javax.swing.JLabel();
-        agendaSharedHandbookQtyTextField1 = new javax.swing.JTextField();
-        agendaSharedHandbookUnitPriceLabel1 = new javax.swing.JLabel();
-        agendaSharedHandbookUnitPriceTextField1 = new javax.swing.JTextField();
-        agendaHandbookVSeparator1 = new javax.swing.JSeparator();
-        agendaHandbookTotalTextField4 = new javax.swing.JTextField();
-        agendaSharedHandbookTotalTextField4 = new javax.swing.JTextField();
-        agendaCoverPane3 = new javax.swing.JPanel();
-        handbookTypebuttonGroup1 = new javax.swing.ButtonGroup();
+        agendaResetButton1 = new javax.swing.JButton();
+        orderInfoPane1 = new javax.swing.JPanel();
+        primaryPhoneTextField1 = new javax.swing.JTextField();
+        materialContactLabel1 = new javax.swing.JLabel();
+        materialPhoneTextField1 = new javax.swing.JTextField();
+        materialContactTextField1 = new javax.swing.JTextField();
+        primaryContactTextField1 = new javax.swing.JTextField();
+        materialPhoneLabel1 = new javax.swing.JLabel();
+        primaryPhoneLabel1 = new javax.swing.JLabel();
+        primaryContactLabel1 = new javax.swing.JLabel();
+        productSizeLabel1 = new javax.swing.JLabel();
+        productSizeComboBox1 = new javax.swing.JComboBox();
+        productFamilyLabel1 = new javax.swing.JLabel();
+        productFamilyComboBox1 = new javax.swing.JComboBox();
+        quantityLabel1 = new javax.swing.JLabel();
+        quantityTextField1 = new javax.swing.JTextField();
+        agendaHSeparator1 = new javax.swing.JSeparator();
+        agendaPlanerPane1 = new javax.swing.JPanel();
+        agendaPlannerCodeLabel1 = new javax.swing.JLabel();
+        agendaPlannerCodeComboBox1 = new javax.swing.JComboBox();
+        agendaPlannerVSeparator1 = new javax.swing.JSeparator();
+        agendaPlannerStudentCheckBox1 = new javax.swing.JCheckBox();
+        agendaPlannerGradeLabel1 = new javax.swing.JLabel();
+        agendaPlannerGradeTextField1 = new javax.swing.JTextField();
+        agendaPlannerHSeparator1 = new javax.swing.JSeparator();
+        agendaPlannerTeacherCheckBox1 = new javax.swing.JCheckBox();
+        agendaPlannerAddLpRcLabel1 = new javax.swing.JLabel();
+        agendaPlannerLpRcComboBox1 = new javax.swing.JComboBox();
+        agendaPlannerStudentQtyLabel1 = new javax.swing.JLabel();
+        agendaPlannerStudentQtyTextField1 = new javax.swing.JTextField();
+        agendaPlannerTeacherQtyLabel1 = new javax.swing.JLabel();
+        agendaPlannerTeacherQtyTextField1 = new javax.swing.JTextField();
+        agendaPlannerStudentUnitPriceLabel1 = new javax.swing.JLabel();
+        agendaPlannerTeacherUnitPriceLabel1 = new javax.swing.JLabel();
+        agendaPlannerStudentUnitPriceTextField1 = new javax.swing.JTextField();
+        agendaPlannerTeacherUnitPriceTextField1 = new javax.swing.JTextField();
+        agendaPlannerVSeparator3 = new javax.swing.JSeparator();
+        agendaPlannerStudentTotalTextField1 = new javax.swing.JTextField();
+        agendaPlannerTeacherTotalTextField1 = new javax.swing.JTextField();
+        agendaHandbookPane1 = new javax.swing.JPanel();
+        agendaHandbookGeneric3 = new javax.swing.JRadioButton();
+        agendaHandbookNameLogo3 = new javax.swing.JRadioButton();
+        agendaHandbookHandbook3 = new javax.swing.JRadioButton();
+        agendaHandbookCustom3 = new javax.swing.JRadioButton();
+        agendaHandbookQtyLabel3 = new javax.swing.JLabel();
+        agendaHandbookQtyTextField6 = new javax.swing.JTextField();
+        agendaHandbookUnitPriceLabel6 = new javax.swing.JLabel();
+        agendaHandbookUnitPriceTextField6 = new javax.swing.JTextField();
+        agendaSharedHandbookQtyLabel3 = new javax.swing.JLabel();
+        agendaSharedHandbookQtyTextField3 = new javax.swing.JTextField();
+        agendaSharedHandbookUnitPriceLabel3 = new javax.swing.JLabel();
+        agendaSharedHandbookUnitPriceTextField3 = new javax.swing.JTextField();
+        agendaHandbookVSeparator3 = new javax.swing.JSeparator();
+        agendaHandbookTotalTextField6 = new javax.swing.JTextField();
+        agendaSharedHandbookTotalTextField6 = new javax.swing.JTextField();
+        agendaCoverPane1 = new javax.swing.JPanel();
+        frontCoverLabel1 = new javax.swing.JLabel();
+        frontCoverOptionPanel1 = new javax.swing.JPanel();
+        standardFC1 = new javax.swing.JRadioButton();
+        custDuraFC1 = new javax.swing.JRadioButton();
+        custLamFC1 = new javax.swing.JRadioButton();
+        custFoilFC1 = new javax.swing.JRadioButton();
+        agendaOFCCheckBox1 = new javax.swing.JCheckBox();
+        agendaIFCCheckBox1 = new javax.swing.JCheckBox();
+        agendaFCListLabel1 = new javax.swing.JLabel();
+        agendaFCListComboBox1 = new javax.swing.JComboBox();
+        agendaFCTotalTextField1 = new javax.swing.JTextField();
+        agendaCoverHSeparator1 = new javax.swing.JSeparator();
+        backCoverLabel1 = new javax.swing.JLabel();
+        backCoverOptionPanel1 = new javax.swing.JPanel();
+        standardBC1 = new javax.swing.JRadioButton();
+        custDuraBC1 = new javax.swing.JRadioButton();
+        custLamBC1 = new javax.swing.JRadioButton();
+        custFoilBC1 = new javax.swing.JRadioButton();
+        agendaOBCCheckBox1 = new javax.swing.JCheckBox();
+        agendaIBCCheckBox1 = new javax.swing.JCheckBox();
+        agendaBCListLabel1 = new javax.swing.JLabel();
+        agendaBCListComboBox1 = new javax.swing.JComboBox();
+        agendaBCTotalTextField1 = new javax.swing.JTextField();
+        handbookTypeButtonGroup1 = new javax.swing.ButtonGroup();
+        frontCoverTypeButtonGroup1 = new javax.swing.ButtonGroup();
+        backCoverTypeButtonGroup1 = new javax.swing.ButtonGroup();
         agendaFormPane2 = new javax.swing.JPanel();
-        agendaResetButton4 = new javax.swing.JButton();
-        orderInfoPane4 = new javax.swing.JPanel();
-        primaryPhoneTextField4 = new javax.swing.JTextField();
-        materialContactLabel4 = new javax.swing.JLabel();
-        materialPhoneTextField4 = new javax.swing.JTextField();
-        materialContactTextField4 = new javax.swing.JTextField();
-        primaryContactTextField4 = new javax.swing.JTextField();
-        materialPhoneLabel4 = new javax.swing.JLabel();
-        primaryPhoneLabel4 = new javax.swing.JLabel();
-        primaryContactLabel4 = new javax.swing.JLabel();
-        productSizeLabel4 = new javax.swing.JLabel();
-        productSizeComboBox4 = new javax.swing.JComboBox();
-        productFamilyLabel4 = new javax.swing.JLabel();
-        productFamilyComboBox4 = new javax.swing.JComboBox();
-        quantityLabel4 = new javax.swing.JLabel();
-        quantityTextField4 = new javax.swing.JTextField();
-        agendaHSeparator4 = new javax.swing.JSeparator();
-        agendaPlanerPane4 = new javax.swing.JPanel();
-        agendaPlannerCodeLabel4 = new javax.swing.JLabel();
-        agendaPlannerCodeComboBox4 = new javax.swing.JComboBox();
-        agendaPlannerVSeparator8 = new javax.swing.JSeparator();
-        agendaPlannerStudentCheckBox4 = new javax.swing.JCheckBox();
-        agendaPlannerGradeLabel4 = new javax.swing.JLabel();
-        agendaPlannerGradeTextField4 = new javax.swing.JTextField();
-        agendaPlannerHSeparator4 = new javax.swing.JSeparator();
-        agendaPlannerTeacherCheckBox4 = new javax.swing.JCheckBox();
-        agendaPlannerAddLpRcLabel4 = new javax.swing.JLabel();
-        agendaPlannerLpRcComboBox4 = new javax.swing.JComboBox();
-        agendaPlannerStudentQtyLabel4 = new javax.swing.JLabel();
-        agendaPlannerStudentQtyTextField4 = new javax.swing.JTextField();
-        agendaPlannerTeacherQtyLabel4 = new javax.swing.JLabel();
-        agendaPlannerTeacherQtyTextField4 = new javax.swing.JTextField();
-        agendaPlannerStudentUnitPriceLabel4 = new javax.swing.JLabel();
-        agendaPlannerTeacherUnitPriceLabel4 = new javax.swing.JLabel();
-        agendaPlannerStudentUnitPriceTextField4 = new javax.swing.JTextField();
-        agendaPlannerTeacherUnitPriceTextField4 = new javax.swing.JTextField();
-        agendaPlannerVSeparator9 = new javax.swing.JSeparator();
-        agendaPlannerStudentTotalTextField4 = new javax.swing.JTextField();
-        agendaPlannerTeacherTotalTextField4 = new javax.swing.JTextField();
-        agendaHandbookPane4 = new javax.swing.JPanel();
-        agendaHandbookGeneric2 = new javax.swing.JRadioButton();
-        agendaHandbookNameLogo2 = new javax.swing.JRadioButton();
-        agendaHandbookHandbook2 = new javax.swing.JRadioButton();
-        agendaHandbookCustom2 = new javax.swing.JRadioButton();
-        agendaHandbookQtyLabel2 = new javax.swing.JLabel();
-        agendaHandbookQtyTextField5 = new javax.swing.JTextField();
-        agendaHandbookUnitPriceLabel5 = new javax.swing.JLabel();
-        agendaHandbookUnitPriceTextField5 = new javax.swing.JTextField();
-        agendaSharedHandbookQtyLabel2 = new javax.swing.JLabel();
-        agendaSharedHandbookQtyTextField2 = new javax.swing.JTextField();
-        agendaSharedHandbookUnitPriceLabel2 = new javax.swing.JLabel();
-        agendaSharedHandbookUnitPriceTextField2 = new javax.swing.JTextField();
-        agendaHandbookVSeparator2 = new javax.swing.JSeparator();
-        agendaHandbookTotalTextField5 = new javax.swing.JTextField();
-        agendaSharedHandbookTotalTextField5 = new javax.swing.JTextField();
-        agendaCoverPane4 = new javax.swing.JPanel();
-        handbookTypebuttonGroup2 = new javax.swing.ButtonGroup();
+        agendaResetButton2 = new javax.swing.JButton();
+        orderInfoPane2 = new javax.swing.JPanel();
+        primaryPhoneTextField2 = new javax.swing.JTextField();
+        materialContactLabel2 = new javax.swing.JLabel();
+        materialPhoneTextField2 = new javax.swing.JTextField();
+        materialContactTextField2 = new javax.swing.JTextField();
+        primaryContactTextField2 = new javax.swing.JTextField();
+        materialPhoneLabel2 = new javax.swing.JLabel();
+        primaryPhoneLabel2 = new javax.swing.JLabel();
+        primaryContactLabel2 = new javax.swing.JLabel();
+        productSizeLabel2 = new javax.swing.JLabel();
+        productSizeComboBox2 = new javax.swing.JComboBox();
+        productFamilyLabel2 = new javax.swing.JLabel();
+        productFamilyComboBox2 = new javax.swing.JComboBox();
+        quantityLabel2 = new javax.swing.JLabel();
+        quantityTextField2 = new javax.swing.JTextField();
+        agendaHSeparator2 = new javax.swing.JSeparator();
+        agendaPlanerPane2 = new javax.swing.JPanel();
+        agendaPlannerCodeLabel2 = new javax.swing.JLabel();
+        agendaPlannerCodeComboBox2 = new javax.swing.JComboBox();
+        agendaPlannerVSeparator4 = new javax.swing.JSeparator();
+        agendaPlannerStudentCheckBox2 = new javax.swing.JCheckBox();
+        agendaPlannerGradeLabel2 = new javax.swing.JLabel();
+        agendaPlannerGradeTextField2 = new javax.swing.JTextField();
+        agendaPlannerHSeparator2 = new javax.swing.JSeparator();
+        agendaPlannerTeacherCheckBox2 = new javax.swing.JCheckBox();
+        agendaPlannerAddLpRcLabel2 = new javax.swing.JLabel();
+        agendaPlannerLpRcComboBox2 = new javax.swing.JComboBox();
+        agendaPlannerStudentQtyLabel2 = new javax.swing.JLabel();
+        agendaPlannerStudentQtyTextField2 = new javax.swing.JTextField();
+        agendaPlannerTeacherQtyLabel2 = new javax.swing.JLabel();
+        agendaPlannerTeacherQtyTextField2 = new javax.swing.JTextField();
+        agendaPlannerStudentUnitPriceLabel2 = new javax.swing.JLabel();
+        agendaPlannerTeacherUnitPriceLabel2 = new javax.swing.JLabel();
+        agendaPlannerStudentUnitPriceTextField2 = new javax.swing.JTextField();
+        agendaPlannerTeacherUnitPriceTextField2 = new javax.swing.JTextField();
+        agendaPlannerVSeparator5 = new javax.swing.JSeparator();
+        agendaPlannerStudentTotalTextField2 = new javax.swing.JTextField();
+        agendaPlannerTeacherTotalTextField2 = new javax.swing.JTextField();
+        agendaHandbookPane2 = new javax.swing.JPanel();
+        agendaHandbookGeneric4 = new javax.swing.JRadioButton();
+        agendaHandbookNameLogo4 = new javax.swing.JRadioButton();
+        agendaHandbookHandbook4 = new javax.swing.JRadioButton();
+        agendaHandbookCustom4 = new javax.swing.JRadioButton();
+        agendaHandbookQtyLabel4 = new javax.swing.JLabel();
+        agendaHandbookQtyTextField7 = new javax.swing.JTextField();
+        agendaHandbookUnitPriceLabel7 = new javax.swing.JLabel();
+        agendaHandbookUnitPriceTextField7 = new javax.swing.JTextField();
+        agendaSharedHandbookQtyLabel4 = new javax.swing.JLabel();
+        agendaSharedHandbookQtyTextField4 = new javax.swing.JTextField();
+        agendaSharedHandbookUnitPriceLabel4 = new javax.swing.JLabel();
+        agendaSharedHandbookUnitPriceTextField4 = new javax.swing.JTextField();
+        agendaHandbookVSeparator4 = new javax.swing.JSeparator();
+        agendaHandbookTotalTextField7 = new javax.swing.JTextField();
+        agendaSharedHandbookTotalTextField7 = new javax.swing.JTextField();
+        agendaCoverPane2 = new javax.swing.JPanel();
+        frontCoverLabel2 = new javax.swing.JLabel();
+        frontCoverOptionPanel2 = new javax.swing.JPanel();
+        standardFC2 = new javax.swing.JRadioButton();
+        custDuraFC2 = new javax.swing.JRadioButton();
+        custLamFC2 = new javax.swing.JRadioButton();
+        custFoilFC2 = new javax.swing.JRadioButton();
+        agendaOFCCheckBox2 = new javax.swing.JCheckBox();
+        agendaIFCCheckBox2 = new javax.swing.JCheckBox();
+        agendaFCListLabel2 = new javax.swing.JLabel();
+        agendaFCListComboBox2 = new javax.swing.JComboBox();
+        agendaFCTotalTextField2 = new javax.swing.JTextField();
+        agendaCoverHSeparator2 = new javax.swing.JSeparator();
+        backCoverLabel2 = new javax.swing.JLabel();
+        backCoverOptionPanel2 = new javax.swing.JPanel();
+        standardBC2 = new javax.swing.JRadioButton();
+        custDuraBC2 = new javax.swing.JRadioButton();
+        custLamBC2 = new javax.swing.JRadioButton();
+        custFoilBC2 = new javax.swing.JRadioButton();
+        agendaOBCCheckBox2 = new javax.swing.JCheckBox();
+        agendaIBCCheckBox2 = new javax.swing.JCheckBox();
+        agendaBCListLabel2 = new javax.swing.JLabel();
+        agendaBCListComboBox2 = new javax.swing.JComboBox();
+        agendaBCTotalTextField2 = new javax.swing.JTextField();
+        handbookTypeButtonGroup2 = new javax.swing.ButtonGroup();
+        frontCoverTypeButtonGroup2 = new javax.swing.ButtonGroup();
+        backCoverTypeButtonGroup2 = new javax.swing.ButtonGroup();
         mainTabbedPane = new javax.swing.JTabbedPane();
         customerProfilePane = new javax.swing.JPanel();
         custProfilePane = new javax.swing.JPanel();
@@ -286,7 +361,7 @@ public class MainView extends javax.swing.JFrame {
         viewMenu = new javax.swing.JMenu();
         helpMenu = new javax.swing.JMenu();
 
-        agendaFormPane.setPreferredSize(new java.awt.Dimension(1055, 670));
+        agendaFormPane.setPreferredSize(new java.awt.Dimension(1085, 850));
 
         agendaResetButton.setText("Reset");
 
@@ -360,7 +435,7 @@ public class MainView extends javax.swing.JFrame {
 
         agendaPlanerPane.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "P l a n n e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        agendaPlannerCodeLabel.setText("Select Type: ");
+        agendaPlannerCodeLabel.setText("Type or Code: ");
 
         agendaPlannerCodeComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -427,7 +502,7 @@ public class MainView extends javax.swing.JFrame {
                         .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(agendaPlannerGradeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                             .add(agendaPlannerLpRcComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(46, 46, 46)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 74, Short.MAX_VALUE)
                         .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(agendaPlannerStudentQtyLabel)
                             .add(agendaPlannerTeacherQtyLabel))
@@ -443,25 +518,30 @@ public class MainView extends javax.swing.JFrame {
                         .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(agendaPlannerStudentUnitPriceTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                             .add(agendaPlannerTeacherUnitPriceTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(agendaPlannerHSeparator, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 726, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(agendaPlannerHSeparator))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(agendaPlannerVSeparator2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(19, 19, 19)
                 .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(agendaPlannerStudentTotalTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
                     .add(agendaPlannerTeacherTotalTextField))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         agendaPlanerPaneLayout.linkSize(new java.awt.Component[] {agendaPlannerStudentTotalTextField, agendaPlannerTeacherTotalTextField}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
 
         agendaPlanerPaneLayout.setVerticalGroup(
             agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaPlanerPaneLayout.createSequentialGroup()
-                .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaPlannerVSeparator)
-                    .add(agendaPlannerVSeparator2)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlanerPaneLayout.createSequentialGroup()
+                .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(agendaPlanerPaneLayout.createSequentialGroup()
+                        .add(0, 0, Short.MAX_VALUE)
+                        .add(agendaPlannerStudentTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(35, 35, 35)
+                        .add(agendaPlannerTeacherTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlannerVSeparator)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlannerVSeparator2)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlanerPaneLayout.createSequentialGroup()
                         .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(agendaPlanerPaneLayout.createSequentialGroup()
                                 .addContainerGap()
@@ -472,13 +552,11 @@ public class MainView extends javax.swing.JFrame {
                                     .add(agendaPlannerStudentQtyLabel)
                                     .add(agendaPlannerStudentQtyTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                     .add(agendaPlannerStudentUnitPriceTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(agendaPlannerStudentUnitPriceLabel)
-                                    .add(agendaPlannerStudentTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                                    .add(agendaPlannerStudentUnitPriceLabel))
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                                 .add(agendaPlannerHSeparator, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                                 .add(agendaPlanerPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                     .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                     .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceLabel)
                                     .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -496,16 +574,16 @@ public class MainView extends javax.swing.JFrame {
 
         agendaHandbookPane.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "H a n d b o o k", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        handbookTypebuttonGroup.add(agendaHandbookGeneric);
+        handbookTypeButtonGroup.add(agendaHandbookGeneric);
         agendaHandbookGeneric.setText("Generic, No Printing");
 
-        handbookTypebuttonGroup.add(agendaHandbookNameLogo);
+        handbookTypeButtonGroup.add(agendaHandbookNameLogo);
         agendaHandbookNameLogo.setText("Name & Logo Imprint");
 
-        handbookTypebuttonGroup.add(agendaHandbookHandbook);
+        handbookTypeButtonGroup.add(agendaHandbookHandbook);
         agendaHandbookHandbook.setText("Handbook");
 
-        handbookTypebuttonGroup.add(agendaHandbookCustom);
+        handbookTypeButtonGroup.add(agendaHandbookCustom);
         agendaHandbookCustom.setText("Custom Title Page");
 
         agendaHandbookQtyLabel.setLabelFor(agendaHandbookQtyTextField3);
@@ -544,7 +622,7 @@ public class MainView extends javax.swing.JFrame {
                         .add(agendaHandbookHandbook)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(agendaHandbookCustom)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED, 32, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 60, Short.MAX_VALUE)
                         .add(agendaHandbookQtyLabel)))
                 .add(18, 18, 18)
                 .add(agendaHandbookPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -558,9 +636,9 @@ public class MainView extends javax.swing.JFrame {
                 .add(agendaHandbookPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(agendaHandbookUnitPriceTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(agendaSharedHandbookUnitPriceTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(28, 28, 28)
-                .add(agendaHandbookVSeparator, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(agendaHandbookVSeparator, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(19, 19, 19)
                 .add(agendaHandbookPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(agendaHandbookTotalTextField3)
                     .add(agendaSharedHandbookTotalTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -595,33 +673,243 @@ public class MainView extends javax.swing.JFrame {
 
         agendaCoverPane.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "C o v e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
+        frontCoverLabel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        frontCoverLabel.setText("F r o n t");
+
+        frontCoverOptionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Front Cover Type"));
+
+        frontCoverTypeButtonGroup.add(standardFC);
+        standardFC.setText("Standard");
+
+        frontCoverTypeButtonGroup.add(custDuraFC);
+        custDuraFC.setText("Customized Dura");
+
+        frontCoverTypeButtonGroup.add(custLamFC);
+        custLamFC.setText("Customized Lam");
+        custLamFC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                custLamFCActionPerformed(evt);
+            }
+        });
+
+        frontCoverTypeButtonGroup.add(custFoilFC);
+        custFoilFC.setText("Customized Foil");
+
+        org.jdesktop.layout.GroupLayout frontCoverOptionPanelLayout = new org.jdesktop.layout.GroupLayout(frontCoverOptionPanel);
+        frontCoverOptionPanel.setLayout(frontCoverOptionPanelLayout);
+        frontCoverOptionPanelLayout.setHorizontalGroup(
+            frontCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(frontCoverOptionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(frontCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(standardFC)
+                    .add(custLamFC))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(frontCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(custDuraFC)
+                    .add(custFoilFC))
+                .addContainerGap())
+        );
+        frontCoverOptionPanelLayout.setVerticalGroup(
+            frontCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(frontCoverOptionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(frontCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(frontCoverOptionPanelLayout.createSequentialGroup()
+                        .add(standardFC)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custLamFC))
+                    .add(frontCoverOptionPanelLayout.createSequentialGroup()
+                        .add(custDuraFC)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custFoilFC)))
+                .addContainerGap())
+        );
+
+        agendaOFCCheckBox.setText("Outside Front Cover");
+
+        agendaIFCCheckBox.setText("Inside Front Cover");
+
+        agendaFCListLabel.setLabelFor(agendaFCListComboBox);
+        agendaFCListLabel.setText("List of Front Cover: ");
+
+        agendaFCListComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        agendaFCTotalTextField.setEnabled(false);
+
+        backCoverLabel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backCoverLabel.setText("B a c k");
+
+        backCoverOptionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Back Cover Type"));
+
+        backCoverTypeButtonGroup.add(standardBC);
+        standardBC.setText("Standard");
+
+        backCoverTypeButtonGroup.add(custDuraBC);
+        custDuraBC.setText("Customized Dura");
+
+        backCoverTypeButtonGroup.add(custLamBC);
+        custLamBC.setText("Customized Lam");
+        custLamBC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                custLamBCActionPerformed(evt);
+            }
+        });
+
+        backCoverTypeButtonGroup.add(custFoilBC);
+        custFoilBC.setText("Customized Foil");
+
+        org.jdesktop.layout.GroupLayout backCoverOptionPanelLayout = new org.jdesktop.layout.GroupLayout(backCoverOptionPanel);
+        backCoverOptionPanel.setLayout(backCoverOptionPanelLayout);
+        backCoverOptionPanelLayout.setHorizontalGroup(
+            backCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backCoverOptionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(backCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(standardBC)
+                    .add(custLamBC))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(backCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(custDuraBC)
+                    .add(custFoilBC))
+                .addContainerGap())
+        );
+        backCoverOptionPanelLayout.setVerticalGroup(
+            backCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backCoverOptionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(backCoverOptionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(backCoverOptionPanelLayout.createSequentialGroup()
+                        .add(standardBC)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custLamBC))
+                    .add(backCoverOptionPanelLayout.createSequentialGroup()
+                        .add(custDuraBC)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custFoilBC)))
+                .addContainerGap())
+        );
+
+        agendaOBCCheckBox.setText("Outside Back Cover");
+
+        agendaIBCCheckBox.setText("Inside Back Cover");
+
+        agendaBCListLabel.setText("List of Back Cover: ");
+
+        agendaBCListComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        agendaBCTotalTextField.setEnabled(false);
+
         org.jdesktop.layout.GroupLayout agendaCoverPaneLayout = new org.jdesktop.layout.GroupLayout(agendaCoverPane);
         agendaCoverPane.setLayout(agendaCoverPaneLayout);
         agendaCoverPaneLayout.setHorizontalGroup(
             agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 0, Short.MAX_VALUE)
+            .add(agendaCoverPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPaneLayout.createSequentialGroup()
+                        .add(frontCoverOptionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(18, 18, 18)
+                        .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaOFCCheckBox)
+                            .add(agendaIFCCheckBox)))
+                    .add(agendaCoverPaneLayout.createSequentialGroup()
+                        .add(backCoverOptionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(18, 18, 18)
+                        .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaOBCCheckBox)
+                            .add(agendaIBCCheckBox))))
+                .add(18, 18, 18)
+                .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaBCListLabel)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFCListLabel))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaBCListComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaFCListComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFCTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaBCTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+            .add(agendaCoverPaneLayout.createSequentialGroup()
+                .add(6, 6, 6)
+                .add(agendaCoverHSeparator)
+                .add(6, 6, 6))
+            .add(agendaCoverPaneLayout.createSequentialGroup()
+                .addContainerGap(495, Short.MAX_VALUE)
+                .add(backCoverLabel)
+                .addContainerGap(495, Short.MAX_VALUE))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaCoverPaneLayout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(frontCoverLabel)
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         agendaCoverPaneLayout.setVerticalGroup(
             agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 100, Short.MAX_VALUE)
+            .add(agendaCoverPaneLayout.createSequentialGroup()
+                .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPaneLayout.createSequentialGroup()
+                        .add(28, 28, 28)
+                        .add(frontCoverOptionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(agendaCoverPaneLayout.createSequentialGroup()
+                        .add(50, 50, 50)
+                        .add(agendaOFCCheckBox)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(agendaIFCCheckBox))
+                    .add(agendaCoverPaneLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(frontCoverLabel)
+                        .add(40, 40, 40)
+                        .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(agendaFCListLabel)
+                            .add(agendaFCListComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaFCTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                .add(18, 18, 18)
+                .add(agendaCoverHSeparator, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPaneLayout.createSequentialGroup()
+                        .add(40, 40, 40)
+                        .add(backCoverOptionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(agendaCoverPaneLayout.createSequentialGroup()
+                        .add(18, 18, 18)
+                        .add(backCoverLabel)
+                        .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaCoverPaneLayout.createSequentialGroup()
+                                .add(28, 28, 28)
+                                .add(agendaOBCCheckBox)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(agendaIBCCheckBox))
+                            .add(agendaCoverPaneLayout.createSequentialGroup()
+                                .add(39, 39, 39)
+                                .add(agendaCoverPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                                    .add(agendaBCListLabel)
+                                    .add(agendaBCListComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaBCTotalTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         org.jdesktop.layout.GroupLayout agendaFormPaneLayout = new org.jdesktop.layout.GroupLayout(agendaFormPane);
         agendaFormPane.setLayout(agendaFormPaneLayout);
         agendaFormPaneLayout.setHorizontalGroup(
             agendaFormPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPaneLayout.createSequentialGroup()
-                .add(80, 80, 80)
-                .add(orderInfoPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(18, 18, 18)
-                .add(agendaResetButton)
-                .add(15, 15, 15))
+            .add(agendaFormPaneLayout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(agendaFormPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaHandbookPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaPlanerPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(agendaFormPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(agendaHSeparator)
+                .addContainerGap())
             .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPaneLayout.createSequentialGroup()
                 .add(30, 30, 30)
                 .add(productSizeLabel)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(productSizeComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(172, 172, 172)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(productFamilyLabel)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(productFamilyComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -630,18 +918,16 @@ public class MainView extends javax.swing.JFrame {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(quantityTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(30, 30, 30))
-            .add(agendaFormPaneLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(agendaHSeparator)
-                .addContainerGap())
-            .add(agendaFormPaneLayout.createSequentialGroup()
-                .add(20, 20, 20)
-                .add(agendaFormPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(agendaCoverPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(agendaHandbookPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(agendaPlanerPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPaneLayout.createSequentialGroup()
+                .add(80, 80, 80)
+                .add(orderInfoPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(18, 18, 18)
+                .add(agendaResetButton)
+                .add(15, 15, 15))
         );
+
+        agendaFormPaneLayout.linkSize(new java.awt.Component[] {agendaCoverPane, agendaHandbookPane, agendaPlanerPane}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+
         agendaFormPaneLayout.setVerticalGroup(
             agendaFormPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(agendaFormPaneLayout.createSequentialGroup()
@@ -669,780 +955,1198 @@ public class MainView extends javax.swing.JFrame {
                 .add(agendaHandbookPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
                 .add(agendaCoverPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        agendaFormPane1.setPreferredSize(new java.awt.Dimension(1055, 670));
+        agendaFormPane1.setPreferredSize(new java.awt.Dimension(1085, 850));
 
-        agendaResetButton3.setText("Reset");
+        agendaResetButton1.setText("Reset");
 
-        orderInfoPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "O r d e r   I n f o", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        orderInfoPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "O r d e r   I n f o", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        materialContactLabel3.setLabelFor(materialContactTextField);
-        materialContactLabel3.setText("Material Contact: ");
+        materialContactLabel1.setLabelFor(materialContactTextField);
+        materialContactLabel1.setText("Material Contact: ");
 
-        materialPhoneLabel3.setLabelFor(materialPhoneTextField);
-        materialPhoneLabel3.setText("Material Contact Phone: ");
+        materialPhoneLabel1.setLabelFor(materialPhoneTextField);
+        materialPhoneLabel1.setText("Material Contact Phone: ");
 
-        primaryPhoneLabel3.setLabelFor(primaryPhoneTextField);
-        primaryPhoneLabel3.setText("Primary Contact Phone: ");
+        primaryPhoneLabel1.setLabelFor(primaryPhoneTextField);
+        primaryPhoneLabel1.setText("Primary Contact Phone: ");
 
-        primaryContactLabel3.setLabelFor(primaryContactTextField);
-        primaryContactLabel3.setText("Primary Contact: ");
+        primaryContactLabel1.setLabelFor(primaryContactTextField);
+        primaryContactLabel1.setText("Primary Contact: ");
 
-        org.jdesktop.layout.GroupLayout orderInfoPane3Layout = new org.jdesktop.layout.GroupLayout(orderInfoPane3);
-        orderInfoPane3.setLayout(orderInfoPane3Layout);
-        orderInfoPane3Layout.setHorizontalGroup(
-            orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(orderInfoPane3Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout orderInfoPane1Layout = new org.jdesktop.layout.GroupLayout(orderInfoPane1);
+        orderInfoPane1.setLayout(orderInfoPane1Layout);
+        orderInfoPane1Layout.setHorizontalGroup(
+            orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(orderInfoPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(primaryPhoneLabel3)
-                    .add(primaryContactLabel3))
+                .add(orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(primaryPhoneLabel1)
+                    .add(primaryContactLabel1))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(primaryPhoneTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(primaryContactTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(primaryPhoneTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(primaryContactTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(130, 130, 130)
-                .add(orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(materialContactLabel3)
-                    .add(materialPhoneLabel3))
+                .add(orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(materialContactLabel1)
+                    .add(materialPhoneLabel1))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(materialPhoneTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(materialContactTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(materialPhoneTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(materialContactTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        orderInfoPane3Layout.setVerticalGroup(
-            orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(orderInfoPane3Layout.createSequentialGroup()
+        orderInfoPane1Layout.setVerticalGroup(
+            orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(orderInfoPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(primaryContactTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(materialContactLabel3)
-                    .add(materialContactTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(primaryContactLabel3))
+                .add(orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(primaryContactTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(materialContactLabel1)
+                    .add(materialContactTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(primaryContactLabel1))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(orderInfoPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(primaryPhoneLabel3)
-                    .add(primaryPhoneTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(materialPhoneLabel3)
-                    .add(materialPhoneTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(orderInfoPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(primaryPhoneLabel1)
+                    .add(primaryPhoneTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(materialPhoneLabel1)
+                    .add(materialPhoneTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        productSizeLabel3.setLabelFor(productSizeComboBox);
-        productSizeLabel3.setText("Product Size: ");
+        productSizeLabel1.setLabelFor(productSizeComboBox);
+        productSizeLabel1.setText("Product Size: ");
 
-        productSizeComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        productSizeComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        productFamilyLabel3.setLabelFor(productFamilyComboBox);
-        productFamilyLabel3.setText("Product Family: ");
+        productFamilyLabel1.setLabelFor(productFamilyComboBox);
+        productFamilyLabel1.setText("Product Family: ");
 
-        productFamilyComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        productFamilyComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        quantityLabel3.setLabelFor(quantityTextField);
-        quantityLabel3.setText("Quantity: ");
+        quantityLabel1.setLabelFor(quantityTextField);
+        quantityLabel1.setText("Quantity: ");
 
-        agendaPlanerPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "P l a n n e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        agendaPlanerPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "P l a n n e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        agendaPlannerCodeLabel3.setText("Select Type: ");
+        agendaPlannerCodeLabel1.setText("Type or Code: ");
 
-        agendaPlannerCodeComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        agendaPlannerCodeComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        agendaPlannerVSeparator6.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        agendaPlannerVSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        agendaPlannerStudentCheckBox3.setText("Student");
+        agendaPlannerStudentCheckBox1.setText("Student");
 
-        agendaPlannerGradeLabel3.setLabelFor(agendaPlannerGradeTextField);
-        agendaPlannerGradeLabel3.setText("Grade Level");
+        agendaPlannerGradeLabel1.setLabelFor(agendaPlannerGradeTextField);
+        agendaPlannerGradeLabel1.setText("Grade Level");
 
-        agendaPlannerTeacherCheckBox3.setText("Teacher Edition");
+        agendaPlannerTeacherCheckBox1.setText("Teacher Edition");
 
-        agendaPlannerAddLpRcLabel3.setLabelFor(agendaPlannerLpRcComboBox);
-        agendaPlannerAddLpRcLabel3.setText("Add L.Plan & R.Chart");
+        agendaPlannerAddLpRcLabel1.setLabelFor(agendaPlannerLpRcComboBox);
+        agendaPlannerAddLpRcLabel1.setText("Add L.Plan & R.Chart");
 
-        agendaPlannerLpRcComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        agendaPlannerLpRcComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        agendaPlannerStudentQtyLabel3.setLabelFor(agendaPlannerStudentQtyTextField);
-        agendaPlannerStudentQtyLabel3.setText("Qty");
+        agendaPlannerStudentQtyLabel1.setLabelFor(agendaPlannerStudentQtyTextField);
+        agendaPlannerStudentQtyLabel1.setText("Qty");
 
-        agendaPlannerTeacherQtyLabel3.setLabelFor(agendaPlannerTeacherQtyTextField);
-        agendaPlannerTeacherQtyLabel3.setText("Qty");
+        agendaPlannerTeacherQtyLabel1.setLabelFor(agendaPlannerTeacherQtyTextField);
+        agendaPlannerTeacherQtyLabel1.setText("Qty");
 
-        agendaPlannerStudentUnitPriceLabel3.setLabelFor(agendaPlannerStudentUnitPriceTextField);
-        agendaPlannerStudentUnitPriceLabel3.setText("X     @");
+        agendaPlannerStudentUnitPriceLabel1.setLabelFor(agendaPlannerStudentUnitPriceTextField);
+        agendaPlannerStudentUnitPriceLabel1.setText("X     @");
 
-        agendaPlannerTeacherUnitPriceLabel3.setLabelFor(agendaPlannerTeacherUnitPriceTextField);
-        agendaPlannerTeacherUnitPriceLabel3.setText("X     @");
+        agendaPlannerTeacherUnitPriceLabel1.setLabelFor(agendaPlannerTeacherUnitPriceTextField);
+        agendaPlannerTeacherUnitPriceLabel1.setText("X     @");
 
-        agendaPlannerStudentUnitPriceTextField3.setEnabled(false);
+        agendaPlannerStudentUnitPriceTextField1.setEnabled(false);
 
-        agendaPlannerTeacherUnitPriceTextField3.setEnabled(false);
+        agendaPlannerTeacherUnitPriceTextField1.setEnabled(false);
 
-        agendaPlannerVSeparator7.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        agendaPlannerVSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        agendaPlannerStudentTotalTextField3.setEnabled(false);
+        agendaPlannerStudentTotalTextField1.setEnabled(false);
 
-        agendaPlannerTeacherTotalTextField3.setEnabled(false);
+        agendaPlannerTeacherTotalTextField1.setEnabled(false);
 
-        org.jdesktop.layout.GroupLayout agendaPlanerPane3Layout = new org.jdesktop.layout.GroupLayout(agendaPlanerPane3);
-        agendaPlanerPane3.setLayout(agendaPlanerPane3Layout);
-        agendaPlanerPane3Layout.setHorizontalGroup(
-            agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaPlanerPane3Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout agendaPlanerPane1Layout = new org.jdesktop.layout.GroupLayout(agendaPlanerPane1);
+        agendaPlanerPane1.setLayout(agendaPlanerPane1Layout);
+        agendaPlanerPane1Layout.setHorizontalGroup(
+            agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaPlanerPane1Layout.createSequentialGroup()
                 .add(12, 12, 12)
-                .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaPlanerPane3Layout.createSequentialGroup()
+                .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaPlanerPane1Layout.createSequentialGroup()
                         .add(15, 15, 15)
-                        .add(agendaPlannerCodeLabel3))
-                    .add(agendaPlannerCodeComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(agendaPlannerCodeLabel1))
+                    .add(agendaPlannerCodeComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlannerVSeparator6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaPlannerVSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaPlanerPane3Layout.createSequentialGroup()
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentCheckBox3)
-                            .add(agendaPlannerTeacherCheckBox3))
+                .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaPlanerPane1Layout.createSequentialGroup()
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentCheckBox1)
+                            .add(agendaPlannerTeacherCheckBox1))
                         .add(51, 51, 51)
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerGradeLabel3)
-                            .add(agendaPlannerAddLpRcLabel3))
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerGradeLabel1)
+                            .add(agendaPlannerAddLpRcLabel1))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerGradeTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaPlannerLpRcComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(46, 46, 46)
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentQtyLabel3)
-                            .add(agendaPlannerTeacherQtyLabel3))
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerGradeTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaPlannerLpRcComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 74, Short.MAX_VALUE)
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentQtyLabel1)
+                            .add(agendaPlannerTeacherQtyLabel1))
                         .add(18, 18, 18)
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentQtyTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaPlannerTeacherQtyTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentQtyTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaPlannerTeacherQtyTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .add(18, 18, 18)
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentUnitPriceLabel3)
-                            .add(agendaPlannerTeacherUnitPriceLabel3))
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentUnitPriceLabel1)
+                            .add(agendaPlannerTeacherUnitPriceLabel1))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentUnitPriceTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaPlannerTeacherUnitPriceTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(agendaPlannerHSeparator3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 726, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentUnitPriceTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaPlannerTeacherUnitPriceTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(agendaPlannerHSeparator1))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlannerVSeparator7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(agendaPlannerStudentTotalTextField3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
-                    .add(agendaPlannerTeacherTotalTextField3))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(agendaPlannerVSeparator3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(19, 19, 19)
+                .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(agendaPlannerStudentTotalTextField1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
+                    .add(agendaPlannerTeacherTotalTextField1))
+                .addContainerGap())
         );
-        agendaPlanerPane3Layout.setVerticalGroup(
-            agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaPlanerPane3Layout.createSequentialGroup()
-                .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaPlannerVSeparator6)
-                    .add(agendaPlannerVSeparator7)
-                    .add(agendaPlanerPane3Layout.createSequentialGroup()
-                        .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlanerPane3Layout.createSequentialGroup()
+        agendaPlanerPane1Layout.setVerticalGroup(
+            agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlanerPane1Layout.createSequentialGroup()
+                .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(agendaPlanerPane1Layout.createSequentialGroup()
+                        .add(0, 0, Short.MAX_VALUE)
+                        .add(agendaPlannerStudentTotalTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(35, 35, 35)
+                        .add(agendaPlannerTeacherTotalTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlannerVSeparator1)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlannerVSeparator3)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlanerPane1Layout.createSequentialGroup()
+                        .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlanerPane1Layout.createSequentialGroup()
                                 .addContainerGap()
-                                .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(agendaPlannerStudentCheckBox3)
-                                    .add(agendaPlannerGradeLabel3)
-                                    .add(agendaPlannerGradeTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(agendaPlannerStudentQtyLabel3)
-                                    .add(agendaPlannerStudentQtyTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(agendaPlannerStudentUnitPriceTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(agendaPlannerStudentUnitPriceLabel3)
-                                    .add(agendaPlannerStudentTotalTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                                .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(agendaPlannerStudentCheckBox1)
+                                    .add(agendaPlannerGradeLabel1)
+                                    .add(agendaPlannerGradeTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaPlannerStudentQtyLabel1)
+                                    .add(agendaPlannerStudentQtyTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaPlannerStudentUnitPriceTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaPlannerStudentUnitPriceLabel1))
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                .add(agendaPlannerHSeparator3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(agendaPlannerHSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                .add(agendaPlanerPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherTotalTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceLabel3)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyLabel3)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerLpRcComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerAddLpRcLabel3)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherCheckBox3)))
-                            .add(agendaPlanerPane3Layout.createSequentialGroup()
-                                .add(agendaPlannerCodeLabel3)
+                                .add(agendaPlanerPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceLabel1)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyLabel1)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerLpRcComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerAddLpRcLabel1)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherCheckBox1)))
+                            .add(agendaPlanerPane1Layout.createSequentialGroup()
+                                .add(agendaPlannerCodeLabel1)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(agendaPlannerCodeComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                                .add(agendaPlannerCodeComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                         .add(0, 2, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
-        agendaHandbookPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "H a n d b o o k", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        agendaHandbookPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "H a n d b o o k", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        handbookTypebuttonGroup1.add(agendaHandbookGeneric1);
-        agendaHandbookGeneric1.setText("Generic, No Printing");
+        handbookTypeButtonGroup1.add(agendaHandbookGeneric3);
+        agendaHandbookGeneric3.setText("Generic, No Printing");
 
-        handbookTypebuttonGroup1.add(agendaHandbookNameLogo1);
-        agendaHandbookNameLogo1.setText("Name & Logo Imprint");
+        handbookTypeButtonGroup1.add(agendaHandbookNameLogo3);
+        agendaHandbookNameLogo3.setText("Name & Logo Imprint");
 
-        handbookTypebuttonGroup1.add(agendaHandbookHandbook1);
-        agendaHandbookHandbook1.setText("Handbook");
+        handbookTypeButtonGroup1.add(agendaHandbookHandbook3);
+        agendaHandbookHandbook3.setText("Handbook");
 
-        handbookTypebuttonGroup1.add(agendaHandbookCustom1);
-        agendaHandbookCustom1.setText("Custom Title Page");
+        handbookTypeButtonGroup1.add(agendaHandbookCustom3);
+        agendaHandbookCustom3.setText("Custom Title Page");
 
-        agendaHandbookQtyLabel1.setLabelFor(agendaHandbookQtyTextField3);
-        agendaHandbookQtyLabel1.setText("# of pages");
+        agendaHandbookQtyLabel3.setLabelFor(agendaHandbookQtyTextField3);
+        agendaHandbookQtyLabel3.setText("# of pages");
 
-        agendaHandbookUnitPriceLabel4.setLabelFor(agendaHandbookUnitPriceTextField3);
-        agendaHandbookUnitPriceLabel4.setText("X     @");
+        agendaHandbookUnitPriceLabel6.setLabelFor(agendaHandbookUnitPriceTextField3);
+        agendaHandbookUnitPriceLabel6.setText("X     @");
 
-        agendaHandbookUnitPriceTextField4.setEnabled(false);
+        agendaHandbookUnitPriceTextField6.setEnabled(false);
 
-        agendaSharedHandbookQtyLabel1.setLabelFor(agendaSharedHandbookQtyTextField);
-        agendaSharedHandbookQtyLabel1.setText("shared handbook # of pages");
+        agendaSharedHandbookQtyLabel3.setLabelFor(agendaSharedHandbookQtyTextField);
+        agendaSharedHandbookQtyLabel3.setText("shared handbook # of pages");
 
-        agendaSharedHandbookUnitPriceLabel1.setLabelFor(agendaSharedHandbookUnitPriceTextField);
-        agendaSharedHandbookUnitPriceLabel1.setText("X     @");
+        agendaSharedHandbookUnitPriceLabel3.setLabelFor(agendaSharedHandbookUnitPriceTextField);
+        agendaSharedHandbookUnitPriceLabel3.setText("X     @");
 
-        agendaHandbookVSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        agendaHandbookVSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        agendaHandbookTotalTextField4.setEnabled(false);
+        agendaHandbookTotalTextField6.setEnabled(false);
 
-        agendaSharedHandbookTotalTextField4.setEnabled(false);
+        agendaSharedHandbookTotalTextField6.setEnabled(false);
 
-        org.jdesktop.layout.GroupLayout agendaHandbookPane3Layout = new org.jdesktop.layout.GroupLayout(agendaHandbookPane3);
-        agendaHandbookPane3.setLayout(agendaHandbookPane3Layout);
-        agendaHandbookPane3Layout.setHorizontalGroup(
-            agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaHandbookPane3Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout agendaHandbookPane1Layout = new org.jdesktop.layout.GroupLayout(agendaHandbookPane1);
+        agendaHandbookPane1.setLayout(agendaHandbookPane1Layout);
+        agendaHandbookPane1Layout.setHorizontalGroup(
+            agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaHandbookPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel1)
-                    .add(agendaHandbookPane3Layout.createSequentialGroup()
-                        .add(agendaHandbookGeneric1)
+                .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel3)
+                    .add(agendaHandbookPane1Layout.createSequentialGroup()
+                        .add(agendaHandbookGeneric3)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaHandbookNameLogo1)
+                        .add(agendaHandbookNameLogo3)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaHandbookHandbook1)
+                        .add(agendaHandbookHandbook3)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaHandbookCustom1)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED, 32, Short.MAX_VALUE)
-                        .add(agendaHandbookQtyLabel1)))
+                        .add(agendaHandbookCustom3)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 60, Short.MAX_VALUE)
+                        .add(agendaHandbookQtyLabel3)))
                 .add(18, 18, 18)
-                .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaSharedHandbookQtyTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(agendaHandbookQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaSharedHandbookQtyTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaHandbookQtyTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(18, 18, 18)
-                .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaHandbookUnitPriceLabel4)
-                    .add(agendaSharedHandbookUnitPriceLabel1))
+                .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaHandbookUnitPriceLabel6)
+                    .add(agendaSharedHandbookUnitPriceLabel3))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaHandbookUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(agendaSharedHandbookUnitPriceTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(28, 28, 28)
-                .add(agendaHandbookVSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaHandbookUnitPriceTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaSharedHandbookUnitPriceTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(agendaHandbookTotalTextField4)
-                    .add(agendaSharedHandbookTotalTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(agendaHandbookVSeparator3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(19, 19, 19)
+                .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(agendaHandbookTotalTextField6)
+                    .add(agendaSharedHandbookTotalTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        agendaHandbookPane3Layout.setVerticalGroup(
-            agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaHandbookPane3Layout.createSequentialGroup()
-                .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaHandbookPane3Layout.createSequentialGroup()
+        agendaHandbookPane1Layout.setVerticalGroup(
+            agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaHandbookPane1Layout.createSequentialGroup()
+                .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaHandbookPane1Layout.createSequentialGroup()
                         .add(8, 8, 8)
-                        .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaHandbookTotalTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaHandbookUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaHandbookUnitPriceLabel4)
-                            .add(agendaHandbookQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaHandbookQtyLabel1)
-                            .add(agendaHandbookCustom1)
-                            .add(agendaHandbookHandbook1)
-                            .add(agendaHandbookNameLogo1)
-                            .add(agendaHandbookGeneric1))
+                        .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaHandbookTotalTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaHandbookUnitPriceTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaHandbookUnitPriceLabel6)
+                            .add(agendaHandbookQtyTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaHandbookQtyLabel3)
+                            .add(agendaHandbookCustom3)
+                            .add(agendaHandbookHandbook3)
+                            .add(agendaHandbookNameLogo3)
+                            .add(agendaHandbookGeneric3))
                         .add(34, 34, 34)
-                        .add(agendaHandbookPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel1)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceLabel1)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookTotalTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(agendaHandbookVSeparator1))
+                        .add(agendaHandbookPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel3)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceLabel3)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookTotalTextField6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(agendaHandbookVSeparator3))
                 .add(6, 6, 6))
         );
 
-        agendaCoverPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "C o v e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        agendaCoverPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "C o v e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        org.jdesktop.layout.GroupLayout agendaCoverPane3Layout = new org.jdesktop.layout.GroupLayout(agendaCoverPane3);
-        agendaCoverPane3.setLayout(agendaCoverPane3Layout);
-        agendaCoverPane3Layout.setHorizontalGroup(
-            agendaCoverPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 0, Short.MAX_VALUE)
+        frontCoverLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        frontCoverLabel1.setText("F r o n t");
+
+        frontCoverOptionPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Front Cover Type"));
+
+        frontCoverTypeButtonGroup1.add(standardFC1);
+        standardFC1.setText("Standard");
+
+        frontCoverTypeButtonGroup1.add(custDuraFC1);
+        custDuraFC1.setText("Customized Dura");
+
+        frontCoverTypeButtonGroup1.add(custLamFC1);
+        custLamFC1.setText("Customized Lam");
+        custLamFC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                custLamFC1ActionPerformed(evt);
+            }
+        });
+
+        frontCoverTypeButtonGroup1.add(custFoilFC1);
+        custFoilFC1.setText("Customized Foil");
+
+        org.jdesktop.layout.GroupLayout frontCoverOptionPanel1Layout = new org.jdesktop.layout.GroupLayout(frontCoverOptionPanel1);
+        frontCoverOptionPanel1.setLayout(frontCoverOptionPanel1Layout);
+        frontCoverOptionPanel1Layout.setHorizontalGroup(
+            frontCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(frontCoverOptionPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(frontCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(standardFC1)
+                    .add(custLamFC1))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(frontCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(custDuraFC1)
+                    .add(custFoilFC1))
+                .addContainerGap())
         );
-        agendaCoverPane3Layout.setVerticalGroup(
-            agendaCoverPane3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 100, Short.MAX_VALUE)
+        frontCoverOptionPanel1Layout.setVerticalGroup(
+            frontCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(frontCoverOptionPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(frontCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(frontCoverOptionPanel1Layout.createSequentialGroup()
+                        .add(standardFC1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custLamFC1))
+                    .add(frontCoverOptionPanel1Layout.createSequentialGroup()
+                        .add(custDuraFC1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custFoilFC1)))
+                .addContainerGap())
+        );
+
+        agendaOFCCheckBox1.setText("Outside Front Cover");
+
+        agendaIFCCheckBox1.setText("Inside Front Cover");
+
+        agendaFCListLabel1.setLabelFor(agendaFCListComboBox);
+        agendaFCListLabel1.setText("List of Front Cover: ");
+
+        agendaFCListComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        agendaFCTotalTextField1.setEnabled(false);
+
+        backCoverLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backCoverLabel1.setText("B a c k");
+
+        backCoverOptionPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Back Cover Type"));
+
+        backCoverTypeButtonGroup1.add(standardBC1);
+        standardBC1.setText("Standard");
+
+        backCoverTypeButtonGroup1.add(custDuraBC1);
+        custDuraBC1.setText("Customized Dura");
+
+        backCoverTypeButtonGroup1.add(custLamBC1);
+        custLamBC1.setText("Customized Lam");
+        custLamBC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                custLamBC1ActionPerformed(evt);
+            }
+        });
+
+        backCoverTypeButtonGroup1.add(custFoilBC1);
+        custFoilBC1.setText("Customized Foil");
+
+        org.jdesktop.layout.GroupLayout backCoverOptionPanel1Layout = new org.jdesktop.layout.GroupLayout(backCoverOptionPanel1);
+        backCoverOptionPanel1.setLayout(backCoverOptionPanel1Layout);
+        backCoverOptionPanel1Layout.setHorizontalGroup(
+            backCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backCoverOptionPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(backCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(standardBC1)
+                    .add(custLamBC1))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(backCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(custDuraBC1)
+                    .add(custFoilBC1))
+                .addContainerGap())
+        );
+        backCoverOptionPanel1Layout.setVerticalGroup(
+            backCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backCoverOptionPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(backCoverOptionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(backCoverOptionPanel1Layout.createSequentialGroup()
+                        .add(standardBC1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custLamBC1))
+                    .add(backCoverOptionPanel1Layout.createSequentialGroup()
+                        .add(custDuraBC1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custFoilBC1)))
+                .addContainerGap())
+        );
+
+        agendaOBCCheckBox1.setText("Outside Back Cover");
+
+        agendaIBCCheckBox1.setText("Inside Back Cover");
+
+        agendaBCListLabel1.setText("List of Back Cover: ");
+
+        agendaBCListComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        agendaBCTotalTextField1.setEnabled(false);
+
+        org.jdesktop.layout.GroupLayout agendaCoverPane1Layout = new org.jdesktop.layout.GroupLayout(agendaCoverPane1);
+        agendaCoverPane1.setLayout(agendaCoverPane1Layout);
+        agendaCoverPane1Layout.setHorizontalGroup(
+            agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaCoverPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane1Layout.createSequentialGroup()
+                        .add(frontCoverOptionPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(18, 18, 18)
+                        .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaOFCCheckBox1)
+                            .add(agendaIFCCheckBox1)))
+                    .add(agendaCoverPane1Layout.createSequentialGroup()
+                        .add(backCoverOptionPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(18, 18, 18)
+                        .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaOBCCheckBox1)
+                            .add(agendaIBCCheckBox1))))
+                .add(18, 18, 18)
+                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaBCListLabel1)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFCListLabel1))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaBCListComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaFCListComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 96, Short.MAX_VALUE)
+                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFCTotalTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaBCTotalTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+            .add(agendaCoverPane1Layout.createSequentialGroup()
+                .add(6, 6, 6)
+                .add(agendaCoverHSeparator1)
+                .add(6, 6, 6))
+            .add(agendaCoverPane1Layout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(backCoverLabel1)
+                    .add(frontCoverLabel1))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        agendaCoverPane1Layout.setVerticalGroup(
+            agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaCoverPane1Layout.createSequentialGroup()
+                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane1Layout.createSequentialGroup()
+                        .add(28, 28, 28)
+                        .add(frontCoverOptionPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(agendaCoverPane1Layout.createSequentialGroup()
+                        .add(50, 50, 50)
+                        .add(agendaOFCCheckBox1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(agendaIFCCheckBox1))
+                    .add(agendaCoverPane1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(frontCoverLabel1)
+                        .add(40, 40, 40)
+                        .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(agendaFCListLabel1)
+                            .add(agendaFCListComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaFCTotalTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                .add(18, 18, 18)
+                .add(agendaCoverHSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane1Layout.createSequentialGroup()
+                        .add(40, 40, 40)
+                        .add(backCoverOptionPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(agendaCoverPane1Layout.createSequentialGroup()
+                        .add(18, 18, 18)
+                        .add(backCoverLabel1)
+                        .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaCoverPane1Layout.createSequentialGroup()
+                                .add(28, 28, 28)
+                                .add(agendaOBCCheckBox1)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(agendaIBCCheckBox1))
+                            .add(agendaCoverPane1Layout.createSequentialGroup()
+                                .add(39, 39, 39)
+                                .add(agendaCoverPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                                    .add(agendaBCListLabel1)
+                                    .add(agendaBCListComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaBCTotalTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         org.jdesktop.layout.GroupLayout agendaFormPane1Layout = new org.jdesktop.layout.GroupLayout(agendaFormPane1);
         agendaFormPane1.setLayout(agendaFormPane1Layout);
         agendaFormPane1Layout.setHorizontalGroup(
             agendaFormPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane1Layout.createSequentialGroup()
-                .add(80, 80, 80)
-                .add(orderInfoPane3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(18, 18, 18)
-                .add(agendaResetButton3)
-                .add(15, 15, 15))
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane1Layout.createSequentialGroup()
-                .add(30, 30, 30)
-                .add(productSizeLabel3)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(productSizeComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(172, 172, 172)
-                .add(productFamilyLabel3)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(productFamilyComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(quantityLabel3)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(quantityTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(30, 30, 30))
+            .add(agendaFormPane1Layout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(agendaFormPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaHandbookPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaPlanerPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .add(agendaFormPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(agendaHSeparator3)
+                .add(agendaHSeparator1)
                 .addContainerGap())
-            .add(agendaFormPane1Layout.createSequentialGroup()
-                .add(20, 20, 20)
-                .add(agendaFormPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(agendaCoverPane3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(agendaHandbookPane3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(agendaPlanerPane3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane1Layout.createSequentialGroup()
+                .add(30, 30, 30)
+                .add(productSizeLabel1)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(productSizeComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(productFamilyLabel1)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(productFamilyComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(quantityLabel1)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(quantityTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(30, 30, 30))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane1Layout.createSequentialGroup()
+                .add(80, 80, 80)
+                .add(orderInfoPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(18, 18, 18)
+                .add(agendaResetButton1)
+                .add(15, 15, 15))
         );
+
+        agendaFormPane1Layout.linkSize(new java.awt.Component[] {agendaCoverPane1, agendaHandbookPane1, agendaPlanerPane1}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+
         agendaFormPane1Layout.setVerticalGroup(
             agendaFormPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(agendaFormPane1Layout.createSequentialGroup()
                 .add(agendaFormPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(agendaFormPane1Layout.createSequentialGroup()
                         .add(15, 15, 15)
-                        .add(agendaResetButton3)
+                        .add(agendaResetButton1)
                         .add(100, 100, 100))
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .add(orderInfoPane3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(orderInfoPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .add(14, 14, 14)))
                 .add(agendaFormPane1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(productSizeLabel3)
-                    .add(quantityTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(productFamilyLabel3)
-                    .add(productFamilyComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(quantityLabel3)
-                    .add(productSizeComboBox3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(productSizeLabel1)
+                    .add(quantityTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(productFamilyLabel1)
+                    .add(productFamilyComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(quantityLabel1)
+                    .add(productSizeComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaHSeparator3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaHSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(agendaPlanerPane3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaPlanerPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(agendaHandbookPane3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaHandbookPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(agendaCoverPane3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .add(agendaCoverPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        agendaFormPane2.setPreferredSize(new java.awt.Dimension(1055, 670));
+        agendaFormPane2.setPreferredSize(new java.awt.Dimension(1085, 850));
 
-        agendaResetButton4.setText("Reset");
+        agendaResetButton2.setText("Reset");
 
-        orderInfoPane4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "O r d e r   I n f o", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        orderInfoPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "O r d e r   I n f o", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        materialContactLabel4.setLabelFor(materialContactTextField);
-        materialContactLabel4.setText("Material Contact: ");
+        materialContactLabel2.setLabelFor(materialContactTextField);
+        materialContactLabel2.setText("Material Contact: ");
 
-        materialPhoneLabel4.setLabelFor(materialPhoneTextField);
-        materialPhoneLabel4.setText("Material Contact Phone: ");
+        materialPhoneLabel2.setLabelFor(materialPhoneTextField);
+        materialPhoneLabel2.setText("Material Contact Phone: ");
 
-        primaryPhoneLabel4.setLabelFor(primaryPhoneTextField);
-        primaryPhoneLabel4.setText("Primary Contact Phone: ");
+        primaryPhoneLabel2.setLabelFor(primaryPhoneTextField);
+        primaryPhoneLabel2.setText("Primary Contact Phone: ");
 
-        primaryContactLabel4.setLabelFor(primaryContactTextField);
-        primaryContactLabel4.setText("Primary Contact: ");
+        primaryContactLabel2.setLabelFor(primaryContactTextField);
+        primaryContactLabel2.setText("Primary Contact: ");
 
-        org.jdesktop.layout.GroupLayout orderInfoPane4Layout = new org.jdesktop.layout.GroupLayout(orderInfoPane4);
-        orderInfoPane4.setLayout(orderInfoPane4Layout);
-        orderInfoPane4Layout.setHorizontalGroup(
-            orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(orderInfoPane4Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout orderInfoPane2Layout = new org.jdesktop.layout.GroupLayout(orderInfoPane2);
+        orderInfoPane2.setLayout(orderInfoPane2Layout);
+        orderInfoPane2Layout.setHorizontalGroup(
+            orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(orderInfoPane2Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(primaryPhoneLabel4)
-                    .add(primaryContactLabel4))
+                .add(orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(primaryPhoneLabel2)
+                    .add(primaryContactLabel2))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(primaryPhoneTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(primaryContactTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(primaryPhoneTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(primaryContactTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(130, 130, 130)
-                .add(orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(materialContactLabel4)
-                    .add(materialPhoneLabel4))
+                .add(orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(materialContactLabel2)
+                    .add(materialPhoneLabel2))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(materialPhoneTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(materialContactTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(materialPhoneTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(materialContactTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        orderInfoPane4Layout.setVerticalGroup(
-            orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(orderInfoPane4Layout.createSequentialGroup()
+        orderInfoPane2Layout.setVerticalGroup(
+            orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(orderInfoPane2Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(primaryContactTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(materialContactLabel4)
-                    .add(materialContactTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(primaryContactLabel4))
+                .add(orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(primaryContactTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(materialContactLabel2)
+                    .add(materialContactTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(primaryContactLabel2))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(orderInfoPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(primaryPhoneLabel4)
-                    .add(primaryPhoneTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(materialPhoneLabel4)
-                    .add(materialPhoneTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(orderInfoPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(primaryPhoneLabel2)
+                    .add(primaryPhoneTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(materialPhoneLabel2)
+                    .add(materialPhoneTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        productSizeLabel4.setLabelFor(productSizeComboBox);
-        productSizeLabel4.setText("Product Size: ");
+        productSizeLabel2.setLabelFor(productSizeComboBox);
+        productSizeLabel2.setText("Product Size: ");
 
-        productSizeComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        productSizeComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        productFamilyLabel4.setLabelFor(productFamilyComboBox);
-        productFamilyLabel4.setText("Product Family: ");
+        productFamilyLabel2.setLabelFor(productFamilyComboBox);
+        productFamilyLabel2.setText("Product Family: ");
 
-        productFamilyComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        productFamilyComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        quantityLabel4.setLabelFor(quantityTextField);
-        quantityLabel4.setText("Quantity: ");
+        quantityLabel2.setLabelFor(quantityTextField);
+        quantityLabel2.setText("Quantity: ");
 
-        agendaPlanerPane4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "P l a n n e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        agendaPlanerPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "P l a n n e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        agendaPlannerCodeLabel4.setText("Select Type: ");
+        agendaPlannerCodeLabel2.setText("Type or Code: ");
 
-        agendaPlannerCodeComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        agendaPlannerCodeComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        agendaPlannerVSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        agendaPlannerVSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        agendaPlannerStudentCheckBox4.setText("Student");
+        agendaPlannerStudentCheckBox2.setText("Student");
 
-        agendaPlannerGradeLabel4.setLabelFor(agendaPlannerGradeTextField);
-        agendaPlannerGradeLabel4.setText("Grade Level");
+        agendaPlannerGradeLabel2.setLabelFor(agendaPlannerGradeTextField);
+        agendaPlannerGradeLabel2.setText("Grade Level");
 
-        agendaPlannerTeacherCheckBox4.setText("Teacher Edition");
+        agendaPlannerTeacherCheckBox2.setText("Teacher Edition");
 
-        agendaPlannerAddLpRcLabel4.setLabelFor(agendaPlannerLpRcComboBox);
-        agendaPlannerAddLpRcLabel4.setText("Add L.Plan & R.Chart");
+        agendaPlannerAddLpRcLabel2.setLabelFor(agendaPlannerLpRcComboBox);
+        agendaPlannerAddLpRcLabel2.setText("Add L.Plan & R.Chart");
 
-        agendaPlannerLpRcComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        agendaPlannerLpRcComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        agendaPlannerStudentQtyLabel4.setLabelFor(agendaPlannerStudentQtyTextField);
-        agendaPlannerStudentQtyLabel4.setText("Qty");
+        agendaPlannerStudentQtyLabel2.setLabelFor(agendaPlannerStudentQtyTextField);
+        agendaPlannerStudentQtyLabel2.setText("Qty");
 
-        agendaPlannerTeacherQtyLabel4.setLabelFor(agendaPlannerTeacherQtyTextField);
-        agendaPlannerTeacherQtyLabel4.setText("Qty");
+        agendaPlannerTeacherQtyLabel2.setLabelFor(agendaPlannerTeacherQtyTextField);
+        agendaPlannerTeacherQtyLabel2.setText("Qty");
 
-        agendaPlannerStudentUnitPriceLabel4.setLabelFor(agendaPlannerStudentUnitPriceTextField);
-        agendaPlannerStudentUnitPriceLabel4.setText("X     @");
+        agendaPlannerStudentUnitPriceLabel2.setLabelFor(agendaPlannerStudentUnitPriceTextField);
+        agendaPlannerStudentUnitPriceLabel2.setText("X     @");
 
-        agendaPlannerTeacherUnitPriceLabel4.setLabelFor(agendaPlannerTeacherUnitPriceTextField);
-        agendaPlannerTeacherUnitPriceLabel4.setText("X     @");
+        agendaPlannerTeacherUnitPriceLabel2.setLabelFor(agendaPlannerTeacherUnitPriceTextField);
+        agendaPlannerTeacherUnitPriceLabel2.setText("X     @");
 
-        agendaPlannerStudentUnitPriceTextField4.setEnabled(false);
+        agendaPlannerStudentUnitPriceTextField2.setEnabled(false);
 
-        agendaPlannerTeacherUnitPriceTextField4.setEnabled(false);
+        agendaPlannerTeacherUnitPriceTextField2.setEnabled(false);
 
-        agendaPlannerVSeparator9.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        agendaPlannerVSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        agendaPlannerStudentTotalTextField4.setEnabled(false);
+        agendaPlannerStudentTotalTextField2.setEnabled(false);
 
-        agendaPlannerTeacherTotalTextField4.setEnabled(false);
+        agendaPlannerTeacherTotalTextField2.setEnabled(false);
 
-        org.jdesktop.layout.GroupLayout agendaPlanerPane4Layout = new org.jdesktop.layout.GroupLayout(agendaPlanerPane4);
-        agendaPlanerPane4.setLayout(agendaPlanerPane4Layout);
-        agendaPlanerPane4Layout.setHorizontalGroup(
-            agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaPlanerPane4Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout agendaPlanerPane2Layout = new org.jdesktop.layout.GroupLayout(agendaPlanerPane2);
+        agendaPlanerPane2.setLayout(agendaPlanerPane2Layout);
+        agendaPlanerPane2Layout.setHorizontalGroup(
+            agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaPlanerPane2Layout.createSequentialGroup()
                 .add(12, 12, 12)
-                .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaPlanerPane4Layout.createSequentialGroup()
+                .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaPlanerPane2Layout.createSequentialGroup()
                         .add(15, 15, 15)
-                        .add(agendaPlannerCodeLabel4))
-                    .add(agendaPlannerCodeComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(agendaPlannerCodeLabel2))
+                    .add(agendaPlannerCodeComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlannerVSeparator8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaPlannerVSeparator4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaPlanerPane4Layout.createSequentialGroup()
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentCheckBox4)
-                            .add(agendaPlannerTeacherCheckBox4))
+                .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaPlanerPane2Layout.createSequentialGroup()
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentCheckBox2)
+                            .add(agendaPlannerTeacherCheckBox2))
                         .add(51, 51, 51)
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerGradeLabel4)
-                            .add(agendaPlannerAddLpRcLabel4))
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerGradeLabel2)
+                            .add(agendaPlannerAddLpRcLabel2))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerGradeTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaPlannerLpRcComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(46, 46, 46)
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentQtyLabel4)
-                            .add(agendaPlannerTeacherQtyLabel4))
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerGradeTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaPlannerLpRcComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 74, Short.MAX_VALUE)
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentQtyLabel2)
+                            .add(agendaPlannerTeacherQtyLabel2))
                         .add(18, 18, 18)
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaPlannerTeacherQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentQtyTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaPlannerTeacherQtyTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .add(18, 18, 18)
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentUnitPriceLabel4)
-                            .add(agendaPlannerTeacherUnitPriceLabel4))
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentUnitPriceLabel2)
+                            .add(agendaPlannerTeacherUnitPriceLabel2))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlannerStudentUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaPlannerTeacherUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(agendaPlannerHSeparator4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 726, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlannerStudentUnitPriceTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaPlannerTeacherUnitPriceTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(agendaPlannerHSeparator2))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlannerVSeparator9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(agendaPlannerStudentTotalTextField4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
-                    .add(agendaPlannerTeacherTotalTextField4))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(agendaPlannerVSeparator5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(19, 19, 19)
+                .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(agendaPlannerStudentTotalTextField2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
+                    .add(agendaPlannerTeacherTotalTextField2))
+                .addContainerGap())
         );
-        agendaPlanerPane4Layout.setVerticalGroup(
-            agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaPlanerPane4Layout.createSequentialGroup()
-                .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaPlannerVSeparator8)
-                    .add(agendaPlannerVSeparator9)
-                    .add(agendaPlanerPane4Layout.createSequentialGroup()
-                        .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaPlanerPane4Layout.createSequentialGroup()
+        agendaPlanerPane2Layout.setVerticalGroup(
+            agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlanerPane2Layout.createSequentialGroup()
+                .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(agendaPlanerPane2Layout.createSequentialGroup()
+                        .add(0, 0, Short.MAX_VALUE)
+                        .add(agendaPlannerStudentTotalTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(35, 35, 35)
+                        .add(agendaPlannerTeacherTotalTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlannerVSeparator4)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlannerVSeparator5)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, agendaPlanerPane2Layout.createSequentialGroup()
+                        .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaPlanerPane2Layout.createSequentialGroup()
                                 .addContainerGap()
-                                .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(agendaPlannerStudentCheckBox4)
-                                    .add(agendaPlannerGradeLabel4)
-                                    .add(agendaPlannerGradeTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(agendaPlannerStudentQtyLabel4)
-                                    .add(agendaPlannerStudentQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(agendaPlannerStudentUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(agendaPlannerStudentUnitPriceLabel4)
-                                    .add(agendaPlannerStudentTotalTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                                .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(agendaPlannerStudentCheckBox2)
+                                    .add(agendaPlannerGradeLabel2)
+                                    .add(agendaPlannerGradeTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaPlannerStudentQtyLabel2)
+                                    .add(agendaPlannerStudentQtyTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaPlannerStudentUnitPriceTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaPlannerStudentUnitPriceLabel2))
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                .add(agendaPlannerHSeparator4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(agendaPlannerHSeparator2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                .add(agendaPlanerPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherTotalTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceLabel4)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyLabel4)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerLpRcComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerAddLpRcLabel4)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherCheckBox4)))
-                            .add(agendaPlanerPane4Layout.createSequentialGroup()
-                                .add(agendaPlannerCodeLabel4)
+                                .add(agendaPlanerPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherUnitPriceLabel2)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherQtyLabel2)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerLpRcComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerAddLpRcLabel2)
+                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaPlannerTeacherCheckBox2)))
+                            .add(agendaPlanerPane2Layout.createSequentialGroup()
+                                .add(agendaPlannerCodeLabel2)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(agendaPlannerCodeComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                                .add(agendaPlannerCodeComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                         .add(0, 2, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
-        agendaHandbookPane4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "H a n d b o o k", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        agendaHandbookPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "H a n d b o o k", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        handbookTypebuttonGroup2.add(agendaHandbookGeneric2);
-        agendaHandbookGeneric2.setText("Generic, No Printing");
+        handbookTypeButtonGroup2.add(agendaHandbookGeneric4);
+        agendaHandbookGeneric4.setText("Generic, No Printing");
 
-        handbookTypebuttonGroup2.add(agendaHandbookNameLogo2);
-        agendaHandbookNameLogo2.setText("Name & Logo Imprint");
+        handbookTypeButtonGroup2.add(agendaHandbookNameLogo4);
+        agendaHandbookNameLogo4.setText("Name & Logo Imprint");
 
-        handbookTypebuttonGroup2.add(agendaHandbookHandbook2);
-        agendaHandbookHandbook2.setText("Handbook");
+        handbookTypeButtonGroup2.add(agendaHandbookHandbook4);
+        agendaHandbookHandbook4.setText("Handbook");
 
-        handbookTypebuttonGroup2.add(agendaHandbookCustom2);
-        agendaHandbookCustom2.setText("Custom Title Page");
+        handbookTypeButtonGroup2.add(agendaHandbookCustom4);
+        agendaHandbookCustom4.setText("Custom Title Page");
 
-        agendaHandbookQtyLabel2.setLabelFor(agendaHandbookQtyTextField3);
-        agendaHandbookQtyLabel2.setText("# of pages");
+        agendaHandbookQtyLabel4.setLabelFor(agendaHandbookQtyTextField3);
+        agendaHandbookQtyLabel4.setText("# of pages");
 
-        agendaHandbookUnitPriceLabel5.setLabelFor(agendaHandbookUnitPriceTextField3);
-        agendaHandbookUnitPriceLabel5.setText("X     @");
+        agendaHandbookUnitPriceLabel7.setLabelFor(agendaHandbookUnitPriceTextField3);
+        agendaHandbookUnitPriceLabel7.setText("X     @");
 
-        agendaHandbookUnitPriceTextField5.setEnabled(false);
+        agendaHandbookUnitPriceTextField7.setEnabled(false);
 
-        agendaSharedHandbookQtyLabel2.setLabelFor(agendaSharedHandbookQtyTextField);
-        agendaSharedHandbookQtyLabel2.setText("shared handbook # of pages");
+        agendaSharedHandbookQtyLabel4.setLabelFor(agendaSharedHandbookQtyTextField);
+        agendaSharedHandbookQtyLabel4.setText("shared handbook # of pages");
 
-        agendaSharedHandbookUnitPriceLabel2.setLabelFor(agendaSharedHandbookUnitPriceTextField);
-        agendaSharedHandbookUnitPriceLabel2.setText("X     @");
+        agendaSharedHandbookUnitPriceLabel4.setLabelFor(agendaSharedHandbookUnitPriceTextField);
+        agendaSharedHandbookUnitPriceLabel4.setText("X     @");
 
-        agendaHandbookVSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        agendaHandbookVSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        agendaHandbookTotalTextField5.setEnabled(false);
+        agendaHandbookTotalTextField7.setEnabled(false);
 
-        agendaSharedHandbookTotalTextField5.setEnabled(false);
+        agendaSharedHandbookTotalTextField7.setEnabled(false);
 
-        org.jdesktop.layout.GroupLayout agendaHandbookPane4Layout = new org.jdesktop.layout.GroupLayout(agendaHandbookPane4);
-        agendaHandbookPane4.setLayout(agendaHandbookPane4Layout);
-        agendaHandbookPane4Layout.setHorizontalGroup(
-            agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaHandbookPane4Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout agendaHandbookPane2Layout = new org.jdesktop.layout.GroupLayout(agendaHandbookPane2);
+        agendaHandbookPane2.setLayout(agendaHandbookPane2Layout);
+        agendaHandbookPane2Layout.setHorizontalGroup(
+            agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaHandbookPane2Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel2)
-                    .add(agendaHandbookPane4Layout.createSequentialGroup()
-                        .add(agendaHandbookGeneric2)
+                .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel4)
+                    .add(agendaHandbookPane2Layout.createSequentialGroup()
+                        .add(agendaHandbookGeneric4)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaHandbookNameLogo2)
+                        .add(agendaHandbookNameLogo4)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaHandbookHandbook2)
+                        .add(agendaHandbookHandbook4)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(agendaHandbookCustom2)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED, 32, Short.MAX_VALUE)
-                        .add(agendaHandbookQtyLabel2)))
+                        .add(agendaHandbookCustom4)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 60, Short.MAX_VALUE)
+                        .add(agendaHandbookQtyLabel4)))
                 .add(18, 18, 18)
-                .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaSharedHandbookQtyTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(agendaHandbookQtyTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaSharedHandbookQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaHandbookQtyTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(18, 18, 18)
-                .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaHandbookUnitPriceLabel5)
-                    .add(agendaSharedHandbookUnitPriceLabel2))
+                .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaHandbookUnitPriceLabel7)
+                    .add(agendaSharedHandbookUnitPriceLabel4))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaHandbookUnitPriceTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(agendaSharedHandbookUnitPriceTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(28, 28, 28)
-                .add(agendaHandbookVSeparator2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaHandbookUnitPriceTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaSharedHandbookUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(agendaHandbookTotalTextField5)
-                    .add(agendaSharedHandbookTotalTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(agendaHandbookVSeparator4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(19, 19, 19)
+                .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(agendaHandbookTotalTextField7)
+                    .add(agendaSharedHandbookTotalTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        agendaHandbookPane4Layout.setVerticalGroup(
-            agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(agendaHandbookPane4Layout.createSequentialGroup()
-                .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(agendaHandbookPane4Layout.createSequentialGroup()
+        agendaHandbookPane2Layout.setVerticalGroup(
+            agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaHandbookPane2Layout.createSequentialGroup()
+                .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaHandbookPane2Layout.createSequentialGroup()
                         .add(8, 8, 8)
-                        .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(agendaHandbookTotalTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaHandbookUnitPriceTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaHandbookUnitPriceLabel5)
-                            .add(agendaHandbookQtyTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(agendaHandbookQtyLabel2)
-                            .add(agendaHandbookCustom2)
-                            .add(agendaHandbookHandbook2)
-                            .add(agendaHandbookNameLogo2)
-                            .add(agendaHandbookGeneric2))
+                        .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaHandbookTotalTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaHandbookUnitPriceTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaHandbookUnitPriceLabel7)
+                            .add(agendaHandbookQtyTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaHandbookQtyLabel4)
+                            .add(agendaHandbookCustom4)
+                            .add(agendaHandbookHandbook4)
+                            .add(agendaHandbookNameLogo4)
+                            .add(agendaHandbookGeneric4))
                         .add(34, 34, 34)
-                        .add(agendaHandbookPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel2)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceLabel2)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookTotalTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(agendaHandbookVSeparator2))
+                        .add(agendaHandbookPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyLabel4)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookQtyTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceLabel4)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookUnitPriceTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaSharedHandbookTotalTextField7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(agendaHandbookVSeparator4))
                 .add(6, 6, 6))
         );
 
-        agendaCoverPane4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "C o v e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
+        agendaCoverPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "C o v e r", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Futura", 0, 14))); // NOI18N
 
-        org.jdesktop.layout.GroupLayout agendaCoverPane4Layout = new org.jdesktop.layout.GroupLayout(agendaCoverPane4);
-        agendaCoverPane4.setLayout(agendaCoverPane4Layout);
-        agendaCoverPane4Layout.setHorizontalGroup(
-            agendaCoverPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 0, Short.MAX_VALUE)
+        frontCoverLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        frontCoverLabel2.setText("F r o n t");
+
+        frontCoverOptionPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Front Cover Type"));
+
+        frontCoverTypeButtonGroup2.add(standardFC2);
+        standardFC2.setText("Standard");
+
+        frontCoverTypeButtonGroup2.add(custDuraFC2);
+        custDuraFC2.setText("Customized Dura");
+
+        frontCoverTypeButtonGroup2.add(custLamFC2);
+        custLamFC2.setText("Customized Lam");
+        custLamFC2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                custLamFC2ActionPerformed(evt);
+            }
+        });
+
+        frontCoverTypeButtonGroup2.add(custFoilFC2);
+        custFoilFC2.setText("Customized Foil");
+
+        org.jdesktop.layout.GroupLayout frontCoverOptionPanel2Layout = new org.jdesktop.layout.GroupLayout(frontCoverOptionPanel2);
+        frontCoverOptionPanel2.setLayout(frontCoverOptionPanel2Layout);
+        frontCoverOptionPanel2Layout.setHorizontalGroup(
+            frontCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(frontCoverOptionPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(frontCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(standardFC2)
+                    .add(custLamFC2))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(frontCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(custDuraFC2)
+                    .add(custFoilFC2))
+                .addContainerGap())
         );
-        agendaCoverPane4Layout.setVerticalGroup(
-            agendaCoverPane4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 100, Short.MAX_VALUE)
+        frontCoverOptionPanel2Layout.setVerticalGroup(
+            frontCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(frontCoverOptionPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(frontCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(frontCoverOptionPanel2Layout.createSequentialGroup()
+                        .add(standardFC2)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custLamFC2))
+                    .add(frontCoverOptionPanel2Layout.createSequentialGroup()
+                        .add(custDuraFC2)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custFoilFC2)))
+                .addContainerGap())
+        );
+
+        agendaOFCCheckBox2.setText("Outside Front Cover");
+
+        agendaIFCCheckBox2.setText("Inside Front Cover");
+
+        agendaFCListLabel2.setLabelFor(agendaFCListComboBox);
+        agendaFCListLabel2.setText("List of Front Cover: ");
+
+        agendaFCListComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        agendaFCTotalTextField2.setEnabled(false);
+
+        backCoverLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        backCoverLabel2.setText("B a c k");
+
+        backCoverOptionPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Back Cover Type"));
+
+        backCoverTypeButtonGroup2.add(standardBC2);
+        standardBC2.setText("Standard");
+
+        backCoverTypeButtonGroup2.add(custDuraBC2);
+        custDuraBC2.setText("Customized Dura");
+
+        backCoverTypeButtonGroup2.add(custLamBC2);
+        custLamBC2.setText("Customized Lam");
+        custLamBC2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                custLamBC2ActionPerformed(evt);
+            }
+        });
+
+        backCoverTypeButtonGroup2.add(custFoilBC2);
+        custFoilBC2.setText("Customized Foil");
+
+        org.jdesktop.layout.GroupLayout backCoverOptionPanel2Layout = new org.jdesktop.layout.GroupLayout(backCoverOptionPanel2);
+        backCoverOptionPanel2.setLayout(backCoverOptionPanel2Layout);
+        backCoverOptionPanel2Layout.setHorizontalGroup(
+            backCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backCoverOptionPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(backCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(standardBC2)
+                    .add(custLamBC2))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(backCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(custDuraBC2)
+                    .add(custFoilBC2))
+                .addContainerGap())
+        );
+        backCoverOptionPanel2Layout.setVerticalGroup(
+            backCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backCoverOptionPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(backCoverOptionPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(backCoverOptionPanel2Layout.createSequentialGroup()
+                        .add(standardBC2)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custLamBC2))
+                    .add(backCoverOptionPanel2Layout.createSequentialGroup()
+                        .add(custDuraBC2)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(custFoilBC2)))
+                .addContainerGap())
+        );
+
+        agendaOBCCheckBox2.setText("Outside Back Cover");
+
+        agendaIBCCheckBox2.setText("Inside Back Cover");
+
+        agendaBCListLabel2.setText("List of Back Cover: ");
+
+        agendaBCListComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        agendaBCTotalTextField2.setEnabled(false);
+
+        org.jdesktop.layout.GroupLayout agendaCoverPane2Layout = new org.jdesktop.layout.GroupLayout(agendaCoverPane2);
+        agendaCoverPane2.setLayout(agendaCoverPane2Layout);
+        agendaCoverPane2Layout.setHorizontalGroup(
+            agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaCoverPane2Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane2Layout.createSequentialGroup()
+                        .add(frontCoverOptionPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(18, 18, 18)
+                        .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaOFCCheckBox2)
+                            .add(agendaIFCCheckBox2)))
+                    .add(agendaCoverPane2Layout.createSequentialGroup()
+                        .add(backCoverOptionPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(18, 18, 18)
+                        .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaOBCCheckBox2)
+                            .add(agendaIBCCheckBox2))))
+                .add(18, 18, 18)
+                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaBCListLabel2)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFCListLabel2))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaBCListComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaFCListComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 96, Short.MAX_VALUE)
+                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFCTotalTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaBCTotalTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+            .add(agendaCoverPane2Layout.createSequentialGroup()
+                .add(6, 6, 6)
+                .add(agendaCoverHSeparator2)
+                .add(6, 6, 6))
+            .add(agendaCoverPane2Layout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(backCoverLabel2)
+                    .add(frontCoverLabel2))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        agendaCoverPane2Layout.setVerticalGroup(
+            agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(agendaCoverPane2Layout.createSequentialGroup()
+                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane2Layout.createSequentialGroup()
+                        .add(28, 28, 28)
+                        .add(frontCoverOptionPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(agendaCoverPane2Layout.createSequentialGroup()
+                        .add(50, 50, 50)
+                        .add(agendaOFCCheckBox2)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(agendaIFCCheckBox2))
+                    .add(agendaCoverPane2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(frontCoverLabel2)
+                        .add(40, 40, 40)
+                        .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(agendaFCListLabel2)
+                            .add(agendaFCListComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(agendaFCTotalTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                .add(18, 18, 18)
+                .add(agendaCoverHSeparator2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaCoverPane2Layout.createSequentialGroup()
+                        .add(40, 40, 40)
+                        .add(backCoverOptionPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(agendaCoverPane2Layout.createSequentialGroup()
+                        .add(18, 18, 18)
+                        .add(backCoverLabel2)
+                        .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(agendaCoverPane2Layout.createSequentialGroup()
+                                .add(28, 28, 28)
+                                .add(agendaOBCCheckBox2)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(agendaIBCCheckBox2))
+                            .add(agendaCoverPane2Layout.createSequentialGroup()
+                                .add(39, 39, 39)
+                                .add(agendaCoverPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                                    .add(agendaBCListLabel2)
+                                    .add(agendaBCListComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(agendaBCTotalTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         org.jdesktop.layout.GroupLayout agendaFormPane2Layout = new org.jdesktop.layout.GroupLayout(agendaFormPane2);
         agendaFormPane2.setLayout(agendaFormPane2Layout);
         agendaFormPane2Layout.setHorizontalGroup(
             agendaFormPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane2Layout.createSequentialGroup()
-                .add(80, 80, 80)
-                .add(orderInfoPane4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(18, 18, 18)
-                .add(agendaResetButton4)
-                .add(15, 15, 15))
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane2Layout.createSequentialGroup()
-                .add(30, 30, 30)
-                .add(productSizeLabel4)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(productSizeComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(172, 172, 172)
-                .add(productFamilyLabel4)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(productFamilyComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(quantityLabel4)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(quantityTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(30, 30, 30))
+            .add(agendaFormPane2Layout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(agendaFormPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(agendaPlanerPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaHandbookPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(agendaCoverPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .add(agendaFormPane2Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(agendaHSeparator4)
+                .add(agendaHSeparator2)
                 .addContainerGap())
-            .add(agendaFormPane2Layout.createSequentialGroup()
-                .add(20, 20, 20)
-                .add(agendaFormPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(agendaCoverPane4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(agendaHandbookPane4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(agendaPlanerPane4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane2Layout.createSequentialGroup()
+                .add(30, 30, 30)
+                .add(productSizeLabel2)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(productSizeComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(productFamilyLabel2)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(productFamilyComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 200, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(quantityLabel2)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(quantityTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(30, 30, 30))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane2Layout.createSequentialGroup()
+                .add(80, 80, 80)
+                .add(orderInfoPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(18, 18, 18)
+                .add(agendaResetButton2)
+                .add(15, 15, 15))
         );
+
+        agendaFormPane2Layout.linkSize(new java.awt.Component[] {agendaCoverPane2, agendaHandbookPane2, agendaPlanerPane2}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+
         agendaFormPane2Layout.setVerticalGroup(
             agendaFormPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(agendaFormPane2Layout.createSequentialGroup()
                 .add(agendaFormPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(agendaFormPane2Layout.createSequentialGroup()
                         .add(15, 15, 15)
-                        .add(agendaResetButton4)
+                        .add(agendaResetButton2)
                         .add(100, 100, 100))
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, agendaFormPane2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .add(orderInfoPane4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(orderInfoPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .add(14, 14, 14)))
                 .add(agendaFormPane2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(productSizeLabel4)
-                    .add(quantityTextField4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(productFamilyLabel4)
-                    .add(productFamilyComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(quantityLabel4)
-                    .add(productSizeComboBox4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(productSizeLabel2)
+                    .add(quantityTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(productFamilyLabel2)
+                    .add(productFamilyComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(quantityLabel2)
+                    .add(productSizeComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(agendaHSeparator4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaHSeparator2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(agendaPlanerPane4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaPlanerPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(agendaHandbookPane4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(agendaHandbookPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(agendaCoverPane4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .add(agendaCoverPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(240, 240, 240));
-        setPreferredSize(new java.awt.Dimension(1108, 660));
+        setPreferredSize(new java.awt.Dimension(1200, 660));
 
-        mainTabbedPane.setPreferredSize(new java.awt.Dimension(1106, 600));
+        mainTabbedPane.setPreferredSize(new java.awt.Dimension(1190, 600));
         mainTabbedPane.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 mainTabbedPaneStateChanged(evt);
@@ -1767,15 +2471,15 @@ public class MainView extends javax.swing.JFrame {
         customerProfilePaneLayout.setHorizontalGroup(
             customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(customerProfilePaneLayout.createSequentialGroup()
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(52, Short.MAX_VALUE)
                 .add(customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
                     .add(orderHistoryPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, profileViewSeparator)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, customerProfilePaneLayout.createSequentialGroup()
                         .add(custProfilePane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(30, 30, 30)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 30, Short.MAX_VALUE)
                         .add(billingPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         customerProfilePaneLayout.setVerticalGroup(
             customerProfilePaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1796,7 +2500,7 @@ public class MainView extends javax.swing.JFrame {
         addOrderPane.setLayout(addOrderPaneLayout);
         addOrderPaneLayout.setHorizontalGroup(
             addOrderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 1067, Short.MAX_VALUE)
+            .add(0, 1159, Short.MAX_VALUE)
         );
         addOrderPaneLayout.setVerticalGroup(
             addOrderPaneLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1812,6 +2516,7 @@ public class MainView extends javax.swing.JFrame {
         cancelButton.setText("Cancel");
 
         jMenuBar.setBackground(new java.awt.Color(204, 204, 204));
+        jMenuBar.setPreferredSize(new java.awt.Dimension(1200, 22));
 
         fileMenu.setText("File");
         jMenuBar.add(fileMenu);
@@ -1833,7 +2538,7 @@ public class MainView extends javax.swing.JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .add(10, 10, 10)
-                .add(mainTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1088, Short.MAX_VALUE)
+                .add(mainTabbedPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1180, Short.MAX_VALUE)
                 .add(10, 10, 10))
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1961,57 +2666,88 @@ public class MainView extends javax.swing.JFrame {
         JTabbedPane tabSource = (JTabbedPane) evt.getSource();
         String tab = tabSource.getTitleAt(tabSource.getSelectedIndex());
         if(tab.equals("+")){
-            Object[] productType = {"Agenda", "Fulfilment", "P2", "Versatile"};
+            if(count < 4){
+                Object[] productType = {"Agenda", "Fulfilment", "P2", "Versatile"};
 
-            selectedProduct =   (String)JOptionPane.showInputDialog(addOrderPane, "Chooce the type of product do you want to order: ", 
+                selectedProduct =   (String)JOptionPane.showInputDialog(addOrderPane, "Chooce the type of product do you want to order: ", 
                                     "Choose Product Type", JOptionPane.PLAIN_MESSAGE, null, productType, "Agenda");
 
-            if(selectedProduct == null){
-                mainTabbedPane.setSelectedComponent(customerProfilePane);
-            }
-            else if(selectedProduct.equals("Agenda")){
-                switch(count){
-                    case 1: 
-                        mainTabbedPane.add("Agenda " + tabCount, new JScrollPane(agendaFormPane));
-                        mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + tabCount), new ButtonTabComponent(mainTabbedPane));
-                        mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
-                        mainTabbedPane.add("+", addOrderPane);
-                        count++;
-                        tabCount++;
-                        saveButton.setVisible(true);
-                        createSumarryButton.setVisible(true);
-                        cancelButton.setVisible(true);
-                        break;
-                    case 2: 
-                        mainTabbedPane.add("Agenda " + tabCount, new JScrollPane(agendaFormPane1));
-                        mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + tabCount), new ButtonTabComponent(mainTabbedPane));
-                        mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
-                        mainTabbedPane.add("+", addOrderPane);
-                        count++;
-                        tabCount++;
-                        saveButton.setVisible(true);
-                        createSumarryButton.setVisible(true);
-                        cancelButton.setVisible(true);
-                        break;
-                    case 3: 
-                        mainTabbedPane.add("Agenda " + tabCount, new JScrollPane(agendaFormPane2));
-                        mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + tabCount), new ButtonTabComponent(mainTabbedPane));
-                        mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
-                        mainTabbedPane.add("+", addOrderPane);
-                        count++;
-                        tabCount++;
-                        saveButton.setVisible(true);
-                        createSumarryButton.setVisible(true);
-                        cancelButton.setVisible(true);
-                        break;
-                    default:    
-                        displayErrorMessage("Only 3 items are allowed to be ordered simultaneously!");
-                        mainTabbedPane.setSelectedComponent(customerProfilePane);
-                        break;
+                if(selectedProduct == null){
+                    mainTabbedPane.setSelectedComponent(customerProfilePane);
                 }
+
+                else if(selectedProduct.equals("Agenda")){
+                    switch(count){
+                        case 1: 
+                            mainTabbedPane.add("Agenda " + tabCount, new JScrollPane(agendaFormPane));
+                            mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + tabCount), new ButtonTabComponent(mainTabbedPane));
+                            mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
+                            mainTabbedPane.add("+", addOrderPane);
+                            count++;
+                            tabCount++;
+                            saveButton.setVisible(true);
+                            createSumarryButton.setVisible(true);
+                            cancelButton.setVisible(true);
+                            break;
+                        case 2: 
+                            mainTabbedPane.add("Agenda " + tabCount, new JScrollPane(agendaFormPane1));
+                            mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + tabCount), new ButtonTabComponent(mainTabbedPane));
+                            mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
+                            mainTabbedPane.add("+", addOrderPane);
+                            count++;
+                            tabCount++;
+                            saveButton.setVisible(true);
+                            createSumarryButton.setVisible(true);
+                            cancelButton.setVisible(true);
+                            break;
+                        case 3: 
+                            mainTabbedPane.add("Agenda " + tabCount, new JScrollPane(agendaFormPane2));
+                            mainTabbedPane.setTabComponentAt(mainTabbedPane.indexOfTab("Agenda " + tabCount), new ButtonTabComponent(mainTabbedPane));
+                            mainTabbedPane.removeTabAt(tabSource.getSelectedIndex());
+                            mainTabbedPane.add("+", addOrderPane);
+                            count++;
+                            tabCount++;
+                            saveButton.setVisible(true);
+                            createSumarryButton.setVisible(true);
+                            cancelButton.setVisible(true);
+                            break;
+                        default:    
+                            displayErrorMessage("Only 3 items are allowed to be ordered simultaneously!");
+                            mainTabbedPane.setSelectedComponent(customerProfilePane);
+                            break;
+                    }
+                }
+            }
+            else{
+                displayErrorMessage("Only 3 items are allowed to be ordered simultaneously!");
+                mainTabbedPane.setSelectedComponent(customerProfilePane);
             }
         }
     }//GEN-LAST:event_mainTabbedPaneStateChanged
+
+    private void custLamFCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custLamFCActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_custLamFCActionPerformed
+
+    private void custLamBCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custLamBCActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_custLamBCActionPerformed
+
+    private void custLamFC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custLamFC1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_custLamFC1ActionPerformed
+
+    private void custLamBC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custLamBC1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_custLamBC1ActionPerformed
+
+    private void custLamFC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custLamFC2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_custLamFC2ActionPerformed
+
+    private void custLamBC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_custLamBC2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_custLamBC2ActionPerformed
 
     
     /**
@@ -2240,132 +2976,174 @@ public class MainView extends javax.swing.JFrame {
    private int tabCount = 1;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel addOrderPane;
+    private javax.swing.JComboBox agendaBCListComboBox;
+    private javax.swing.JComboBox agendaBCListComboBox1;
+    private javax.swing.JComboBox agendaBCListComboBox2;
+    private javax.swing.JLabel agendaBCListLabel;
+    private javax.swing.JLabel agendaBCListLabel1;
+    private javax.swing.JLabel agendaBCListLabel2;
+    private javax.swing.JTextField agendaBCTotalTextField;
+    private javax.swing.JTextField agendaBCTotalTextField1;
+    private javax.swing.JTextField agendaBCTotalTextField2;
+    private javax.swing.JSeparator agendaCoverHSeparator;
+    private javax.swing.JSeparator agendaCoverHSeparator1;
+    private javax.swing.JSeparator agendaCoverHSeparator2;
     private javax.swing.JPanel agendaCoverPane;
-    private javax.swing.JPanel agendaCoverPane3;
-    private javax.swing.JPanel agendaCoverPane4;
+    private javax.swing.JPanel agendaCoverPane1;
+    private javax.swing.JPanel agendaCoverPane2;
+    private javax.swing.JComboBox agendaFCListComboBox;
+    private javax.swing.JComboBox agendaFCListComboBox1;
+    private javax.swing.JComboBox agendaFCListComboBox2;
+    private javax.swing.JLabel agendaFCListLabel;
+    private javax.swing.JLabel agendaFCListLabel1;
+    private javax.swing.JLabel agendaFCListLabel2;
+    private javax.swing.JTextField agendaFCTotalTextField;
+    private javax.swing.JTextField agendaFCTotalTextField1;
+    private javax.swing.JTextField agendaFCTotalTextField2;
     private javax.swing.JPanel agendaFormPane;
     private javax.swing.JPanel agendaFormPane1;
     private javax.swing.JPanel agendaFormPane2;
     private javax.swing.JSeparator agendaHSeparator;
-    private javax.swing.JSeparator agendaHSeparator3;
-    private javax.swing.JSeparator agendaHSeparator4;
+    private javax.swing.JSeparator agendaHSeparator1;
+    private javax.swing.JSeparator agendaHSeparator2;
     private javax.swing.JRadioButton agendaHandbookCustom;
-    private javax.swing.JRadioButton agendaHandbookCustom1;
-    private javax.swing.JRadioButton agendaHandbookCustom2;
+    private javax.swing.JRadioButton agendaHandbookCustom3;
+    private javax.swing.JRadioButton agendaHandbookCustom4;
     private javax.swing.JRadioButton agendaHandbookGeneric;
-    private javax.swing.JRadioButton agendaHandbookGeneric1;
-    private javax.swing.JRadioButton agendaHandbookGeneric2;
+    private javax.swing.JRadioButton agendaHandbookGeneric3;
+    private javax.swing.JRadioButton agendaHandbookGeneric4;
     private javax.swing.JRadioButton agendaHandbookHandbook;
-    private javax.swing.JRadioButton agendaHandbookHandbook1;
-    private javax.swing.JRadioButton agendaHandbookHandbook2;
+    private javax.swing.JRadioButton agendaHandbookHandbook3;
+    private javax.swing.JRadioButton agendaHandbookHandbook4;
     private javax.swing.JRadioButton agendaHandbookNameLogo;
-    private javax.swing.JRadioButton agendaHandbookNameLogo1;
-    private javax.swing.JRadioButton agendaHandbookNameLogo2;
+    private javax.swing.JRadioButton agendaHandbookNameLogo3;
+    private javax.swing.JRadioButton agendaHandbookNameLogo4;
     private javax.swing.JPanel agendaHandbookPane;
-    private javax.swing.JPanel agendaHandbookPane3;
-    private javax.swing.JPanel agendaHandbookPane4;
+    private javax.swing.JPanel agendaHandbookPane1;
+    private javax.swing.JPanel agendaHandbookPane2;
     private javax.swing.JLabel agendaHandbookQtyLabel;
-    private javax.swing.JLabel agendaHandbookQtyLabel1;
-    private javax.swing.JLabel agendaHandbookQtyLabel2;
+    private javax.swing.JLabel agendaHandbookQtyLabel3;
+    private javax.swing.JLabel agendaHandbookQtyLabel4;
     private javax.swing.JTextField agendaHandbookQtyTextField3;
-    private javax.swing.JTextField agendaHandbookQtyTextField4;
-    private javax.swing.JTextField agendaHandbookQtyTextField5;
+    private javax.swing.JTextField agendaHandbookQtyTextField6;
+    private javax.swing.JTextField agendaHandbookQtyTextField7;
     private javax.swing.JTextField agendaHandbookTotalTextField3;
-    private javax.swing.JTextField agendaHandbookTotalTextField4;
-    private javax.swing.JTextField agendaHandbookTotalTextField5;
+    private javax.swing.JTextField agendaHandbookTotalTextField6;
+    private javax.swing.JTextField agendaHandbookTotalTextField7;
     private javax.swing.JLabel agendaHandbookUnitPriceLabel3;
-    private javax.swing.JLabel agendaHandbookUnitPriceLabel4;
-    private javax.swing.JLabel agendaHandbookUnitPriceLabel5;
+    private javax.swing.JLabel agendaHandbookUnitPriceLabel6;
+    private javax.swing.JLabel agendaHandbookUnitPriceLabel7;
     private javax.swing.JTextField agendaHandbookUnitPriceTextField3;
-    private javax.swing.JTextField agendaHandbookUnitPriceTextField4;
-    private javax.swing.JTextField agendaHandbookUnitPriceTextField5;
+    private javax.swing.JTextField agendaHandbookUnitPriceTextField6;
+    private javax.swing.JTextField agendaHandbookUnitPriceTextField7;
     private javax.swing.JSeparator agendaHandbookVSeparator;
-    private javax.swing.JSeparator agendaHandbookVSeparator1;
-    private javax.swing.JSeparator agendaHandbookVSeparator2;
+    private javax.swing.JSeparator agendaHandbookVSeparator3;
+    private javax.swing.JSeparator agendaHandbookVSeparator4;
+    private javax.swing.JCheckBox agendaIBCCheckBox;
+    private javax.swing.JCheckBox agendaIBCCheckBox1;
+    private javax.swing.JCheckBox agendaIBCCheckBox2;
+    private javax.swing.JCheckBox agendaIFCCheckBox;
+    private javax.swing.JCheckBox agendaIFCCheckBox1;
+    private javax.swing.JCheckBox agendaIFCCheckBox2;
+    private javax.swing.JCheckBox agendaOBCCheckBox;
+    private javax.swing.JCheckBox agendaOBCCheckBox1;
+    private javax.swing.JCheckBox agendaOBCCheckBox2;
+    private javax.swing.JCheckBox agendaOFCCheckBox;
+    private javax.swing.JCheckBox agendaOFCCheckBox1;
+    private javax.swing.JCheckBox agendaOFCCheckBox2;
     private javax.swing.JPanel agendaPlanerPane;
-    private javax.swing.JPanel agendaPlanerPane3;
-    private javax.swing.JPanel agendaPlanerPane4;
+    private javax.swing.JPanel agendaPlanerPane1;
+    private javax.swing.JPanel agendaPlanerPane2;
     private javax.swing.JLabel agendaPlannerAddLpRcLabel;
-    private javax.swing.JLabel agendaPlannerAddLpRcLabel3;
-    private javax.swing.JLabel agendaPlannerAddLpRcLabel4;
+    private javax.swing.JLabel agendaPlannerAddLpRcLabel1;
+    private javax.swing.JLabel agendaPlannerAddLpRcLabel2;
     private javax.swing.JComboBox agendaPlannerCodeComboBox;
-    private javax.swing.JComboBox agendaPlannerCodeComboBox3;
-    private javax.swing.JComboBox agendaPlannerCodeComboBox4;
+    private javax.swing.JComboBox agendaPlannerCodeComboBox1;
+    private javax.swing.JComboBox agendaPlannerCodeComboBox2;
     private javax.swing.JLabel agendaPlannerCodeLabel;
-    private javax.swing.JLabel agendaPlannerCodeLabel3;
-    private javax.swing.JLabel agendaPlannerCodeLabel4;
+    private javax.swing.JLabel agendaPlannerCodeLabel1;
+    private javax.swing.JLabel agendaPlannerCodeLabel2;
     private javax.swing.JLabel agendaPlannerGradeLabel;
-    private javax.swing.JLabel agendaPlannerGradeLabel3;
-    private javax.swing.JLabel agendaPlannerGradeLabel4;
+    private javax.swing.JLabel agendaPlannerGradeLabel1;
+    private javax.swing.JLabel agendaPlannerGradeLabel2;
     private javax.swing.JTextField agendaPlannerGradeTextField;
-    private javax.swing.JTextField agendaPlannerGradeTextField3;
-    private javax.swing.JTextField agendaPlannerGradeTextField4;
+    private javax.swing.JTextField agendaPlannerGradeTextField1;
+    private javax.swing.JTextField agendaPlannerGradeTextField2;
     private javax.swing.JSeparator agendaPlannerHSeparator;
-    private javax.swing.JSeparator agendaPlannerHSeparator3;
-    private javax.swing.JSeparator agendaPlannerHSeparator4;
+    private javax.swing.JSeparator agendaPlannerHSeparator1;
+    private javax.swing.JSeparator agendaPlannerHSeparator2;
     private javax.swing.JComboBox agendaPlannerLpRcComboBox;
-    private javax.swing.JComboBox agendaPlannerLpRcComboBox3;
-    private javax.swing.JComboBox agendaPlannerLpRcComboBox4;
+    private javax.swing.JComboBox agendaPlannerLpRcComboBox1;
+    private javax.swing.JComboBox agendaPlannerLpRcComboBox2;
     private javax.swing.JCheckBox agendaPlannerStudentCheckBox;
-    private javax.swing.JCheckBox agendaPlannerStudentCheckBox3;
-    private javax.swing.JCheckBox agendaPlannerStudentCheckBox4;
+    private javax.swing.JCheckBox agendaPlannerStudentCheckBox1;
+    private javax.swing.JCheckBox agendaPlannerStudentCheckBox2;
     private javax.swing.JLabel agendaPlannerStudentQtyLabel;
-    private javax.swing.JLabel agendaPlannerStudentQtyLabel3;
-    private javax.swing.JLabel agendaPlannerStudentQtyLabel4;
+    private javax.swing.JLabel agendaPlannerStudentQtyLabel1;
+    private javax.swing.JLabel agendaPlannerStudentQtyLabel2;
     private javax.swing.JTextField agendaPlannerStudentQtyTextField;
-    private javax.swing.JTextField agendaPlannerStudentQtyTextField3;
-    private javax.swing.JTextField agendaPlannerStudentQtyTextField4;
+    private javax.swing.JTextField agendaPlannerStudentQtyTextField1;
+    private javax.swing.JTextField agendaPlannerStudentQtyTextField2;
     private javax.swing.JTextField agendaPlannerStudentTotalTextField;
-    private javax.swing.JTextField agendaPlannerStudentTotalTextField3;
-    private javax.swing.JTextField agendaPlannerStudentTotalTextField4;
+    private javax.swing.JTextField agendaPlannerStudentTotalTextField1;
+    private javax.swing.JTextField agendaPlannerStudentTotalTextField2;
     private javax.swing.JLabel agendaPlannerStudentUnitPriceLabel;
-    private javax.swing.JLabel agendaPlannerStudentUnitPriceLabel3;
-    private javax.swing.JLabel agendaPlannerStudentUnitPriceLabel4;
+    private javax.swing.JLabel agendaPlannerStudentUnitPriceLabel1;
+    private javax.swing.JLabel agendaPlannerStudentUnitPriceLabel2;
     private javax.swing.JTextField agendaPlannerStudentUnitPriceTextField;
-    private javax.swing.JTextField agendaPlannerStudentUnitPriceTextField3;
-    private javax.swing.JTextField agendaPlannerStudentUnitPriceTextField4;
+    private javax.swing.JTextField agendaPlannerStudentUnitPriceTextField1;
+    private javax.swing.JTextField agendaPlannerStudentUnitPriceTextField2;
     private javax.swing.JCheckBox agendaPlannerTeacherCheckBox;
-    private javax.swing.JCheckBox agendaPlannerTeacherCheckBox3;
-    private javax.swing.JCheckBox agendaPlannerTeacherCheckBox4;
+    private javax.swing.JCheckBox agendaPlannerTeacherCheckBox1;
+    private javax.swing.JCheckBox agendaPlannerTeacherCheckBox2;
     private javax.swing.JLabel agendaPlannerTeacherQtyLabel;
-    private javax.swing.JLabel agendaPlannerTeacherQtyLabel3;
-    private javax.swing.JLabel agendaPlannerTeacherQtyLabel4;
+    private javax.swing.JLabel agendaPlannerTeacherQtyLabel1;
+    private javax.swing.JLabel agendaPlannerTeacherQtyLabel2;
     private javax.swing.JTextField agendaPlannerTeacherQtyTextField;
-    private javax.swing.JTextField agendaPlannerTeacherQtyTextField3;
-    private javax.swing.JTextField agendaPlannerTeacherQtyTextField4;
+    private javax.swing.JTextField agendaPlannerTeacherQtyTextField1;
+    private javax.swing.JTextField agendaPlannerTeacherQtyTextField2;
     private javax.swing.JTextField agendaPlannerTeacherTotalTextField;
-    private javax.swing.JTextField agendaPlannerTeacherTotalTextField3;
-    private javax.swing.JTextField agendaPlannerTeacherTotalTextField4;
+    private javax.swing.JTextField agendaPlannerTeacherTotalTextField1;
+    private javax.swing.JTextField agendaPlannerTeacherTotalTextField2;
     private javax.swing.JLabel agendaPlannerTeacherUnitPriceLabel;
-    private javax.swing.JLabel agendaPlannerTeacherUnitPriceLabel3;
-    private javax.swing.JLabel agendaPlannerTeacherUnitPriceLabel4;
+    private javax.swing.JLabel agendaPlannerTeacherUnitPriceLabel1;
+    private javax.swing.JLabel agendaPlannerTeacherUnitPriceLabel2;
     private javax.swing.JTextField agendaPlannerTeacherUnitPriceTextField;
-    private javax.swing.JTextField agendaPlannerTeacherUnitPriceTextField3;
-    private javax.swing.JTextField agendaPlannerTeacherUnitPriceTextField4;
+    private javax.swing.JTextField agendaPlannerTeacherUnitPriceTextField1;
+    private javax.swing.JTextField agendaPlannerTeacherUnitPriceTextField2;
     private javax.swing.JSeparator agendaPlannerVSeparator;
+    private javax.swing.JSeparator agendaPlannerVSeparator1;
     private javax.swing.JSeparator agendaPlannerVSeparator2;
-    private javax.swing.JSeparator agendaPlannerVSeparator6;
-    private javax.swing.JSeparator agendaPlannerVSeparator7;
-    private javax.swing.JSeparator agendaPlannerVSeparator8;
-    private javax.swing.JSeparator agendaPlannerVSeparator9;
+    private javax.swing.JSeparator agendaPlannerVSeparator3;
+    private javax.swing.JSeparator agendaPlannerVSeparator4;
+    private javax.swing.JSeparator agendaPlannerVSeparator5;
     private javax.swing.JButton agendaResetButton;
-    private javax.swing.JButton agendaResetButton3;
-    private javax.swing.JButton agendaResetButton4;
+    private javax.swing.JButton agendaResetButton1;
+    private javax.swing.JButton agendaResetButton2;
     private javax.swing.JLabel agendaSharedHandbookQtyLabel;
-    private javax.swing.JLabel agendaSharedHandbookQtyLabel1;
-    private javax.swing.JLabel agendaSharedHandbookQtyLabel2;
+    private javax.swing.JLabel agendaSharedHandbookQtyLabel3;
+    private javax.swing.JLabel agendaSharedHandbookQtyLabel4;
     private javax.swing.JTextField agendaSharedHandbookQtyTextField;
-    private javax.swing.JTextField agendaSharedHandbookQtyTextField1;
-    private javax.swing.JTextField agendaSharedHandbookQtyTextField2;
+    private javax.swing.JTextField agendaSharedHandbookQtyTextField3;
+    private javax.swing.JTextField agendaSharedHandbookQtyTextField4;
     private javax.swing.JTextField agendaSharedHandbookTotalTextField3;
-    private javax.swing.JTextField agendaSharedHandbookTotalTextField4;
-    private javax.swing.JTextField agendaSharedHandbookTotalTextField5;
+    private javax.swing.JTextField agendaSharedHandbookTotalTextField6;
+    private javax.swing.JTextField agendaSharedHandbookTotalTextField7;
     private javax.swing.JLabel agendaSharedHandbookUnitPriceLabel;
-    private javax.swing.JLabel agendaSharedHandbookUnitPriceLabel1;
-    private javax.swing.JLabel agendaSharedHandbookUnitPriceLabel2;
+    private javax.swing.JLabel agendaSharedHandbookUnitPriceLabel3;
+    private javax.swing.JLabel agendaSharedHandbookUnitPriceLabel4;
     private javax.swing.JTextField agendaSharedHandbookUnitPriceTextField;
-    private javax.swing.JTextField agendaSharedHandbookUnitPriceTextField1;
-    private javax.swing.JTextField agendaSharedHandbookUnitPriceTextField2;
+    private javax.swing.JTextField agendaSharedHandbookUnitPriceTextField3;
+    private javax.swing.JTextField agendaSharedHandbookUnitPriceTextField4;
+    private javax.swing.JLabel backCoverLabel;
+    private javax.swing.JLabel backCoverLabel1;
+    private javax.swing.JLabel backCoverLabel2;
+    private javax.swing.JPanel backCoverOptionPanel;
+    private javax.swing.JPanel backCoverOptionPanel1;
+    private javax.swing.JPanel backCoverOptionPanel2;
+    private javax.swing.ButtonGroup backCoverTypeButtonGroup;
+    private javax.swing.ButtonGroup backCoverTypeButtonGroup1;
+    private javax.swing.ButtonGroup backCoverTypeButtonGroup2;
     private javax.swing.JLabel billingAddressLabel;
     private javax.swing.JTextField billingAddressTextField;
     private javax.swing.JLabel billingBillToLabel;
@@ -2384,13 +3162,40 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JTextField billingStateTextField;
     private javax.swing.JButton cancelButton;
     private javax.swing.JButton createSumarryButton;
+    private javax.swing.JRadioButton custDuraBC;
+    private javax.swing.JRadioButton custDuraBC1;
+    private javax.swing.JRadioButton custDuraBC2;
+    private javax.swing.JRadioButton custDuraFC;
+    private javax.swing.JRadioButton custDuraFC1;
+    private javax.swing.JRadioButton custDuraFC2;
+    private javax.swing.JRadioButton custFoilBC;
+    private javax.swing.JRadioButton custFoilBC1;
+    private javax.swing.JRadioButton custFoilBC2;
+    private javax.swing.JRadioButton custFoilFC;
+    private javax.swing.JRadioButton custFoilFC1;
+    private javax.swing.JRadioButton custFoilFC2;
+    private javax.swing.JRadioButton custLamBC;
+    private javax.swing.JRadioButton custLamBC1;
+    private javax.swing.JRadioButton custLamBC2;
+    private javax.swing.JRadioButton custLamFC;
+    private javax.swing.JRadioButton custLamFC1;
+    private javax.swing.JRadioButton custLamFC2;
     private javax.swing.JPanel custProfilePane;
     private javax.swing.JPanel customerProfilePane;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenu fileMenu;
-    private javax.swing.ButtonGroup handbookTypebuttonGroup;
-    private javax.swing.ButtonGroup handbookTypebuttonGroup1;
-    private javax.swing.ButtonGroup handbookTypebuttonGroup2;
+    private javax.swing.JLabel frontCoverLabel;
+    private javax.swing.JLabel frontCoverLabel1;
+    private javax.swing.JLabel frontCoverLabel2;
+    private javax.swing.JPanel frontCoverOptionPanel;
+    private javax.swing.JPanel frontCoverOptionPanel1;
+    private javax.swing.JPanel frontCoverOptionPanel2;
+    private javax.swing.ButtonGroup frontCoverTypeButtonGroup;
+    private javax.swing.ButtonGroup frontCoverTypeButtonGroup1;
+    private javax.swing.ButtonGroup frontCoverTypeButtonGroup2;
+    private javax.swing.ButtonGroup handbookTypeButtonGroup;
+    private javax.swing.ButtonGroup handbookTypeButtonGroup1;
+    private javax.swing.ButtonGroup handbookTypeButtonGroup2;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JButton historyCopyPOButton;
     private javax.swing.JButton historyCreatePOButton;
@@ -2400,45 +3205,45 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar;
     private javax.swing.JTabbedPane mainTabbedPane;
     private javax.swing.JLabel materialContactLabel;
-    private javax.swing.JLabel materialContactLabel3;
-    private javax.swing.JLabel materialContactLabel4;
+    private javax.swing.JLabel materialContactLabel1;
+    private javax.swing.JLabel materialContactLabel2;
     private javax.swing.JTextField materialContactTextField;
-    private javax.swing.JTextField materialContactTextField3;
-    private javax.swing.JTextField materialContactTextField4;
+    private javax.swing.JTextField materialContactTextField1;
+    private javax.swing.JTextField materialContactTextField2;
     private javax.swing.JLabel materialPhoneLabel;
-    private javax.swing.JLabel materialPhoneLabel3;
-    private javax.swing.JLabel materialPhoneLabel4;
+    private javax.swing.JLabel materialPhoneLabel1;
+    private javax.swing.JLabel materialPhoneLabel2;
     private javax.swing.JTextField materialPhoneTextField;
-    private javax.swing.JTextField materialPhoneTextField3;
-    private javax.swing.JTextField materialPhoneTextField4;
+    private javax.swing.JTextField materialPhoneTextField1;
+    private javax.swing.JTextField materialPhoneTextField2;
     private javax.swing.JPanel orderHistoryPane;
     private javax.swing.JPanel orderInfoPane;
-    private javax.swing.JPanel orderInfoPane3;
-    private javax.swing.JPanel orderInfoPane4;
+    private javax.swing.JPanel orderInfoPane1;
+    private javax.swing.JPanel orderInfoPane2;
     private javax.swing.JLabel primaryContactLabel;
-    private javax.swing.JLabel primaryContactLabel3;
-    private javax.swing.JLabel primaryContactLabel4;
+    private javax.swing.JLabel primaryContactLabel1;
+    private javax.swing.JLabel primaryContactLabel2;
     private javax.swing.JTextField primaryContactTextField;
-    private javax.swing.JTextField primaryContactTextField3;
-    private javax.swing.JTextField primaryContactTextField4;
+    private javax.swing.JTextField primaryContactTextField1;
+    private javax.swing.JTextField primaryContactTextField2;
     private javax.swing.JLabel primaryPhoneLabel;
-    private javax.swing.JLabel primaryPhoneLabel3;
-    private javax.swing.JLabel primaryPhoneLabel4;
+    private javax.swing.JLabel primaryPhoneLabel1;
+    private javax.swing.JLabel primaryPhoneLabel2;
     private javax.swing.JTextField primaryPhoneTextField;
-    private javax.swing.JTextField primaryPhoneTextField3;
-    private javax.swing.JTextField primaryPhoneTextField4;
+    private javax.swing.JTextField primaryPhoneTextField1;
+    private javax.swing.JTextField primaryPhoneTextField2;
     private javax.swing.JComboBox productFamilyComboBox;
-    private javax.swing.JComboBox productFamilyComboBox3;
-    private javax.swing.JComboBox productFamilyComboBox4;
+    private javax.swing.JComboBox productFamilyComboBox1;
+    private javax.swing.JComboBox productFamilyComboBox2;
     private javax.swing.JLabel productFamilyLabel;
-    private javax.swing.JLabel productFamilyLabel3;
-    private javax.swing.JLabel productFamilyLabel4;
+    private javax.swing.JLabel productFamilyLabel1;
+    private javax.swing.JLabel productFamilyLabel2;
     private javax.swing.JComboBox productSizeComboBox;
-    private javax.swing.JComboBox productSizeComboBox3;
-    private javax.swing.JComboBox productSizeComboBox4;
+    private javax.swing.JComboBox productSizeComboBox1;
+    private javax.swing.JComboBox productSizeComboBox2;
     private javax.swing.JLabel productSizeLabel;
-    private javax.swing.JLabel productSizeLabel3;
-    private javax.swing.JLabel productSizeLabel4;
+    private javax.swing.JLabel productSizeLabel1;
+    private javax.swing.JLabel productSizeLabel2;
     private javax.swing.JLabel profileAddressLabel;
     private javax.swing.JTextField profileAddressTextField;
     private javax.swing.JLabel profileCityLabel;
@@ -2457,16 +3262,22 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JTextField profileStateTextField;
     private javax.swing.JSeparator profileViewSeparator;
     private javax.swing.JLabel quantityLabel;
-    private javax.swing.JLabel quantityLabel3;
-    private javax.swing.JLabel quantityLabel4;
+    private javax.swing.JLabel quantityLabel1;
+    private javax.swing.JLabel quantityLabel2;
     private javax.swing.JTextField quantityTextField;
-    private javax.swing.JTextField quantityTextField3;
-    private javax.swing.JTextField quantityTextField4;
+    private javax.swing.JTextField quantityTextField1;
+    private javax.swing.JTextField quantityTextField2;
     private javax.swing.JButton saveButton;
     private javax.swing.JComboBox schoolComboBox;
     private javax.swing.JLabel schoolDistrictLabel;
     private javax.swing.JTextField schoolDistrictTextField;
     private javax.swing.JLabel schoolLabel;
+    private javax.swing.JRadioButton standardBC;
+    private javax.swing.JRadioButton standardBC1;
+    private javax.swing.JRadioButton standardBC2;
+    private javax.swing.JRadioButton standardFC;
+    private javax.swing.JRadioButton standardFC1;
+    private javax.swing.JRadioButton standardFC2;
     private javax.swing.JMenu viewMenu;
     // End of variables declaration//GEN-END:variables
 
