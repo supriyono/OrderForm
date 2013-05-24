@@ -30,12 +30,12 @@
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="productSizeLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="productSizeComboBox" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="productSizeComboBox" min="-2" pref="150" max="-2" attributes="0"/>
+                  <EmptySpace pref="154" max="32767" attributes="0"/>
                   <Component id="productFamilyLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="productFamilyComboBox" min="-2" pref="200" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="155" max="32767" attributes="0"/>
                   <Component id="quantityLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="quantityTextField" min="-2" pref="100" max="-2" attributes="0"/>
@@ -109,23 +109,23 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="primaryPhoneLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailLabel" min="-2" max="-2" attributes="0"/>
                           <Component id="primaryContactLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="primaryPhoneTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="primaryContactTextField" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="primaryContactTextField" pref="200" max="32767" attributes="0"/>
+                          <Component id="primaryEmailTextField" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="materialContactLabel" min="-2" max="-2" attributes="0"/>
-                          <Component id="materialPhoneLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="materialEmailLabel" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="materialPhoneTextField" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="materialContactTextField" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="materialContactTextField" pref="200" max="32767" attributes="0"/>
+                          <Component id="materialEmailTextField" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -143,10 +143,10 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="primaryPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="primaryPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="materialPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="materialPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="materialEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="materialEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -154,7 +154,30 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="primaryPhoneTextField">
+            <Component class="javax.swing.JLabel" name="primaryContactLabel">
+              <Properties>
+                <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="primaryContactTextField"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Primary Contact: "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="primaryContactTextField">
+            </Component>
+            <Component class="javax.swing.JLabel" name="primaryEmailLabel">
+              <Properties>
+                <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="primaryEmailTextField"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Primary Contact Email: "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="primaryEmailTextField">
+              <Properties>
+                <Property name="inputVerifier" type="javax.swing.InputVerifier" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new EmailVerifier()" type="code"/>
+                </Property>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="materialContactLabel">
               <Properties>
@@ -164,34 +187,21 @@
                 <Property name="text" type="java.lang.String" value="Material Contact: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="materialPhoneTextField">
-            </Component>
             <Component class="javax.swing.JTextField" name="materialContactTextField">
             </Component>
-            <Component class="javax.swing.JTextField" name="primaryContactTextField">
-            </Component>
-            <Component class="javax.swing.JLabel" name="materialPhoneLabel">
+            <Component class="javax.swing.JLabel" name="materialEmailLabel">
               <Properties>
                 <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="materialPhoneTextField"/>
+                  <ComponentRef name="materialEmailTextField"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Material Contact Phone: "/>
+                <Property name="text" type="java.lang.String" value="Material Contact Email: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="primaryPhoneLabel">
+            <Component class="javax.swing.JTextField" name="materialEmailTextField">
               <Properties>
-                <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="primaryPhoneTextField"/>
+                <Property name="inputVerifier" type="javax.swing.InputVerifier" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new EmailVerifier()" type="code"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Primary Contact Phone: "/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="primaryContactLabel">
-              <Properties>
-                <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="primaryContactTextField"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Primary Contact: "/>
               </Properties>
             </Component>
           </SubComponents>
@@ -207,11 +217,12 @@
         <Component class="javax.swing.JComboBox" name="productSizeComboBox">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="5">
+                <StringItem index="0" value="- Choose Size -"/>
+                <StringItem index="1" value="5&quot; x 8&quot;"/>
+                <StringItem index="2" value="7&quot; x 9&quot;"/>
+                <StringItem index="3" value="7&quot; x 11&quot;"/>
+                <StringItem index="4" value="8.5&quot; x 11&quot;"/>
               </StringArray>
             </Property>
           </Properties>
@@ -227,13 +238,9 @@
         <Component class="javax.swing.JComboBox" name="productFamilyComboBox">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="quantityLabel">
@@ -245,6 +252,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="quantityTextField">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JSeparator" name="agendaHSeparator">
         </Component>
@@ -263,13 +273,15 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Component id="agendaPlannerCodeComboBox" min="-2" pref="120" max="-2" attributes="0"/>
+                          </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                               <Component id="agendaPlannerCodeLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="agendaPlannerCodeComboBox" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="agendaPlannerVSeparator" min="-2" max="-2" attributes="0"/>
@@ -379,7 +391,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="agendaPlannerCodeLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Type or Code: "/>
+                <Property name="text" type="java.lang.String" value="Code: "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="agendaPlannerCodeComboBox">
@@ -402,6 +414,7 @@
             <Component class="javax.swing.JCheckBox" name="agendaPlannerStudentCheckBox">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Student"/>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="agendaPlannerGradeLabel">
@@ -413,12 +426,16 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="agendaPlannerGradeTextField">
+              <Properties>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JSeparator" name="agendaPlannerHSeparator">
             </Component>
             <Component class="javax.swing.JCheckBox" name="agendaPlannerTeacherCheckBox">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Teacher Edition"/>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="agendaPlannerAddLpRcLabel">
@@ -432,13 +449,9 @@
             <Component class="javax.swing.JComboBox" name="agendaPlannerLpRcComboBox">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="4">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
-                  </StringArray>
+                  <StringArray count="0"/>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="agendaPlannerStudentQtyLabel">
@@ -450,6 +463,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="agendaPlannerStudentQtyTextField">
+              <Properties>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="agendaPlannerTeacherQtyLabel">
               <Properties>
@@ -460,6 +476,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="agendaPlannerTeacherQtyTextField">
+              <Properties>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="agendaPlannerStudentUnitPriceLabel">
               <Properties>
@@ -730,7 +749,7 @@
                           <Component id="agendaBCListComboBox" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
                           <Component id="agendaFCListComboBox" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="96" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="agendaFCTotalTextField" alignment="1" min="-2" pref="92" max="-2" attributes="0"/>
                           <Component id="agendaBCTotalTextField" alignment="1" min="-2" pref="92" max="-2" attributes="0"/>
@@ -743,13 +762,11 @@
                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="495" max="32767" attributes="0"/>
-                      <Component id="backCoverLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="495" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="frontCoverLabel" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="backCoverLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="frontCoverLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -893,9 +910,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Customized Lam"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custLamFCActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="custFoilFC">
                   <Properties>
@@ -1024,9 +1038,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Customized Lam"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custLamBCActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="custFoilBC">
                   <Properties>
@@ -1091,13 +1102,13 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="agendaCoverPane1" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="agendaHandbookPane1" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="agendaPlanerPane1" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
@@ -1187,13 +1198,13 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="primaryPhoneLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="primaryContactLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="primaryPhoneTextField1" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="primaryContactTextField1" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="primaryContactTextField1" pref="200" max="32767" attributes="0"/>
+                          <Component id="primaryEmailTextField1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -1201,9 +1212,9 @@
                           <Component id="materialPhoneLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="materialPhoneTextField1" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="materialContactTextField1" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="materialContactTextField1" pref="200" max="32767" attributes="0"/>
+                          <Component id="materialEmailTextField1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1221,10 +1232,10 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="primaryPhoneLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="primaryPhoneTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="materialPhoneLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="materialPhoneTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="materialEmailTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1232,7 +1243,12 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="primaryPhoneTextField1">
+            <Component class="javax.swing.JTextField" name="primaryEmailTextField1">
+              <Properties>
+                <Property name="inputVerifier" type="javax.swing.InputVerifier" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new EmailVerifier()" type="code"/>
+                </Property>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="materialContactLabel1">
               <Properties>
@@ -1242,7 +1258,12 @@
                 <Property name="text" type="java.lang.String" value="Material Contact: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="materialPhoneTextField1">
+            <Component class="javax.swing.JTextField" name="materialEmailTextField1">
+              <Properties>
+                <Property name="inputVerifier" type="javax.swing.InputVerifier" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new EmailVerifier()" type="code"/>
+                </Property>
+              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="materialContactTextField1">
             </Component>
@@ -1251,17 +1272,17 @@
             <Component class="javax.swing.JLabel" name="materialPhoneLabel1">
               <Properties>
                 <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="materialPhoneTextField"/>
+                  <ComponentRef name="materialEmailTextField"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Material Contact Phone: "/>
+                <Property name="text" type="java.lang.String" value="Material Contact Email: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="primaryPhoneLabel1">
+            <Component class="javax.swing.JLabel" name="primaryEmailLabel1">
               <Properties>
                 <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="primaryPhoneTextField"/>
+                  <ComponentRef name="primaryEmailTextField"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Primary Contact Phone: "/>
+                <Property name="text" type="java.lang.String" value="Primary Contact Email: "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="primaryContactLabel1">
@@ -1969,9 +1990,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Customized Lam"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custLamFC1ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="custFoilFC1">
                   <Properties>
@@ -2100,9 +2118,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Customized Lam"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custLamBC1ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="custFoilBC1">
                   <Properties>
@@ -2167,13 +2182,13 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="agendaPlanerPane2" linkSize="4" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="agendaHandbookPane2" linkSize="4" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="agendaCoverPane2" linkSize="4" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
@@ -2263,23 +2278,23 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="primaryPhoneLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="primaryContactLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="primaryPhoneTextField2" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="primaryContactTextField2" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="primaryContactTextField2" pref="200" max="32767" attributes="0"/>
+                          <Component id="primaryEmailTextField2" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="materialContactLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="materialPhoneLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="materialEmailLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="materialPhoneTextField2" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="materialContactTextField2" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="materialContactTextField2" pref="200" max="32767" attributes="0"/>
+                          <Component id="materialEmailTextField2" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -2297,10 +2312,10 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="primaryPhoneLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="primaryPhoneTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="materialPhoneLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="materialPhoneTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="primaryEmailTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="materialEmailLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="materialEmailTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -2308,7 +2323,12 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="primaryPhoneTextField2">
+            <Component class="javax.swing.JTextField" name="primaryEmailTextField2">
+              <Properties>
+                <Property name="inputVerifier" type="javax.swing.InputVerifier" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new EmailVerifier()" type="code"/>
+                </Property>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="materialContactLabel2">
               <Properties>
@@ -2318,26 +2338,31 @@
                 <Property name="text" type="java.lang.String" value="Material Contact: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="materialPhoneTextField2">
+            <Component class="javax.swing.JTextField" name="materialEmailTextField2">
+              <Properties>
+                <Property name="inputVerifier" type="javax.swing.InputVerifier" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new EmailVerifier()" type="code"/>
+                </Property>
+              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="materialContactTextField2">
             </Component>
             <Component class="javax.swing.JTextField" name="primaryContactTextField2">
             </Component>
-            <Component class="javax.swing.JLabel" name="materialPhoneLabel2">
+            <Component class="javax.swing.JLabel" name="materialEmailLabel2">
               <Properties>
                 <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="materialPhoneTextField"/>
+                  <ComponentRef name="materialEmailTextField"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Material Contact Phone: "/>
+                <Property name="text" type="java.lang.String" value="Material Contact Email: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="primaryPhoneLabel2">
+            <Component class="javax.swing.JLabel" name="primaryEmailLabel2">
               <Properties>
                 <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                  <ComponentRef name="primaryPhoneTextField"/>
+                  <ComponentRef name="primaryEmailTextField"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Primary Contact Phone: "/>
+                <Property name="text" type="java.lang.String" value="Primary Contact Email: "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="primaryContactLabel2">
@@ -3045,9 +3070,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Customized Lam"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custLamFC2ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="custFoilFC2">
                   <Properties>
@@ -3176,9 +3198,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Customized Lam"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custLamBC2ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="custFoilBC2">
                   <Properties>
